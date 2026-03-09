@@ -26,7 +26,7 @@ public class UserService {
 	@Autowired
 	private JwtService jwtService;
 
-	JwtTokenDto registerUser(RegisterRequestDto registerRequest) {
+	public JwtTokenDto registerUser(RegisterRequestDto registerRequest) {
 
 		// check if username or email are already registered
 		if (userRepo.existsByUsername(registerRequest.getUsername())) {
@@ -52,6 +52,10 @@ public class UserService {
 		String token = jwtService.generateToken(registeredUser);
 
 		return new JwtTokenDto(token);
+	}
+
+	public User findUserByUsername(String username) {
+		return userRepo.findByUsername(username);
 	}
 
 }

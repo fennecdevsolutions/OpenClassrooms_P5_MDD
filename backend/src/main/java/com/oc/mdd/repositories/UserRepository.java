@@ -12,4 +12,6 @@ public interface UserRepository extends ListCrudRepository<User, Long>, ListPagi
 
 	boolean existsByEmail(String email);
 
+	User findByUsername(String username);
+
 }
