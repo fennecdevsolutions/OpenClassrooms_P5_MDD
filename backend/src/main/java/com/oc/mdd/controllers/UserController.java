@@ -10,13 +10,22 @@ import com.oc.mdd.dto.JwtTokenDto;
 import com.oc.mdd.dto.RegisterRequestDto;
 import com.oc.mdd.services.UserService;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.tags.Tag;
+
 @RestController
 @RequestMapping("/api")
+@Tag(name = "Authentication", description = "Endpoints for user management")
 public class UserController {
 
 	@Autowired
 	private UserService userService;
 
+	@Operation(summary = "Register a new user", description = "Creates a new user account and returns a JWT token upon success.")
+	@ApiResponse(responseCode = "200", description = "User registered successfully", content = @Content(schema = @Schema(implementation = JwtTokenDto.class)))
 	@PostMapping("/auth/register")
 	public JwtTokenDto registerUser(@RequestBody RegisterRequestDto registerRequest) {
 		return userService.registerUser(registerRequest);
