@@ -8,5 +8,8 @@ import com.oc.mdd.models.User;
 
 @Repository
 public interface UserRepository extends ListCrudRepository<User, Long>, ListPagingAndSortingRepository<User, Long> {
+	boolean existsByUsername(String username);
+
+	boolean existsByEmail(String email);
 
 }
