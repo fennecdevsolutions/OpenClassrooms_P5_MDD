@@ -6,6 +6,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.AccessDeniedException;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -38,16 +39,21 @@ public class GlobalExceptionHandler {
 	}
 
 	@ExceptionHandler(Exception.class)
-	public ResponseEntity<ErrorResponseDto> handleUnexpectedException(Exception ex, WebRequest request) {
+	public ResponseEntity<ErrorResponseDto> handleUnexpected(Exception ex, WebRequest request) {
 		logger.error("SYSTEM ERROR: An unhandled exception occurred at {}", request.getDescription(false), ex);
 		return buildResponse(HttpStatus.INTERNAL_SERVER_ERROR, "An unexpected server error has occured", request);
 	}
 
 	@ExceptionHandler(MethodArgumentNotValidException.class)
-	public ResponseEntity<ErrorResponseDto> handleValidationException(MethodArgumentNotValidException ex,
-			WebRequest request) {
+	public ResponseEntity<ErrorResponseDto> handleValidation(MethodArgumentNotValidException ex, WebRequest request) {
 		String firstErroMsg = ex.getBindingResult().getFieldError().getDefaultMessage();
 		return buildResponse(HttpStatus.BAD_REQUEST, firstErroMsg, request);
+	}
+
+	@ExceptionHandler(AccessDeniedException.class)
+	public ResponseEntity<ErrorResponseDto> handleAccessDenial(AccessDeniedException ex, WebRequest request) {
+		return buildResponse(HttpStatus.FORBIDDEN,
+				"Access Denied: you do not have authorization to access the requested data", request);
 	}
 
 	private ResponseEntity<ErrorResponseDto> buildResponse(HttpStatus status, String message, WebRequest request) {

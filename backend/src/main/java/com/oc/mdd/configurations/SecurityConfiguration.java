@@ -3,6 +3,7 @@ package com.oc.mdd.configurations;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
@@ -10,7 +11,13 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
+import io.swagger.v3.oas.models.Components;
+import io.swagger.v3.oas.models.OpenAPI;
+import io.swagger.v3.oas.models.security.SecurityRequirement;
+import io.swagger.v3.oas.models.security.SecurityScheme;
+
 @Configuration
+@EnableMethodSecurity
 public class SecurityConfiguration {
 
 	@Bean
@@ -43,5 +50,12 @@ public class SecurityConfiguration {
 		http.addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class);
 		return http.build();
 
+	}
+
+	@Bean
+	public OpenAPI customOpenAPI() {
+		return new OpenAPI().addSecurityItem(new SecurityRequirement().addList("BearerAuth"))
+				.components(new Components().addSecuritySchemes("BearerAuth", new SecurityScheme().name("BearerAuth")
+						.type(SecurityScheme.Type.HTTP).scheme("bearer").bearerFormat("JWT")));
 	}
 }

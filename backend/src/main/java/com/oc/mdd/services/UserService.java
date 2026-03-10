@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import com.oc.mdd.dto.JwtTokenDto;
 import com.oc.mdd.dto.LoginRequestDto;
 import com.oc.mdd.dto.RegisterRequestDto;
+import com.oc.mdd.dto.UserDto;
 import com.oc.mdd.exceptions.InvalidCredentialsException;
 import com.oc.mdd.exceptions.ResourceAlreadyExistsException;
 import com.oc.mdd.exceptions.ResourceNotFoundException;
@@ -63,6 +64,13 @@ public class UserService {
 		}
 
 		return new JwtTokenDto(jwtService.generateToken(user));
+	}
+
+	public UserDto fetchUserData(String username) {
+
+		User user = this.findUserByUsername(username);
+		return userMapper.toUserDto(user);
+
 	}
 
 	public User findUserByUsername(String username) {

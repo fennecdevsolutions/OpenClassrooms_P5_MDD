@@ -3,6 +3,9 @@ package com.oc.mdd.controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -12,6 +15,7 @@ import com.oc.mdd.dto.ErrorResponseDto;
 import com.oc.mdd.dto.JwtTokenDto;
 import com.oc.mdd.dto.LoginRequestDto;
 import com.oc.mdd.dto.RegisterRequestDto;
+import com.oc.mdd.dto.UserDto;
 import com.oc.mdd.services.UserService;
 
 import io.swagger.v3.oas.annotations.Operation;
@@ -43,7 +47,16 @@ public class UserController {
 	@ApiResponse(responseCode = "401", description = "Invalid credentials", content = @Content(schema = @Schema(implementation = ErrorResponseDto.class)))
 	@PostMapping("/auth/login")
 	public ResponseEntity<JwtTokenDto> registerUser(@Valid @RequestBody LoginRequestDto loginRequest) {
-		return ResponseEntity.status(HttpStatus.OK).body(userService.loginUser(loginRequest));
+		return ResponseEntity.ok(userService.loginUser(loginRequest));
+	}
+
+	@Operation(summary = "Get user data by username", description = "Fetch user by username and returns user data")
+	@ApiResponse(responseCode = "200", description = "User data found", content = @Content(schema = @Schema(implementation = UserDto.class)))
+	@ApiResponse(responseCode = "403", description = "Access denied", content = @Content(schema = @Schema(implementation = ErrorResponseDto.class)))
+	@GetMapping("/users/{username}")
+	@PreAuthorize("#username == authentication.principal")
+	public ResponseEntity<UserDto> getUserData(@PathVariable String username) {
+		return ResponseEntity.ok(userService.fetchUserData(username));
 	}
 
 }
