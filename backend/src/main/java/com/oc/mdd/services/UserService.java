@@ -29,18 +29,16 @@ public class UserService {
 	public JwtTokenDto registerUser(RegisterRequestDto registerRequest) {
 
 		// check if username or email are already registered
-		if (userRepo.existsByUsername(registerRequest.getUsername())) {
-			throw new ResourceAlreadyExistsException(
-					"Username '" + registerRequest.getUsername() + "' is already taken!");
+		if (userRepo.existsByUsername(registerRequest.username())) {
+			throw new ResourceAlreadyExistsException("Username '" + registerRequest.username() + "' is already taken!");
 		}
 
-		if (userRepo.existsByEmail(registerRequest.getEmail())) {
-			throw new ResourceAlreadyExistsException(
-					"Email '" + registerRequest.getEmail() + "' is already registered!");
+		if (userRepo.existsByEmail(registerRequest.email())) {
+			throw new ResourceAlreadyExistsException("Email '" + registerRequest.email() + "' is already registered!");
 		}
 
 		// Encode password
-		String encodedPw = pwEncoder.encode(registerRequest.getPassword());
+		String encodedPw = pwEncoder.encode(registerRequest.password());
 
 		// Prepare entity and save it
 		User userToRegister = userMapper.toEntity(registerRequest);

@@ -1,6 +1,8 @@
 package com.oc.mdd.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -25,10 +27,10 @@ public class UserController {
 	private UserService userService;
 
 	@Operation(summary = "Register a new user", description = "Creates a new user account and returns a JWT token upon success.")
-	@ApiResponse(responseCode = "200", description = "User registered successfully", content = @Content(schema = @Schema(implementation = JwtTokenDto.class)))
+	@ApiResponse(responseCode = "201", description = "User registered successfully", content = @Content(schema = @Schema(implementation = JwtTokenDto.class)))
 	@PostMapping("/auth/register")
-	public JwtTokenDto registerUser(@RequestBody RegisterRequestDto registerRequest) {
-		return userService.registerUser(registerRequest);
+	public ResponseEntity<JwtTokenDto> registerUser(@RequestBody RegisterRequestDto registerRequest) {
+		return ResponseEntity.status(HttpStatus.CREATED).body(userService.registerUser(registerRequest));
 	}
 
 }
