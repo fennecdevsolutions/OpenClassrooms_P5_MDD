@@ -49,9 +49,9 @@ CREATE TABLE subscriptions (
 
 -- Initial Data / Test Data (pwd: 'Password123!')
 INSERT INTO users (username, email, password) VALUES 
-('Abdel_Dev', 'abdel@mdd.com', '$2a$10$e0MYzXyjpJS7Pd0RVvHwHeasBC26251z/5IxG'), 
-('Sophie_Code', 'sophie@mdd.com', '$2a$10$e0MYzXyjpJS7Pd0RVvHwHeasBC26251z/5IxG'),
-('Jean_Test', 'jean@mdd.com', '$2a$10$e0MYzXyjpJS7Pd0RVvHwHeasBC26251z/5IxG');
+('Abdel_Dev', 'abdel@mdd.com', '$2a$12$g3Z7FPiPs9bCahkfWo.i1eoaciZrgAjuDmQVk2OunubpTl/QZ83l6'), 
+('Sophie_Code', 'sophie@mdd.com', '$2a$12$g3Z7FPiPs9bCahkfWo.i1eoaciZrgAjuDmQVk2OunubpTl/QZ83l6'),
+('Jean_Test', 'jean@mdd.com', '$2a$12$g3Z7FPiPs9bCahkfWo.i1eoaciZrgAjuDmQVk2OunubpTl/QZ83l6');
 
 INSERT INTO themes (id, title, description) VALUES 
 (1, 'Java', 'Discussions autour de l’écosystème Java et Spring Boot.'),

@@ -14,10 +14,16 @@ import org.springframework.web.context.request.WebRequest;
 import com.oc.mdd.dto.ErrorResponseDto;
 import com.oc.mdd.exceptions.InvalidCredentialsException;
 import com.oc.mdd.exceptions.ResourceAlreadyExistsException;
+import com.oc.mdd.exceptions.ResourceNotFoundException;
 
 @ControllerAdvice
 public class GlobalExceptionHandler {
 	private static final Logger logger = LoggerFactory.getLogger(GlobalExceptionHandler.class);
+
+	@ExceptionHandler(ResourceNotFoundException.class)
+	public ResponseEntity<ErrorResponseDto> handleResourceNotFound(ResourceNotFoundException ex, WebRequest request) {
+		return buildResponse(HttpStatus.NOT_FOUND, ex.getMessage(), request);
+	}
 
 	@ExceptionHandler(ResourceAlreadyExistsException.class)
 	public ResponseEntity<ErrorResponseDto> handleResourceAlreadyExists(ResourceAlreadyExistsException ex,

@@ -1,5 +1,7 @@
 package com.oc.mdd.repositories;
 
+import java.util.Optional;
+
 import org.springframework.data.repository.ListCrudRepository;
 import org.springframework.data.repository.ListPagingAndSortingRepository;
 import org.springframework.stereotype.Repository;
@@ -12,6 +14,8 @@ public interface UserRepository extends ListCrudRepository<User, Long>, ListPagi
 
 	boolean existsByEmail(String email);
 
-	User findByUsername(String username);
+	Optional<User> findByUsername(String username);
+
+	Optional<User> findByUsernameOrEmail(String username, String email);
 
 }

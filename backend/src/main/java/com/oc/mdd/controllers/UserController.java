@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.oc.mdd.dto.ErrorResponseDto;
 import com.oc.mdd.dto.JwtTokenDto;
+import com.oc.mdd.dto.LoginRequestDto;
 import com.oc.mdd.dto.RegisterRequestDto;
 import com.oc.mdd.services.UserService;
 
@@ -35,6 +36,14 @@ public class UserController {
 	@PostMapping("/auth/register")
 	public ResponseEntity<JwtTokenDto> registerUser(@Valid @RequestBody RegisterRequestDto registerRequest) {
 		return ResponseEntity.status(HttpStatus.CREATED).body(userService.registerUser(registerRequest));
+	}
+
+	@Operation(summary = "Login user", description = "Login user and returns a JWT token upon success.")
+	@ApiResponse(responseCode = "200", description = "User logged in successfully", content = @Content(schema = @Schema(implementation = JwtTokenDto.class)))
+	@ApiResponse(responseCode = "401", description = "Invalid credentials", content = @Content(schema = @Schema(implementation = ErrorResponseDto.class)))
+	@PostMapping("/auth/login")
+	public ResponseEntity<JwtTokenDto> registerUser(@Valid @RequestBody LoginRequestDto loginRequest) {
+		return ResponseEntity.status(HttpStatus.OK).body(userService.loginUser(loginRequest));
 	}
 
 }

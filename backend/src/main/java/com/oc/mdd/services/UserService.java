@@ -5,8 +5,11 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import com.oc.mdd.dto.JwtTokenDto;
+import com.oc.mdd.dto.LoginRequestDto;
 import com.oc.mdd.dto.RegisterRequestDto;
+import com.oc.mdd.exceptions.InvalidCredentialsException;
 import com.oc.mdd.exceptions.ResourceAlreadyExistsException;
+import com.oc.mdd.exceptions.ResourceNotFoundException;
 import com.oc.mdd.mapper.UserMapper;
 import com.oc.mdd.models.User;
 import com.oc.mdd.repositories.UserRepository;
@@ -52,8 +55,19 @@ public class UserService {
 		return new JwtTokenDto(token);
 	}
 
+	public JwtTokenDto loginUser(LoginRequestDto loginRequest) {
+		User user = userRepo.findByUsernameOrEmail(loginRequest.identifier(), loginRequest.identifier())
+				.orElseThrow(() -> new InvalidCredentialsException("Invalid credentials"));
+		if (!pwEncoder.matches(loginRequest.password(), user.getPassword())) {
+			throw new InvalidCredentialsException("Invalid credentials");
+		}
+
+		return new JwtTokenDto(jwtService.generateToken(user));
+	}
+
 	public User findUserByUsername(String username) {
-		return userRepo.findByUsername(username);
+		return userRepo.findByUsername(username)
+				.orElseThrow(() -> new ResourceNotFoundException("User with username '" + username + "' not found"));
 	}
 
 }
