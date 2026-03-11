@@ -7,10 +7,12 @@ import org.springframework.stereotype.Service;
 import com.oc.mdd.dto.JwtTokenDto;
 import com.oc.mdd.dto.LoginRequestDto;
 import com.oc.mdd.dto.RegisterRequestDto;
+import com.oc.mdd.dto.UpdateRequestDto;
 import com.oc.mdd.dto.UserDto;
 import com.oc.mdd.exceptions.InvalidCredentialsException;
 import com.oc.mdd.exceptions.ResourceAlreadyExistsException;
 import com.oc.mdd.exceptions.ResourceNotFoundException;
+import com.oc.mdd.exceptions.ValidationException;
 import com.oc.mdd.mapper.UserMapper;
 import com.oc.mdd.models.User;
 import com.oc.mdd.repositories.UserRepository;
@@ -71,6 +73,50 @@ public class UserService {
 		User user = this.findUserByUsername(username);
 		return userMapper.toUserDto(user);
 
+	}
+
+	public JwtTokenDto updateUserData(String currentUsername, UpdateRequestDto updateRequest) {
+		// fetch User
+		User user = this.findUserByUsername(currentUsername);
+		boolean updated = false;
+
+		// Update username if modified
+		if (!updateRequest.username().equals(user.getUsername())) {
+			if (userRepo.existsByUsername(updateRequest.username())) {
+				throw new ResourceAlreadyExistsException(
+						"Username '" + updateRequest.username() + "' is already taken!");
+			}
+			user.setUsername(updateRequest.username());
+			updated = true;
+		}
+
+		// Update email if modified
+		if (!updateRequest.email().equals(user.getEmail())) {
+			if (userRepo.existsByEmail(updateRequest.email())) {
+				throw new ResourceAlreadyExistsException(
+						"Email '" + updateRequest.email() + "' is already registered!");
+			}
+			user.setEmail(updateRequest.email());
+			updated = true;
+		}
+
+		// Update password if not empty
+
+		if (updateRequest.password() != null && !updateRequest.password().isBlank()) {
+			if (updateRequest.password().length() < 8
+					|| !updateRequest.password().matches("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=!]).*$")) {
+				throw new ValidationException("Password must be at least 8 characters long");
+			}
+			user.setPassword(pwEncoder.encode(updateRequest.password()));
+			updated = true;
+		}
+
+		// save user if changed
+		if (updated) {
+			userRepo.save(user);
+
+		}
+		return new JwtTokenDto(jwtService.generateToken(user));
 	}
 
 	public User findUserByUsername(String username) {

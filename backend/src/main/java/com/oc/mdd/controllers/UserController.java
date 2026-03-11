@@ -7,6 +7,7 @@ import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,6 +16,7 @@ import com.oc.mdd.dto.ErrorResponseDto;
 import com.oc.mdd.dto.JwtTokenDto;
 import com.oc.mdd.dto.LoginRequestDto;
 import com.oc.mdd.dto.RegisterRequestDto;
+import com.oc.mdd.dto.UpdateRequestDto;
 import com.oc.mdd.dto.UserDto;
 import com.oc.mdd.services.UserService;
 
@@ -50,13 +52,26 @@ public class UserController {
 		return ResponseEntity.ok(userService.loginUser(loginRequest));
 	}
 
-	@Operation(summary = "Get user data by username", description = "Fetch user by username and returns user data")
+	@Operation(summary = "Get user data by username", description = "Fetches user by username and returns user data")
 	@ApiResponse(responseCode = "200", description = "User data found", content = @Content(schema = @Schema(implementation = UserDto.class)))
 	@ApiResponse(responseCode = "403", description = "Access denied", content = @Content(schema = @Schema(implementation = ErrorResponseDto.class)))
 	@GetMapping("/users/{username}")
 	@PreAuthorize("#username == authentication.principal")
 	public ResponseEntity<UserDto> getUserData(@PathVariable String username) {
 		return ResponseEntity.ok(userService.fetchUserData(username));
+	}
+
+	@Operation(summary = "Update user profile", description = "Updates user profile if modified and returns a JWT token upon success.")
+	@ApiResponse(responseCode = "200", description = "User profile updated", content = @Content(schema = @Schema(implementation = JwtTokenDto.class)))
+	@ApiResponse(responseCode = "403", description = "Access denied", content = @Content(schema = @Schema(implementation = ErrorResponseDto.class)))
+	@ApiResponse(responseCode = "409", description = "Username or Email already registered", content = @Content(schema = @Schema(implementation = ErrorResponseDto.class)))
+	@ApiResponse(responseCode = "400", description = "Password invalid", content = @Content(schema = @Schema(implementation = ErrorResponseDto.class)))
+	@PutMapping("/users/{username}")
+	@PreAuthorize("#username == authentication.principal")
+	public ResponseEntity<JwtTokenDto> updateUserProfile(@PathVariable String username,
+			@Valid @RequestBody UpdateRequestDto updateRequest) {
+
+		return ResponseEntity.ok(userService.updateUserData(username, updateRequest));
 	}
 
 }

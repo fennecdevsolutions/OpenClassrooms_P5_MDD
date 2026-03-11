@@ -16,6 +16,7 @@ import com.oc.mdd.dto.ErrorResponseDto;
 import com.oc.mdd.exceptions.InvalidCredentialsException;
 import com.oc.mdd.exceptions.ResourceAlreadyExistsException;
 import com.oc.mdd.exceptions.ResourceNotFoundException;
+import com.oc.mdd.exceptions.ValidationException;
 
 @ControllerAdvice
 public class GlobalExceptionHandler {
@@ -48,6 +49,11 @@ public class GlobalExceptionHandler {
 	public ResponseEntity<ErrorResponseDto> handleValidation(MethodArgumentNotValidException ex, WebRequest request) {
 		String firstErroMsg = ex.getBindingResult().getFieldError().getDefaultMessage();
 		return buildResponse(HttpStatus.BAD_REQUEST, firstErroMsg, request);
+	}
+
+	@ExceptionHandler(ValidationException.class)
+	public ResponseEntity<ErrorResponseDto> handleBusinessValidation(ValidationException ex, WebRequest request) {
+		return buildResponse(HttpStatus.BAD_REQUEST, ex.getMessage(), request);
 	}
 
 	@ExceptionHandler(AccessDeniedException.class)
