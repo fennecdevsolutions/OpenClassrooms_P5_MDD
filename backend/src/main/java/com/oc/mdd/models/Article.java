@@ -37,7 +37,8 @@ public class Article {
 	private String content;
 
 	@CreationTimestamp
-	private Timestamp created_at;
+	@Column(name = "created_at")
+	private Timestamp createdAt;
 
 	@ManyToOne
 	@JoinColumn(name = "author_id")

@@ -43,10 +43,12 @@ public class User {
 	private String password;
 
 	@CreationTimestamp
-	private Timestamp created_at;
+	@Column(name = "created_at")
+	private Timestamp createdAt;
 
 	@UpdateTimestamp
-	private Timestamp updated_at;
+	@Column(name = "updated_at")
+	private Timestamp updatedAt;
 
 	@ManyToMany
 	@JoinTable(name = "subscriptions", joinColumns = @JoinColumn(name = "user_id"), inverseJoinColumns = @JoinColumn(name = "theme_id"))

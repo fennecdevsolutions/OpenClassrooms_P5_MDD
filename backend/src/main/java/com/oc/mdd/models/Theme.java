@@ -32,6 +32,7 @@ public class Theme {
 	private String description;
 
 	@CreationTimestamp
-	private Timestamp created_at;
+	@Column(name = "created_at")
+	private Timestamp createdAt;
 
 }

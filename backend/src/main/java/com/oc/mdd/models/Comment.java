@@ -39,5 +39,6 @@ public class Comment {
 	private User author;
 
 	@CreationTimestamp
-	private Timestamp created_at;
+	@Column(name = "created_at")
+	private Timestamp createdAt;
 }
