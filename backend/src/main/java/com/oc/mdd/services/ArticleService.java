@@ -66,4 +66,12 @@ public class ArticleService {
 
 		return articleMapper.toArticleDto(savedArticle);
 	}
+
+	public boolean existById(Long articleId) {
+		return articleRepo.existsById(articleId);
+	}
+
+	public Article getArtcileById(Long articleId) {
+		return articleRepo.findById(articleId).orElseThrow(() -> new ResourceNotFoundException("Article not found"));
+	}
 }
