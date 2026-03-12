@@ -4,7 +4,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
-import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -30,7 +29,7 @@ import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/api")
-@Tag(name = "Authentication", description = "Endpoints for user management")
+@Tag(name = "User Management", description = "Endpoints for user management")
 public class UserController {
 
 	@Autowired
@@ -73,27 +72,6 @@ public class UserController {
 			@Valid @RequestBody UpdateRequestDto updateRequest) {
 
 		return ResponseEntity.ok(userService.updateUserData(username, updateRequest));
-	}
-
-	@Operation(summary = "Subscribe to Theme", description = "Subscribes user to theme, returns empty body")
-	@ApiResponse(responseCode = "204", description = "User subscribed successfully")
-	@ApiResponse(responseCode = "403", description = "Access denied", content = @Content(schema = @Schema(implementation = ErrorResponseDto.class)))
-	@ApiResponse(responseCode = "409", description = "User already subscribed", content = @Content(schema = @Schema(implementation = ErrorResponseDto.class)))
-	@PostMapping("/users/{username}/themes/{id}")
-	@PreAuthorize("#username == authentication.principal")
-	public ResponseEntity subscribeUserToTheme(@PathVariable String username, @PathVariable Long id) {
-		userService.subscribeToTheme(username, id);
-		return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
-	}
-
-	@Operation(summary = "Unsubscribe from Theme", description = "Unubscribes user from theme, returns empty body")
-	@ApiResponse(responseCode = "204", description = "User unsubscribed successfully")
-	@ApiResponse(responseCode = "403", description = "Access denied", content = @Content(schema = @Schema(implementation = ErrorResponseDto.class)))
-	@DeleteMapping("/users/{username}/themes/{id}")
-	@PreAuthorize("#username == authentication.principal")
-	public ResponseEntity unSubscribeUserFromTheme(@PathVariable String username, @PathVariable Long id) {
-		userService.unsubscribeFromTheme(username, id);
-		return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
 	}
 
 }

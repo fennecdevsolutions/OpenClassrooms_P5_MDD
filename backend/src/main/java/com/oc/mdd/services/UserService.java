@@ -14,7 +14,6 @@ import com.oc.mdd.exceptions.ResourceAlreadyExistsException;
 import com.oc.mdd.exceptions.ResourceNotFoundException;
 import com.oc.mdd.exceptions.ValidationException;
 import com.oc.mdd.mapper.UserMapper;
-import com.oc.mdd.models.Theme;
 import com.oc.mdd.models.User;
 import com.oc.mdd.repositories.UserRepository;
 
@@ -121,25 +120,6 @@ public class UserService {
 
 		}
 		return new JwtTokenDto(jwtService.generateToken(user));
-	}
-
-	public void unsubscribeFromTheme(String username, Long themeId) {
-		User user = this.findUserByUsername(username);
-
-		user.getSubscribedThemes().removeIf(theme -> theme.getId().equals(themeId));
-		userRepo.save(user);
-	}
-
-	public void subscribeToTheme(String username, Long themeId) {
-		User user = this.findUserByUsername(username);
-		Theme theme = themeService.findById(themeId);
-
-		if (user.getSubscribedThemes().contains(theme)) {
-			throw new ResourceAlreadyExistsException("You are already subscribed to this theme");
-		}
-
-		user.getSubscribedThemes().add(theme);
-		userRepo.save(user);
 	}
 
 	public User findUserByUsername(String username) {
