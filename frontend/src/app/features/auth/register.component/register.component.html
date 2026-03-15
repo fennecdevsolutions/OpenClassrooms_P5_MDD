@@ -1,1 +1,33 @@
-<p>register works!</p>
+<div class="centered-container">
+    <button mat-icon-button class="back-btn" routerLink="/" aria-label="Retour">
+        <mat-icon>arrow_back</mat-icon>
+    </button>
+    <img class="logo">
+    <h2>Inscription</h2>
+    <form [formGroup]="registerForm" (ngSubmit)="onSubmitForm()" class="full-width-form">
+        <mat-form-field appearance="outline">
+            <mat-label>Nom d'utilisateur</mat-label>
+            <input matInput formControlName="username" placeholder="john.dev">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Adresse e-mail</mat-label>
+            <input matInput formControlName="email" placeholder="john.dev@example.com">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Mot de passe</mat-label>
+            <input matInput formControlName="password" placeholder="">
+            <mat-hint>Utilisez au moins 8 caractères avec majuscule, chiffres et symboles</mat-hint>
+        </mat-form-field>
+        <div class="error-container">
+            @if (serverErrorMessage) {
+            <div class="server-error">
+                {{ serverErrorMessage }}
+            </div>
+            }
+        </div>
+        <button mat-raised-button type="submit" class="submit-btn" [disabled]="registerForm.invalid">
+            S'inscrire
+        </button>
+
+    </form>
+</div>

@@ -5,10 +5,6 @@
 // custom components at https://material.angular.dev/guide/theming
 @use '@angular/material' as mat;
 
-:root {
-  --app-logo: url('/mdd_logo.png')
-}
-
 html {
   height: 100%;
   @include mat.theme((color: (primary: mat.$magenta-palette,
@@ -38,3 +34,97 @@ body {
 }
 
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+  --app-logo: url('/mdd_logo.png')
+}
+
+.logo {
+  width: 80%;
+  max-width: 450px;
+  height: auto;
+  margin-bottom: 2rem;
+  content: var(--app-logo);
+}
+
+.centered-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.back-btn {
+  align-self: flex-start;
+
+  mat-icon {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.full-width-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  max-width: 300px;
+
+
+  .submit-btn {
+    align-self: center;
+    width: 50%;
+    margin-top: 10px;
+    padding: 8px;
+  }
+}
+
+.error-container {
+  min-height: 24px;
+  margin-bottom: 1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.server-error {
+  color: var(--mat-sys-error);
+  background-color: var(--mat-sys-error-container);
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+@media (min-width: 768px) {
+  .centered-container {
+
+    .button-group {
+      flex-direction: row;
+      max-width: none;
+      justify-content: center;
+
+      button {
+        width: 180px;
+      }
+    }
+
+    .full-width-form {
+      max-width: 400px;
+    }
+  }
+}
