@@ -1,12 +1,13 @@
 import { HttpClient } from '@angular/common/http';
 import { computed, inject, Injectable, signal } from '@angular/core';
 import { Observable, tap } from 'rxjs';
-import { AuthResponse, RegisterRequest } from '../models/auth.model';
+import { AuthResponse, LoginRequest, RegisterRequest } from '../models/auth.model';
 
 @Injectable({
   providedIn: 'root',
 })
 export class AuthService {
+
   private httpClient = inject(HttpClient);
   private apiUrl = '/api/auth'
   private readonly tokenKey = "MDD_token"
@@ -33,6 +34,14 @@ export class AuthService {
       .pipe(
         tap(res => this.saveToken(res)));
   }
+
+  loginUser(loginRequest: LoginRequest): Observable<AuthResponse> {
+    return this.httpClient.post<AuthResponse>(`${this.apiUrl}/login`, loginRequest)
+      .pipe(
+        tap(res => this.saveToken(res)));
+  }
+
+
 
   public logout(): void {
     localStorage.removeItem(this.tokenKey);

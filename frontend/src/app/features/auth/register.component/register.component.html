@@ -15,7 +15,14 @@
         </mat-form-field>
         <mat-form-field appearance="outline">
             <mat-label>Mot de passe</mat-label>
-            <input matInput formControlName="password" placeholder="">
+            <input matInput [type]="hidePassword()? 'password': 'text'" formControlName="password" placeholder="">
+            <button matIconButton matSuffix (click)="togglePasswordVisibility($event)"
+                [attr.area-label]="'Hide password'" [attr.aria-pressed]="hidePassword()">
+                <mat-icon>
+                    {{hidePassword()? 'visibility_off': 'visibility'}}
+                </mat-icon>
+
+            </button>
             <mat-hint>Utilisez au moins 8 caractères avec majuscule, chiffres et symboles</mat-hint>
         </mat-form-field>
         <div class="error-container">
