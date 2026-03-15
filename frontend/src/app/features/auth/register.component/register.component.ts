@@ -1,10 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, DestroyRef, inject, signal } from '@angular/core';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { MatButtonModule } from "@angular/material/button";
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
-import { RouterLink } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
+import { RegisterRequest } from '../../../core/models/auth.model';
+import { AuthService } from '../../../core/services/auth.service';
 @Component({
   selector: 'app-register',
   imports: [
@@ -18,7 +21,10 @@ import { RouterLink } from '@angular/router';
   styleUrl: './register.component.scss',
 })
 export class RegisterComponent {
-  serverErrorMessage: string | null = null;
+  private router = inject(Router);
+  private authService = inject(AuthService);
+  private destroyRef = inject(DestroyRef);
+  serverErrorMessage = signal<string | null>(null);
 
 
   registerForm = new FormGroup({
@@ -28,9 +34,20 @@ export class RegisterComponent {
   });
 
   onSubmitForm() {
+    if (this.registerForm.valid) {
+      const registerRequest: RegisterRequest = this.registerForm.getRawValue();
+      this.authService.registerUser(registerRequest).pipe(takeUntilDestroyed(this.destroyRef)).subscribe({
+        next: (res) => {
+          this.serverErrorMessage.set(null);
+          this.router.navigate(['/']);
+        },
+        error: (err) => {
+          const msg = err.error?.message || "Une erreur est survenue";
+          this.serverErrorMessage.set(msg);
+        }
+      });
+    }
 
-    console.log("Sending data to server", this.registerForm.value);
-    this.serverErrorMessage = "Testing the server error message"
   }
 
 
