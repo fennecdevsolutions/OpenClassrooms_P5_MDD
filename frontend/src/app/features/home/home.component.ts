@@ -1,11 +1,14 @@
-import { Component } from '@angular/core';
-import { MatButtonModule } from '@angular/material/button';
-import { RouterLink } from '@angular/router';
+import { Component, inject } from '@angular/core';
+import { AuthService } from '../../core/services/auth.service';
+import { MainComponent } from '../main/main.component/main.component';
+import { LandingComponent } from './landing.component/landing.component';
 
 @Component({
   selector: 'app-home',
-  imports: [MatButtonModule, RouterLink],
+  imports: [LandingComponent, MainComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })
-export class HomeComponent { }
+export class HomeComponent {
+  protected authService = inject(AuthService);
+}
