@@ -1,0 +1,45 @@
+:host {
+    display: block;
+    height: var(--header-height);
+    box-sizing: border-box;
+    border-bottom: 1px solid black;
+}
+
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+.mobile-only {
+    display: none;
+}
+
+.desktop-only {
+    button {
+        font-size: x-large;
+        align-self: end;
+        justify-content: flex-end;
+        color: black;
+    }
+
+    mat-icon {
+        font-size: 48px;
+        width: 48px;
+        height: 48px;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .desktop-only {
+        display: none;
+    }
+
+    .mobile-only {
+        display: block;
+    }
+
+    .is-guest {
+        display: none;
+    }
+}

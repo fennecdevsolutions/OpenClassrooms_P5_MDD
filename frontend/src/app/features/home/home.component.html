@@ -1,5 +1,22 @@
-@if (authService.isLoggedIn()) {
-<app-main />
-} @else {
-<app-landing />
-}
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #sidenav position="end">
+        <div class="links">
+            <button mat-button routerLink="/logout" (click)="sidenav.close()" class="logout-btn">Se déconnecter</button>
+            <button mat-button routerLink="/articles" (click)="sidenav.close()">Articles</button>
+            <button mat-button routerLink="/themes" (click)="sidenav.close()">Thèmes</button>
+        </div>
+        <div class="spacer"></div>
+        <button mat-icon-button routerLink="/me" (click)="sidenav.close()" class="profile-icon">
+            <mat-icon>account_circle</mat-icon>
+        </button>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+        @if (authService.isLoggedIn()) {
+        <app-header (toggleSidenav)="sidenav.toggle()" />
+        <app-main />
+        } @else {
+        <app-landing />
+        }
+    </mat-sidenav-content>
+</mat-sidenav-container>

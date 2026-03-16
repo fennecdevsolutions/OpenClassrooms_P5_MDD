@@ -1,0 +1,21 @@
+<mat-toolbar color="primary" [class.is-guest]="!authService.isLoggedIn()">
+    <img alt="Logo" class="logo-header" routerLink="/">
+
+    <span class="spacer"></span>
+
+    @if (authService.isLoggedIn()) {
+    <div class="desktop-only links">
+        <button mat-button routerLink="/logout" class="logout-btn">Se déconnecter</button>
+        <button mat-button routerLink="/articles">Articles</button>
+        <button mat-button routerLink="/themes">Thèmes</button>
+        <button mat-icon-button routerLink="/me" class="profile-icon">
+            <mat-icon>account_circle</mat-icon>
+        </button>
+    </div>
+    <div class="mobile-only">
+        <button mat-icon-button (click)="toggleSidenav.emit()">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+    }
+</mat-toolbar>

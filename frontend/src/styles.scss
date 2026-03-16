@@ -13,6 +13,8 @@ html {
       typography: Roboto,
       density: 0,
     ));
+
+
 }
 
 body {
@@ -31,19 +33,31 @@ body {
   // Reset the user agent margin.
   margin: 0;
   height: 100%;
+
 }
 
 /* You can add global styles to this file, and also import other style files */
 
 :root {
-  --app-logo: url('/mdd_logo.png')
+  --app-logo: url('/mdd_logo.png');
+  --header-height: 85px;
 }
 
-.logo {
+
+
+.logo-large {
   width: 80%;
-  max-width: 450px;
+  max-width: 350px;
   height: auto;
   margin-bottom: 2rem;
+  content: var(--app-logo);
+}
+
+.logo-header {
+  width: auto;
+  height: 80px;
+  display: block;
+  cursor: pointer;
   content: var(--app-logo);
 }
 
@@ -52,10 +66,13 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
+  //min-height: 100vh;
+  min-height: calc(100vh - var(--header-height));
   padding: 20px;
   box-sizing: border-box;
+
 }
+
 
 .button-group {
   display: flex;
@@ -126,5 +143,12 @@ body {
     .full-width-form {
       max-width: 400px;
     }
+  }
+}
+
+.logout-btn {
+  .mdc-button__label {
+    font-size: medium;
+    color: red;
   }
 }

@@ -1,0 +1,46 @@
+.sidenav-container {
+    // fills 100% of the page height
+    height: 100vh;
+
+    // required for profile icon alignement and spacing
+    ::ng-deep .mat-drawer-inner-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    // sets the sidenav width 
+    mat-sidenav {
+        width: 60%;
+    }
+
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    button {
+        font-size: x-large;
+        align-self: end;
+        justify-content: flex-end;
+        color: black;
+
+    }
+}
+
+// adds space between the textual buttons and the profile icon
+.spacer {
+    flex: 1;
+}
+
+.profile-icon {
+    align-self: flex-end;
+    width: 60px;
+    height: 60px;
+
+    mat-icon {
+        font-size: 48px;
+        width: 48px;
+    }
+}
