@@ -15,4 +15,8 @@ import { AuthService } from '../../../core/services/auth.service';
 export class HeaderComponent {
   protected authService = inject(AuthService);
   @Output() toggleSidenav = new EventEmitter<void>();
+
+  onLogout() {
+    this.authService.logout();
+  }
 }

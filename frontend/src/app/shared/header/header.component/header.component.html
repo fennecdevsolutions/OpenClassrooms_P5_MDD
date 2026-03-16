@@ -5,8 +5,8 @@
 
     @if (authService.isLoggedIn()) {
     <div class="desktop-only links">
-        <button mat-button routerLink="/logout" class="logout-btn">Se déconnecter</button>
-        <button mat-button routerLink="/articles">Articles</button>
+        <button mat-button class="logout-btn" (click)="onLogout()">Se déconnecter</button>
+        <button mat-button routerLink=" /articles">Articles</button>
         <button mat-button routerLink="/themes">Thèmes</button>
         <button mat-icon-button routerLink="/me" class="profile-icon">
             <mat-icon>account_circle</mat-icon>

@@ -16,4 +16,8 @@ import { LandingComponent } from './landing.component/landing.component';
 })
 export class HomeComponent {
   protected authService = inject(AuthService);
+
+  onLogout() {
+    this.authService.logout();
+  }
 }
