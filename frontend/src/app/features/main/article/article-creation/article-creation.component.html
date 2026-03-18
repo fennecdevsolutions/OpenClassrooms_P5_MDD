@@ -1,0 +1,36 @@
+<div class="centered-container">
+    <button mat-icon-button class="back-btn" routerLink="/articles" aria-label="Retour">
+        <mat-icon>arrow_back</mat-icon>
+    </button>
+    <h2>Créer un nouvel article</h2>
+    <form [formGroup]="articleCreateForm" (ngSubmit)="onSubmit()" class="full-width-form">
+        <mat-form-field appearance="outline">
+            <mat-label>
+                Sélectionner un thème
+            </mat-label>
+            <mat-select formControlName="themeId">
+                @for (theme of themes$ | async; track theme.id) {
+                <mat-option [value]="theme.id">
+                    {{theme.title}}
+                </mat-option>
+                }
+            </mat-select>
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>
+                Titre de l'article
+            </mat-label>
+            <input matInput formControlName="articleTitle" placeholder="Titre de l'article">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>
+                Contenu de l'article
+            </mat-label>
+            <textarea matInput formControlName="content" rows="10"></textarea>
+        </mat-form-field>
+        <button mat-raised-button type="submit" class="submit-btn" [disabled]="articleCreateForm.invalid">
+            Créer
+        </button>
+    </form>
+
+</div>

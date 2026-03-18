@@ -80,6 +80,13 @@ body {
   gap: 20px;
   width: 100%;
   max-width: 300px;
+
+  button {
+    border-radius: 10px;
+  }
+
+
+
 }
 
 .back-btn {
@@ -103,9 +110,12 @@ body {
 
   .submit-btn {
     align-self: center;
-    width: 50%;
-    margin-top: 10px;
-    padding: 8px;
+    border-radius: 10px;
+
+    &:not(:disabled) {
+      background-color: #7A5BC4 !important;
+      color: white !important;
+    }
   }
 }
 
