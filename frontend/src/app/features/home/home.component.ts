@@ -4,8 +4,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
+import { HeaderComponent } from '../../components/header/header.component/header.component';
 import { AuthService } from '../../core/services/auth.service';
-import { HeaderComponent } from '../../shared/header/header.component/header.component';
 import { LandingComponent } from './landing.component/landing.component';
 
 @Component({

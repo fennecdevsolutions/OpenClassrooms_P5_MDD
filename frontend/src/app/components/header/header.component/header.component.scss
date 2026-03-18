@@ -34,7 +34,7 @@
     color: #7050CF !important;
 }
 
-@media (max-width: 768px) {
+@media (max-width: --media-width) {
     .desktop-only {
         display: none;
     }

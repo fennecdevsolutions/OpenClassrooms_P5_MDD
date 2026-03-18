@@ -1,0 +1,42 @@
+.articles-container {
+    padding: 3rem 5%;
+
+    .header-actions {
+        display: flex;
+        justify-content: space-between;
+
+        margin-bottom: 1rem;
+
+        .sort-container {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+
+            // Flips the arrow when direction is toggled
+            &.asc mat-icon {
+                transform: rotate(180deg);
+            }
+        }
+    }
+}
+
+.articles-grid {
+    display: grid;
+
+    grid-template-columns: 1fr; // Single column on mobile
+    gap: 1.5rem;
+
+
+    @media (min-width: --media-width) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+}
+
+.create-btn {
+    border-radius: 10px;
+    background: #7A5BC4;
+    color: white;
+}

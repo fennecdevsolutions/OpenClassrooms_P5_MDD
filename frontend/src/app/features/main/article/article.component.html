@@ -1,3 +1,16 @@
-<div>
-    <h1>User logged in</h1>
+<div class="articles-container">
+    <div class="header-actions">
+        <button mat-flat-button class="create-btn" routerLink="/articles/new">Créer un article</button>
+
+        <div class="sort-container" [class.asc]="currentDirection === 'asc'" (click)="toggleSort()">
+            <span>Trier par</span>
+            <mat-icon>arrow_downward</mat-icon>
+        </div>
+    </div>
+
+    <div class="articles-grid">
+        @for (article of articles$ | async; track article.id) {
+        <app-article-card [article]="article" />
+        }
+    </div>
 </div>

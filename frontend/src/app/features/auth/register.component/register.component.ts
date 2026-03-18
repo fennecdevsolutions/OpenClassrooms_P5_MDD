@@ -6,9 +6,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { Router, RouterLink } from '@angular/router';
+import { HeaderComponent } from '../../../components/header/header.component/header.component';
 import { RegisterRequest } from '../../../core/models/auth.model';
 import { AuthService } from '../../../core/services/auth.service';
-import { HeaderComponent } from '../../../shared/header/header.component/header.component';
 @Component({
   selector: 'app-register',
   imports: [

@@ -1,0 +1,45 @@
+.article-card {
+    padding: 1rem;
+    box-shadow: none;
+    cursor: pointer;
+
+    // mouse hover effect
+    &:hover {
+        filter: brightness(0.95);
+    }
+
+    .metadata-row {
+        // to add spacing between date and author
+        display: flex;
+        justify-content: space-between;
+
+        .author {
+            font-style: italic;
+        }
+    }
+
+    mat-card-header {
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+
+    mat-card-title {
+        //font-size: 1.6rem !important;
+        font-weight: 500;
+        margin-bottom: 1rem;
+    }
+
+    mat-card-content {
+        padding: 0;
+
+        p {
+            margin: 0;
+            line-clamp: 5;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+
+        }
+    }
+}

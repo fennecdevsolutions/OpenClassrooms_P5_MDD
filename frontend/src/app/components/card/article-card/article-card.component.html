@@ -1,0 +1,16 @@
+<mat-card class="article-card">
+    <mat-card-header>
+        <mat-card-title>
+            {{article.title}}
+        </mat-card-title>
+        <mat-card-subtitle class="metadata-row">
+            {{article.createdAt | date: 'dd/MM/yyyy'}}
+            <span class="author"> {{article.authorName}}</span>
+        </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+        <p>
+            {{article.content}}
+        </p>
+    </mat-card-content>
+</mat-card>
