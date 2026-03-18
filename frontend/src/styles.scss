@@ -41,7 +41,6 @@ body {
 :root {
   --app-logo: url('/mdd_logo.png');
   --header-height: 85px;
-  --media-width: 768px;
 }
 
 
@@ -128,7 +127,7 @@ body {
   font-size: 0.9rem;
 }
 
-@media (min-width: --media-width) {
+@media (min-width: 768px) {
   .centered-container {
 
     .button-group {
