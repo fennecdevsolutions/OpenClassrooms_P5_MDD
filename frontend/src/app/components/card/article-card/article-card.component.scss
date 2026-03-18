@@ -3,6 +3,12 @@
     box-shadow: none;
     cursor: pointer;
 
+    mat-card-header {
+        ::ng-deep .mat-mdc-card-header-text {
+            width: 50%;
+        }
+    }
+
     // mouse hover effect
     &:hover {
         filter: brightness(0.95);
@@ -13,6 +19,7 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
+        gap: 50px;
 
         .author {
             font-style: italic;
