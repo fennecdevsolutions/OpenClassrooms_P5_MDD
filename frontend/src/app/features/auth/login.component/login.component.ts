@@ -8,6 +8,7 @@ import { MatInputModule } from '@angular/material/input';
 import { Router, RouterLink } from '@angular/router';
 import { LoginRequest } from '../../../core/models/auth.model';
 import { AuthService } from '../../../core/services/auth.service';
+import { HeaderComponent } from '../../../shared/header/header.component/header.component';
 
 @Component({
   selector: 'app-login.component',
@@ -17,7 +18,8 @@ import { AuthService } from '../../../core/services/auth.service';
     ReactiveFormsModule,
     MatIconModule,
     RouterLink,
-    MatButtonModule
+    MatButtonModule,
+    HeaderComponent
   ],
   templateUrl: './login.component.html',
   styleUrl: './login.component.scss',

@@ -3,8 +3,10 @@
         <div class="links">
             <button mat-button (click)="onLogout();sidenav.close()" class="logout-btn">Se
                 déconnecter</button>
-            <button mat-button routerLink="/articles" (click)="sidenav.close()">Articles</button>
-            <button mat-button routerLink="/themes" (click)="sidenav.close()">Thèmes</button>
+            <button mat-button routerLink="/articles" routerLinkActive="active-link"
+                (click)="sidenav.close()">Articles</button>
+            <button mat-button routerLink="/themes" routerLinkActive="active-link"
+                (click)="sidenav.close()">Thèmes</button>
         </div>
         <div class="spacer"></div>
         <button mat-icon-button routerLink="/me" (click)="sidenav.close()" class="profile-icon">
@@ -15,7 +17,7 @@
     <mat-sidenav-content>
         @if (authService.isLoggedIn()) {
         <app-header (toggleSidenav)="sidenav.toggle()" />
-        <app-main />
+        <router-outlet></router-outlet>
         } @else {
         <app-landing />
         }
