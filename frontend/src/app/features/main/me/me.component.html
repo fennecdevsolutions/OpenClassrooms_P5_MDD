@@ -1,1 +1,34 @@
-<p>me.component works!</p>
+<div class="centered-container">
+    <h2>Profile utilisateur</h2>
+    <form [formGroup]="profileForm" (ngSubmit)="onSubmitForm()" class="full-width-form">
+        <mat-form-field appearance="outline">
+            <mat-label>Nom d'utilisateur</mat-label>
+            <input matInput formControlName="username" autocomplete="off">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Email</mat-label>
+            <input matInput formControlName="email" autocomplete="off">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Mot de passe</mat-label>
+            <input matInput [type]="hidePassword()? 'password' : 'text'" formControlName="password"
+                autocomplete="new-password">
+            <button mat-icon-button matSuffix (click)="togglePasswordVisibility($event)"
+                [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hidePassword()">
+                <mat-icon>{{hidePassword()? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+        </mat-form-field>
+        <div class="error-container">
+            @if (serverErrorMessage()) {
+            <div class="server-error">
+                {{ serverErrorMessage() }}
+            </div>
+            }
+        </div>
+        <button mat-raised-button type="submit" class="submit-btn" [disabled]="profileForm.invalid">
+            Sauvegarder
+        </button>
+
+
+    </form>
+</div>
