@@ -1,5 +1,7 @@
-<div class="themes-grid">
-    @for (theme of themes$ | async; track theme.id) {
-    <app-theme-card [theme]="theme" />
-    }
+<div class="themes-container">
+    <div class="themes-grid">
+        @for (theme of themes$ | async; track theme.id) {
+        <app-theme-card [theme]="theme" />
+        }
+    </div>
 </div>
