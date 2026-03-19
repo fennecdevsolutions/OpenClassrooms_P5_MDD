@@ -8,6 +8,7 @@
         <p>
             {{theme().description}}
         </p>
+        @if(!isUnsubView) {
         <button mat-flat-button class="subscribe-btn" [disabled]="isSubscribed()" (click)="onSubscribe(theme().id)">
             @if(isSubscribed()){
             Déjà abonné
@@ -16,6 +17,11 @@
             S'abonner
             }
         </button>
+        }@else {
+        <button mat-flat-button class="subscribe-btn" (click)="onUnsubscribe(theme().id)">
+            Se désabonner
+        </button>
+        }
     </mat-card-content>
 
 </mat-card>

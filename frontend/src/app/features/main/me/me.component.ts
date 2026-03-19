@@ -1,3 +1,4 @@
+import { AsyncPipe } from '@angular/common';
 import { Component, DestroyRef, inject, signal } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
@@ -7,13 +8,15 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInputModule } from '@angular/material/input';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { tap } from 'rxjs';
+import { ThemeCardComponent } from '../../../components/card/theme-card/theme-card.component';
+import { ThemeWithSubscription } from '../../../core/models/theme.models';
 import { UserProfileUpdateRequest } from '../../../core/models/user.model';
 import { ThemeService } from '../../../core/services/theme.service';
 import { UserService } from '../../../core/services/user.service';
 
 @Component({
   selector: 'app-me',
-  imports: [ReactiveFormsModule, MatIconModule, MatButtonModule, MatFormFieldModule, MatIconModule, MatInputModule],
+  imports: [ReactiveFormsModule, MatIconModule, MatButtonModule, MatFormFieldModule, MatIconModule, MatInputModule, AsyncPipe, ThemeCardComponent, ThemeCardComponent],
   templateUrl: './me.component.html',
   styleUrl: './me.component.scss',
 })
@@ -24,6 +27,23 @@ export class MeComponent {
   private snackBar = inject(MatSnackBar)
   serverErrorMessage = signal<string | null>(null);
   hidePassword = signal(true);
+  isUnsubView = true;
+
+  themes = signal<ThemeWithSubscription[]>([]);
+
+  ngOnInit(): void {
+    this.loadThemes();
+  }
+
+  loadThemes() {
+    this.themeService.getUserSubscriptions()
+      .pipe(takeUntilDestroyed(this.destroyRef))
+      .subscribe(themes => {
+        const mapped = themes.map(theme => ({ ...theme, isSubscribed: true }));
+        this.themes.set(mapped);
+      });
+  }
+
 
   profileForm = new FormGroup({
     username: new FormControl('', { nonNullable: true, validators: [Validators.required] }),
@@ -64,6 +84,11 @@ export class MeComponent {
     this.hidePassword.set(!this.hidePassword());
     event.preventDefault()
   }
+
+  handleUnsubscribe() {
+    this.loadThemes();
+  }
+
 }
 
 

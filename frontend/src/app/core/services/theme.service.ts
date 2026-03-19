@@ -18,6 +18,11 @@ export class ThemeService {
     return this.httpClient.post<void>(`${this.apiUrl}/${themeId}/subscribe`, {})
   }
 
+  unSubscribeTheme(themeId: string): Observable<void> {
+    return this.httpClient.delete<void>(`${this.apiUrl}/${themeId}/unsubscribe`, {})
+  }
+
+
   getUserSubscriptions(): Observable<Theme[]> {
     return this.httpClient.get<Theme[]>(`${this.apiUrl}/subscriptions`);
   }
