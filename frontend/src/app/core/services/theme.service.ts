@@ -13,4 +13,12 @@ export class ThemeService {
   getAllThemes(): Observable<Theme[]> {
     return this.httpClient.get<Theme[]>(this.apiUrl);
   }
+
+  subscribeTheme(themeId: string): Observable<void> {
+    return this.httpClient.post<void>(`${this.apiUrl}/${themeId}`, {})
+  }
+
+  getUserSubscriptions(): Observable<Theme[]> {
+    return this.httpClient.get<Theme[]>(`${this.apiUrl}/subscriptions`);
+  }
 }

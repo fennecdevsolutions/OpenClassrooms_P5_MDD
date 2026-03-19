@@ -1,0 +1,16 @@
+.themes-container {
+    padding: 3rem 5%;
+}
+
+.themes-grid {
+    display: grid;
+
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+
+
+    @media (min-width: 768px) {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5rem;
+    }
+}

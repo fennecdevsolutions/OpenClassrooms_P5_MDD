@@ -1,1 +1,5 @@
-<p>theme.component works!</p>
+<div class="themes-grid">
+    @for (theme of themes$ | async; track theme.id) {
+    <app-theme-card [theme]="theme" />
+    }
+</div>

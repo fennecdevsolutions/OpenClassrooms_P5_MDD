@@ -4,7 +4,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from "@angular/material/icon";
 import { RouterLink } from '@angular/router';
-import { Observable, tap } from 'rxjs';
+import { Observable } from 'rxjs';
 import { ArticleCardComponent } from '../../../components/card/article-card/article-card.component';
 import { Article } from '../../../core/models/article.model';
 import { ArticleService } from '../../../core/services/article.service';
@@ -26,7 +26,6 @@ export class ArticleComponent implements OnInit {
   }
   private loadArticles() {
     this.articles$ = this.articlService.getAllUserArticles(this.currentDirection).pipe(
-      tap(articles => console.log('current articles', articles))
     );
   }
 
