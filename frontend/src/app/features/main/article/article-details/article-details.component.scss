@@ -1,0 +1,42 @@
+.article-details-container {
+    padding: 1rem 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .article-detail {
+        padding: 1rem;
+        box-shadow: none;
+
+        mat-card-header {
+            ::ng-deep .mat-mdc-card-header-text {
+                width: 100%;
+            }
+        }
+
+        .metadata-row {
+            // to add spacing between date, author and theme title
+            display: flex;
+            gap: 3rem;
+            flex-wrap: wrap;
+
+            .author {
+                font-style: italic;
+            }
+        }
+
+        mat-card-header {
+            padding: 0;
+            margin-bottom: 1rem;
+        }
+
+        mat-card-title {
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        mat-card-content {
+            padding: 0;
+        }
+    }
+}

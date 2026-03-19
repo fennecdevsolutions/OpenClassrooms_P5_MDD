@@ -20,4 +20,8 @@ export class ArticleService {
   createNewArticle(articleReq: ArticleCreationRequest): Observable<Article> {
     return this.httpClient.post<Article>(this.apiUrl, articleReq);
   }
+
+  getArticleDetails(id: string): Observable<Article> {
+    return this.httpClient.get<Article>(`${this.apiUrl}/${id}`);
+  }
 }
