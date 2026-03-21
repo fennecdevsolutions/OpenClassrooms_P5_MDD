@@ -1,16 +1,29 @@
 .comment-container {
     display: flex;
     flex-direction: column;
+    text-align: center;
+
+    @media (min-width: 768px) {
+        flex-direction: row;
+    }
 
     .author-name {
         font-style: italic;
         font-size: 1rem;
         align-self: flex-end;
+        padding: 0.5rem;
+
+        @media (min-width: 768px) {
+            align-self: flex-start;
+
+        }
+
     }
 
     .comment-bubble {
         padding: 1rem;
         word-break: break-word;
+        background-color: #FBF1F5;
     }
 
 }
