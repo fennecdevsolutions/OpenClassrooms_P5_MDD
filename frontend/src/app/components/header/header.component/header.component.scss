@@ -3,6 +3,10 @@
     height: var(--header-height);
     box-sizing: border-box;
     border-bottom: 1px solid black;
+
+    mat-toolbar {
+        height: 100%;
+    }
 }
 
 
@@ -15,18 +19,22 @@
 }
 
 .desktop-only {
+    display: flex;
+    align-items: center;
+
     button {
         font-size: x-large;
-        align-self: end;
-        justify-content: flex-end;
         color: black;
     }
 
-    mat-icon {
-        font-size: 48px;
+    .header-profile-icon {
         width: 48px;
         height: 48px;
 
+        mat-icon {
+            font-size: 36px;
+            width: 36px;
+        }
     }
 }
 

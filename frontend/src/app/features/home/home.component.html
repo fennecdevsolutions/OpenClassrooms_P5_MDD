@@ -9,7 +9,8 @@
                 (click)="sidenav.close()">Thèmes</button>
         </div>
         <div class="spacer"></div>
-        <button mat-icon-button routerLink="/me" (click)="sidenav.close()" class="profile-icon">
+        <button mat-icon-button routerLink="/me" routerLinkActive="active-link" (click)="sidenav.close()"
+            class="sidenav-profile-icon">
             <mat-icon>account_circle</mat-icon>
         </button>
     </mat-sidenav>
