@@ -1,0 +1,16 @@
+.comment-container {
+    display: flex;
+    flex-direction: column;
+
+    .author-name {
+        font-style: italic;
+        font-size: 1rem;
+        align-self: flex-end;
+    }
+
+    .comment-bubble {
+        padding: 1rem;
+        word-break: break-word;
+    }
+
+}

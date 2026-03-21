@@ -40,3 +40,47 @@
         }
     }
 }
+
+.comments-container {
+    padding: 1rem 2%;
+    display: flex;
+    flex-direction: column;
+
+    .comment-cards-container {
+        padding: 1rem;
+    }
+
+    .comment-post-container {
+        padding: 1rem;
+
+        form {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 15px;
+
+            mat-form-field {
+                flex: 1;
+            }
+
+            button {
+                width: 48px;
+                height: 48px;
+
+                mat-icon {
+                    font-size: 32px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                }
+
+                &:not(:disabled) {
+                    color: #7A5BC4;
+                }
+            }
+
+
+        }
+    }
+
+}

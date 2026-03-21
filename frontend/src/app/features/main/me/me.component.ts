@@ -1,4 +1,3 @@
-import { AsyncPipe } from '@angular/common';
 import { Component, DestroyRef, inject, signal } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
@@ -16,7 +15,7 @@ import { UserService } from '../../../core/services/user.service';
 
 @Component({
   selector: 'app-me',
-  imports: [ReactiveFormsModule, MatIconModule, MatButtonModule, MatFormFieldModule, MatIconModule, MatInputModule, AsyncPipe, ThemeCardComponent, ThemeCardComponent],
+  imports: [ReactiveFormsModule, MatIconModule, MatButtonModule, MatFormFieldModule, MatIconModule, MatInputModule, ThemeCardComponent, ThemeCardComponent],
   templateUrl: './me.component.html',
   styleUrl: './me.component.scss',
 })
