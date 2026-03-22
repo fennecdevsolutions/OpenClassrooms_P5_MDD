@@ -48,9 +48,7 @@ public class ArticleService {
 	}
 
 	public ArticleDto getArticleDetails(Long id) {
-		Article article = articleRepo.findById(id)
-				.orElseThrow(() -> new ResourceNotFoundException("Article not found"));
-
+		Article article = this.getArtcileById(id);
 		return articleMapper.toArticleDto(article);
 	}
 

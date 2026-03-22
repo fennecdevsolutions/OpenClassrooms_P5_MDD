@@ -108,7 +108,8 @@ public class UserService {
 		if (updateRequest.password() != null && !updateRequest.password().isBlank()) {
 			if (updateRequest.password().length() < 8
 					|| !updateRequest.password().matches("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=!]).*$")) {
-				throw new ValidationException("Password must be at least 8 characters long");
+				throw new ValidationException(
+						"Password must be at least 8 characters long and contain at least one lowercase, one uppercase and one special character");
 			}
 			user.setPassword(pwEncoder.encode(updateRequest.password()));
 			updated = true;
