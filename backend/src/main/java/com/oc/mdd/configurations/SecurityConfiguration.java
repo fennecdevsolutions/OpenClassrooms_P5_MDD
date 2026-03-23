@@ -21,7 +21,7 @@ import io.swagger.v3.oas.models.security.SecurityScheme;
 public class SecurityConfiguration {
 
 	@Bean
-	public PasswordEncoder passwordEncoder() {
+	PasswordEncoder passwordEncoder() {
 		return new BCryptPasswordEncoder();
 	}
 
@@ -53,7 +53,7 @@ public class SecurityConfiguration {
 	}
 
 	@Bean
-	public OpenAPI customOpenAPI() {
+	OpenAPI customOpenAPI() {
 		return new OpenAPI().addSecurityItem(new SecurityRequirement().addList("BearerAuth"))
 				.components(new Components().addSecuritySchemes("BearerAuth", new SecurityScheme().name("BearerAuth")
 						.type(SecurityScheme.Type.HTTP).scheme("bearer").bearerFormat("JWT")));

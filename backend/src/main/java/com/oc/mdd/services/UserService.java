@@ -32,9 +32,6 @@ public class UserService {
 	@Autowired
 	private JwtService jwtService;
 
-	@Autowired
-	private ThemeService themeService;
-
 	public JwtTokenDto registerUser(RegisterRequestDto registerRequest) {
 
 		// check if username or email are already registered

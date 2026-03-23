@@ -53,7 +53,7 @@ public class ThemeController {
 	@ApiResponse(responseCode = "403", description = "Access denied", content = @Content(schema = @Schema(implementation = ErrorResponseDto.class)))
 	@ApiResponse(responseCode = "409", description = "User already subscribed", content = @Content(schema = @Schema(implementation = ErrorResponseDto.class)))
 	@PostMapping("/themes/{id}/subscribe")
-	public ResponseEntity subscribeUserToTheme(@AuthenticationPrincipal String username, @PathVariable Long id) {
+	public ResponseEntity<Void> subscribeUserToTheme(@AuthenticationPrincipal String username, @PathVariable Long id) {
 		themeService.subscribeToTheme(username, id);
 		return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
 	}
@@ -62,7 +62,8 @@ public class ThemeController {
 	@ApiResponse(responseCode = "204", description = "User unsubscribed successfully")
 	@ApiResponse(responseCode = "403", description = "Access denied", content = @Content(schema = @Schema(implementation = ErrorResponseDto.class)))
 	@DeleteMapping("/themes/{id}/unsubscribe")
-	public ResponseEntity unSubscribeUserFromTheme(@AuthenticationPrincipal String username, @PathVariable Long id) {
+	public ResponseEntity<Void> unSubscribeUserFromTheme(@AuthenticationPrincipal String username,
+			@PathVariable Long id) {
 		themeService.unsubscribeFromTheme(username, id);
 		return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
 	}

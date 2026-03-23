@@ -6,6 +6,7 @@ import java.util.ArrayList;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
+import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.stereotype.Component;
@@ -38,6 +39,7 @@ public class JwtFilter extends OncePerRequestFilter {
 
 		String username = null;
 		String jwt = null;
+		Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
 
 		if (authorizationHeader != null && authorizationHeader.startsWith("Bearer ")) {
 			// extracting the token String from header
@@ -45,7 +47,7 @@ public class JwtFilter extends OncePerRequestFilter {
 			// extracting the User username
 			username = jwtService.extractUsername(jwt);
 		}
-		if (username != null && SecurityContextHolder.getContext().getAuthentication() == null) {
+		if (username != null && (authentication == null || authentication.isAuthenticated())) {
 			// finding the User with extracted username
 			// add exception handling for not found user
 
