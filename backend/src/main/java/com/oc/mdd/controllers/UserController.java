@@ -47,7 +47,7 @@ public class UserController {
 	@ApiResponse(responseCode = "200", description = "User logged in successfully", content = @Content(schema = @Schema(implementation = JwtTokenDto.class)))
 	@ApiResponse(responseCode = "401", description = "Invalid credentials", content = @Content(schema = @Schema(implementation = ErrorResponseDto.class)))
 	@PostMapping("/auth/login")
-	public ResponseEntity<JwtTokenDto> registerUser(@Valid @RequestBody LoginRequestDto loginRequest) {
+	public ResponseEntity<JwtTokenDto> loginUser(@Valid @RequestBody LoginRequestDto loginRequest) {
 		return ResponseEntity.ok(userService.loginUser(loginRequest));
 	}
 
