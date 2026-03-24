@@ -12,6 +12,11 @@ describe('CommentCardComponent', () => {
     }).compileComponents();
 
     fixture = TestBed.createComponent(CommentCardComponent);
+    fixture.componentRef.setInput('comment', {
+      id: '1',
+      authorUsername: 'testUser',
+      content: 'Test comment',
+    });
     component = fixture.componentInstance;
     await fixture.whenStable();
   });
