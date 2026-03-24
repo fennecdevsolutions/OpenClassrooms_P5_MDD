@@ -1,15 +1,16 @@
 <mat-card class="theme-card">
     <mat-card-header>
-        <mat-card-title>
+        <mat-card-title data-testid="theme-title">
             {{theme().title}}
         </mat-card-title>
     </mat-card-header>
     <mat-card-content>
-        <p>
+        <p data-testid="theme-description">
             {{theme().description}}
         </p>
         @if(!isUnsubView) {
-        <button mat-flat-button class="subscribe-btn" [disabled]="isSubscribed()" (click)="onSubscribe(theme().id)">
+        <button mat-flat-button class="subscribe-btn" [disabled]="isSubscribed()" (click)="onSubscribe(theme().id)"
+            data-testid="subscribe-btn">
             @if(isSubscribed()){
             Déjà abonné
             }
@@ -18,7 +19,7 @@
             }
         </button>
         }@else {
-        <button mat-flat-button class="subscribe-btn" (click)="onUnsubscribe(theme().id)">
+        <button mat-flat-button class="subscribe-btn" (click)="onUnsubscribe(theme().id)" data-testid="unsubscribe-btn">
             Se désabonner
         </button>
         }

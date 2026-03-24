@@ -1,14 +1,15 @@
 <mat-card class="article-card" [routerLink]="['/articles', article.id]">
     <mat-card-header>
-        <mat-card-title>
+        <mat-card-title data-testid="article-title">
             {{article.title}}
         </mat-card-title>
         <mat-card-subtitle class="metadata-row">
-            <span>{{article.createdAt|date:'dd/MM/yyyy'}}</span><span class="author">{{article.authorName}}</span>
+            <span data-testid="article-date">{{article.createdAt|date:'dd/MM/yyyy'}}</span><span class="author"
+                data-testid="article-author">{{article.authorName}}</span>
         </mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
-        <p>
+        <p data-testid="article-content">
             {{article.content}}
         </p>
     </mat-card-content>

@@ -37,11 +37,8 @@ export class ThemeCardComponent {
       },
       error: (error) => {
         let message = 'Une erreur est survenue'
-
-        if (error.status === 409) {
-          message = 'Vous êtes déjà abonné à ce thème';
-        } else if (error.status === 403) {
-          message = 'Veuillez vous connecter avant de vous abonner'
+        if (error.status === 403) {
+          message = 'Veuillez vous connecter avant de vous désabonner'
         }
         this.snackBar.open(message, 'Fermer', {
           duration: 5000,

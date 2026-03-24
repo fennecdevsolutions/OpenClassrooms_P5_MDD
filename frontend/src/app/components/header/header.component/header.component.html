@@ -5,15 +5,17 @@
 
     @if (authService.isLoggedIn()) {
     <div class="desktop-only links">
-        <button mat-button class="logout-btn" (click)="onLogout()">Se déconnecter</button>
-        <button mat-button routerLink="/articles" routerLinkActive="active-link">Articles</button>
-        <button mat-button routerLink="/themes" routerLinkActive="active-link">Thèmes</button>
-        <button mat-icon-button routerLink="/me" routerLinkActive="active-link" class="header-profile-icon">
+        <button mat-button class="logout-btn" (click)="onLogout()" data-testid="logout-button">Se déconnecter</button>
+        <button mat-button routerLink="/articles" routerLinkActive="active-link"
+            data-testid="nav-articles">Articles</button>
+        <button mat-button routerLink="/themes" routerLinkActive="active-link" data-testid="nav-themes">Thèmes</button>
+        <button mat-icon-button routerLink="/me" routerLinkActive="active-link" class="header-profile-icon"
+            data-testid="nav-profile">
             <mat-icon>account_circle</mat-icon>
         </button>
     </div>
     <div class="mobile-only">
-        <button mat-icon-button (click)="toggleSidenav.emit()">
+        <button mat-icon-button (click)="toggleSidenav.emit()" data-testid="menu-button">
             <mat-icon>menu</mat-icon>
         </button>
     </div>
