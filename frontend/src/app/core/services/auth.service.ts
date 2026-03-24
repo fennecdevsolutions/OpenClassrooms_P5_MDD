@@ -1,5 +1,5 @@
 import { HttpClient } from '@angular/common/http';
-import { computed, inject, Injectable, signal } from '@angular/core';
+import { computed, effect, inject, Injectable, signal } from '@angular/core';
 import { Observable, tap } from 'rxjs';
 import { AuthResponse, LoginRequest, RegisterRequest } from '../models/auth.model';
 
@@ -13,18 +13,21 @@ export class AuthService {
   private readonly tokenKey = "MDD_token"
 
   private tokenSignal = signal<string | null>(localStorage.getItem(this.tokenKey));
+  private autoLogoutEffect = effect(() => {
+    const token = this.tokenSignal();
+    if (token && this.isTokenExpired(token)) {
+      this.logout();
+    }
+  });
 
   // set log in state
   isLoggedIn = computed(() => {
     const token = this.tokenSignal();
 
-    // clean up if token exists and is expired
     if (token && this.isTokenExpired(token)) {
-      this.logout();
       return null;
     }
 
-    // logged in if token exists and not expired
     return token;
   })
 
