@@ -6,7 +6,7 @@
     <img class="logo-large">
     <h2>Se connecter</h2>
     <form [formGroup]="loginForm" (ngSubmit)="onSubmitForm()" class="full-width-form" data-testid="login-form">
-        <mat-form-field appearance="outline">
+        <mat-form-field appearance="outline" data-testid="login-input">
             <mat-label>Nom d'utilisateur ou E-mail</mat-label>
             <input matInput formControlName="identifier" placeholder="john.dev">
         </mat-form-field>
