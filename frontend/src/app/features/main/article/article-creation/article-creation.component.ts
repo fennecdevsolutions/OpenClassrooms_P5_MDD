@@ -7,6 +7,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatInput } from "@angular/material/input";
 import { MatListModule } from "@angular/material/list";
 import { MatSelectModule } from '@angular/material/select';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { Router, RouterLink } from '@angular/router';
 import { Article, ArticleCreationRequest } from '../../../../core/models/article.model';
 import { ArticleService } from '../../../../core/services/article.service';
@@ -22,6 +23,7 @@ export class ArticleCreationComponent {
   private articleService = inject(ArticleService);
   private themeService = inject(ThemeService);
   private router = inject(Router);
+  private snackBar = inject(MatSnackBar);
   themes$ = this.themeService.getAllThemes();
 
   articleCreateForm = new FormGroup({
@@ -38,7 +40,18 @@ export class ArticleCreationComponent {
           next: (newArticle: Article) => {
             this.router.navigate(['/articles', newArticle.id]);
           },
-          error: (error) => console.error('Error creating article', error)
+          error: (error) => {
+            let message = 'Une erreur est survenue'
+            if (error.status === 403) {
+              message = 'Veuillez vous connecter avant de créer un article'
+            }
+            this.snackBar.open(message, 'Fermer', {
+              duration: 5000,
+              horizontalPosition: 'center',
+              verticalPosition: 'bottom',
+            })
+
+          }
         }
       );
     }

@@ -1,7 +1,7 @@
 <mat-sidenav-container class="sidenav-container">
-    <mat-sidenav #sidenav position="end">
+    <mat-sidenav #sidenav position="end" data-testid="sidenav">
         <div class="links">
-            <button mat-button (click)="onLogout();sidenav.close()" class="logout-btn">Se
+            <button mat-button (click)="onLogout();sidenav.close()" class="logout-btn" data-testid="sidenav-logout">Se
                 déconnecter</button>
             <button mat-button routerLink="/articles" routerLinkActive="active-link"
                 (click)="sidenav.close()">Articles</button>
@@ -17,10 +17,10 @@
 
     <mat-sidenav-content>
         @if (authService.isLoggedIn()) {
-        <app-header (toggleSidenav)="sidenav.toggle()" />
+        <app-header (toggleSidenav)="sidenav.toggle()" data-testid="app-header" />
         <router-outlet></router-outlet>
         } @else {
-        <app-landing />
+        <app-landing data-testid="app-landing" />
         }
     </mat-sidenav-content>
 </mat-sidenav-container>

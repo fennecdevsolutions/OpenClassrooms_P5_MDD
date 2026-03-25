@@ -1,6 +1,6 @@
 <div class="profile-container">
     <h2>Profile utilisateur</h2>
-    <form [formGroup]="profileForm" (ngSubmit)="onSubmitForm()" class="full-width-form">
+    <form [formGroup]="profileForm" (ngSubmit)="onSubmitForm()" class="full-width-form" data-testid="profile-form">
         <mat-form-field appearance="outline">
             <mat-label>Nom d'utilisateur</mat-label>
             <input matInput formControlName="username" autocomplete="off">
@@ -12,20 +12,22 @@
         <mat-form-field appearance="outline">
             <mat-label>Mot de passe</mat-label>
             <input matInput [type]="hidePassword()? 'password' : 'text'" formControlName="password"
-                autocomplete="new-password">
+                autocomplete="new-password" data-testid="password-input">
             <button mat-icon-button matSuffix (click)="togglePasswordVisibility($event)"
-                [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hidePassword()">
+                [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hidePassword()"
+                data-testid="toggle-password-btn">
                 <mat-icon>{{hidePassword()? 'visibility_off' : 'visibility'}}</mat-icon>
             </button>
         </mat-form-field>
-        <div class="error-container">
+        <div class="error-container" data-testid="server-error">
             @if (serverErrorMessage()) {
             <div class="server-error">
                 {{ serverErrorMessage() }}
             </div>
             }
         </div>
-        <button mat-raised-button type="submit" class="submit-btn" [disabled]="profileForm.invalid">
+        <button mat-raised-button type="submit" class="submit-btn" [disabled]="profileForm.invalid"
+            data-testid="submit-btn">
             Sauvegarder
         </button>
     </form>
@@ -34,7 +36,8 @@
 <div class="themes-container">
     <div class="themes-grid">
         @for (theme of themes(); track theme.id) {
-        <app-theme-card [theme]="theme" [isUnsubView]="isUnsubView" (unsubscribed)="handleUnsubscribe()" />
+        <app-theme-card [theme]="theme" [isUnsubView]="isUnsubView" (unsubscribed)="handleUnsubscribe()"
+            data-testid="subscribed-theme-card" />
         }
     </div>
 </div>

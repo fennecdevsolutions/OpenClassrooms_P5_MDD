@@ -5,18 +5,19 @@
         </button>
     </div>
     @if(article$ | async; as article){
-    <mat-card class="article-detail">
+    <mat-card class="article-detail" data-testid="article-content">
         <mat-card-header>
-            <mat-card-title>
+            <mat-card-title data-testid="article-title">
                 {{article.title}}
             </mat-card-title>
             <mat-card-subtitle class="metadata-row">
-                <span>{{article.createdAt|date:'dd/MM/yyyy'}}</span><span
-                    class="author">{{article.authorName}}</span><span class="theme">{{article.themeTitle}}</span>
+                <span data-testid="article-date">{{article.createdAt|date:'dd/MM/yyyy'}}</span><span class="author"
+                    data-testid="article-author">{{article.authorName}}</span><span class="theme"
+                    data-testid="article-theme">{{article.themeTitle}}</span>
             </mat-card-subtitle>
         </mat-card-header>
         <mat-card-content>
-            <p>
+            <p data-testid="article-content">
                 {{article.content}}
             </p>
         </mat-card-content>
@@ -28,19 +29,20 @@
     <h3> Commentaires</h3>
     <div class="comment-cards-container">
         @for (comment of comments$ | async; track comment.id) {
-        <app-comment-card [comment]="comment"></app-comment-card>
+        <app-comment-card [comment]="comment" data-testid="comment-card"></app-comment-card>
         }@empty {
         <p>Soyez le premier à commenter !</p>
         }
     </div>
     <div class="comment-post-container">
-        <form [formGroup]="commentForm" (ngSubmit)="onSubmitForm()">
+        <form [formGroup]="commentForm" (ngSubmit)="onSubmitForm()" data-testid="comment-form">
             <mat-form-field appearance="outline">
                 <mat-label>Commentaire</mat-label>
-                <textarea matInput formControlName="content" placeholder="Ecrivez ici votre commentaire" rows="3">
+                <textarea matInput formControlName="content" placeholder="Ecrivez ici votre commentaire" rows="3"
+                    data-testid="comment-input">
             </textarea>
             </mat-form-field>
-            <button mat-icon-button type="submit" [disabled]="commentForm.invalid">
+            <button mat-icon-button type="submit" [disabled]="commentForm.invalid" data-testid="submit-comment">
                 <mat-icon>send</mat-icon>
             </button>
         </form>

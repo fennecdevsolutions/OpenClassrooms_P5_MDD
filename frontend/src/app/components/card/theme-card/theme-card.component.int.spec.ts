@@ -138,7 +138,7 @@ describe('ThemeCardComponent', () => {
       );
     });
 
-    it('should handle 403 and show appropriate snackbar message', () => {
+    it('should handle 403 and show appropriate snackbar message (isUnsubView = false)', () => {
       mockThemeService.subscribeTheme.mockReturnValue(throwError(() => ({ status: 403 })));
       fixture.componentRef.setInput('isUnsubView', false);
       fixture.detectChanges();
@@ -151,6 +151,49 @@ describe('ThemeCardComponent', () => {
         expect.any(Object)
       );
     });
+    it('should show snackbar with default error message (isUnsubView = false)', () => {
+      mockThemeService.subscribeTheme.mockReturnValue(throwError(() => ({ status: 500 })));
+      fixture.componentRef.setInput('isUnsubView', false);
+      fixture.detectChanges();
+
+      getElementByTestId<HTMLButtonElement>(fixture, 'subscribe-btn').click();
+
+      expect(mockSnackBar.open).toHaveBeenCalledWith(
+        'Une erreur est survenue',
+        'Fermer',
+        expect.any(Object)
+      );
+    });
+
+    it('should show snackbar with default error message (isUnsubView = true)', () => {
+      mockThemeService.unSubscribeTheme.mockReturnValue(throwError(() => ({ status: 500 })));
+      fixture.componentRef.setInput('isUnsubView', true);
+      fixture.detectChanges();
+
+      getElementByTestId<HTMLButtonElement>(fixture, 'unsubscribe-btn').click();
+
+      expect(mockSnackBar.open).toHaveBeenCalledWith(
+        'Une erreur est survenue',
+        'Fermer',
+        expect.any(Object)
+      );
+    });
+
+    it('should handle 403 and show appropriate snackbar message (isUnsubView = true)', () => {
+      mockThemeService.unSubscribeTheme.mockReturnValue(throwError(() => ({ status: 403 })));
+      fixture.componentRef.setInput('isUnsubView', true);
+      fixture.detectChanges();
+
+      getElementByTestId<HTMLButtonElement>(fixture, 'unsubscribe-btn').click();
+
+      expect(mockSnackBar.open).toHaveBeenCalledWith(
+        'Veuillez vous connecter avant de vous désabonner',
+        'Fermer',
+        expect.any(Object)
+      );
+    });
+
+
 
   })
 

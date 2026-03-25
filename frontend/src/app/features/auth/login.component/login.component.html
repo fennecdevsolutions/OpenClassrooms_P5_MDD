@@ -5,27 +5,30 @@
     </button>
     <img class="logo-large">
     <h2>Se connecter</h2>
-    <form [formGroup]="loginForm" (ngSubmit)="onSubmitForm()" class="full-width-form">
+    <form [formGroup]="loginForm" (ngSubmit)="onSubmitForm()" class="full-width-form" data-testid="login-form">
         <mat-form-field appearance="outline">
             <mat-label>Nom d'utilisateur ou E-mail</mat-label>
             <input matInput formControlName="identifier" placeholder="john.dev">
         </mat-form-field>
         <mat-form-field appearance="outline">
             <mat-label>Mot de passe</mat-label>
-            <input matInput [type]="hidePassword()? 'password' : 'text'" formControlName="password" placeholder="">
+            <input matInput [type]="hidePassword()? 'password' : 'text'" formControlName="password" placeholder=""
+                data-testid="password-input">
             <button mat-icon-button matSuffix (click)="togglePasswordVisibility($event)"
-                [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hidePassword()">
+                [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hidePassword()"
+                data-testid="toggle-password-btn">
                 <mat-icon>{{hidePassword()? 'visibility_off' : 'visibility'}}</mat-icon>
             </button>
         </mat-form-field>
         <div class="error-container">
             @if (serverErrorMessage()) {
-            <div class="server-error">
+            <div class="server-error" data-testid="server-error">
                 {{ serverErrorMessage() }}
             </div>
             }
         </div>
-        <button mat-raised-button type="submit" class="submit-btn" [disabled]="loginForm.invalid">
+        <button mat-raised-button type="submit" class="submit-btn" [disabled]="loginForm.invalid"
+            data-testid="submit-btn">
             Se connecter
         </button>
 

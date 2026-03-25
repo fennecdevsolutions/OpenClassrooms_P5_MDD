@@ -1,8 +1,10 @@
 <div class="articles-container">
     <div class="header-actions">
-        <button mat-flat-button class="create-btn" routerLink="/articles/new">Créer un article</button>
+        <button mat-flat-button class="create-btn" routerLink="/articles/new" data-testid="create-article-btn">Créer un
+            article</button>
 
-        <div class="sort-container" [class.asc]="currentDirection === 'asc'" (click)="toggleSort()">
+        <div class="sort-container" [class.asc]="currentDirection === 'asc'" (click)="toggleSort()"
+            data-testid="sort-button">
             <span>Trier par</span>
             <mat-icon>arrow_downward</mat-icon>
         </div>
@@ -10,7 +12,7 @@
 
     <div class="articles-grid">
         @for (article of articles$ | async; track article.id) {
-        <app-article-card [article]="article" />
+        <app-article-card [article]="article" data-testid="article-card" />
         }
     </div>
 </div>

@@ -46,13 +46,14 @@ export class MeComponent {
 
   profileForm = new FormGroup({
     username: new FormControl('', { nonNullable: true, validators: [Validators.required] }),
-    email: new FormControl('', { nonNullable: true, validators: [Validators.required] }),
+    email: new FormControl('', { nonNullable: true, validators: [Validators.required, Validators.email] }),
     password: new FormControl('', { validators: [Validators.minLength(8), Validators.pattern(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%*?&])/)] })
   })
 
   userProfile$ = this.userService.getUserProfile().pipe(
     takeUntilDestroyed(this.destroyRef),
     tap(user => {
+      //pre-fill form
       this.profileForm.patchValue({
         username: user.username,
         email: user.email

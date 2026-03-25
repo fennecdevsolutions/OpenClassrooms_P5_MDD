@@ -1,16 +1,16 @@
 <div class="centered-container">
-    <button mat-icon-button class="back-btn" routerLink="/articles" aria-label="Retour">
+    <button mat-icon-button class="back-btn" routerLink="/articles" aria-label="Retour" data-testid="back-btn">
         <mat-icon>arrow_back</mat-icon>
     </button>
     <h2>Créer un nouvel article</h2>
-    <form [formGroup]="articleCreateForm" (ngSubmit)="onSubmit()" class="full-width-form">
+    <form [formGroup]="articleCreateForm" (ngSubmit)="onSubmit()" class="full-width-form" data-testid="article-form">
         <mat-form-field appearance="outline">
             <mat-label>
                 Sélectionner un thème
             </mat-label>
-            <mat-select formControlName="themeId">
+            <mat-select formControlName="themeId" data-testid="theme-select">
                 @for (theme of themes$ | async; track theme.id) {
-                <mat-option [value]="theme.id">
+                <mat-option [value]="theme.id" data-testid="theme-option">
                     {{theme.title}}
                 </mat-option>
                 }
@@ -20,15 +20,16 @@
             <mat-label>
                 Titre de l'article
             </mat-label>
-            <input matInput formControlName="articleTitle" placeholder="Titre de l'article">
+            <input matInput formControlName="articleTitle" placeholder="Titre de l'article" data-testid="title-input">
         </mat-form-field>
         <mat-form-field appearance="outline">
             <mat-label>
                 Contenu de l'article
             </mat-label>
-            <textarea matInput formControlName="content" rows="10"></textarea>
+            <textarea matInput formControlName="content" rows="10" data-testid="content-input"></textarea>
         </mat-form-field>
-        <button mat-raised-button type="submit" class="submit-btn" [disabled]="articleCreateForm.invalid">
+        <button mat-raised-button type="submit" class="submit-btn" [disabled]="articleCreateForm.invalid"
+            data-testid="submit-btn">
             Créer
         </button>
     </form>

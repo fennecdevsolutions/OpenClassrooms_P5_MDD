@@ -10,6 +10,12 @@ export const getByTestId = (fixture: ComponentFixture<any>, testId: string): Deb
     fixture.debugElement.query(By.css(`[data-testid="${testId}"]`));
 
 /**
+ * Finds all DebugElement by data-testid
+ */
+export const getAllByTestId = (fixture: ComponentFixture<any>, testId: string): DebugElement[] =>
+    fixture.debugElement.queryAll(By.css(`[data-testid="${testId}"]`));
+
+/**
  * Finds a NativeElement by data-testid
  */
 export const getElementByTestId = <T extends HTMLElement>(fixture: ComponentFixture<any>, testId: string): T =>
