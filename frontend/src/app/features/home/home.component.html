@@ -3,14 +3,14 @@
         <div class="links">
             <button mat-button (click)="onLogout();sidenav.close()" class="logout-btn" data-testid="sidenav-logout">Se
                 déconnecter</button>
-            <button mat-button routerLink="/articles" routerLinkActive="active-link"
-                (click)="sidenav.close()">Articles</button>
-            <button mat-button routerLink="/themes" routerLinkActive="active-link"
-                (click)="sidenav.close()">Thèmes</button>
+            <button mat-button routerLink="/articles" routerLinkActive="active-link" (click)="sidenav.close()"
+                data-testid="sidenav-articles">Articles</button>
+            <button mat-button routerLink="/themes" routerLinkActive="active-link" (click)="sidenav.close()"
+                data-testid="sidenav-themes">Thèmes</button>
         </div>
         <div class="spacer"></div>
         <button mat-icon-button routerLink="/me" routerLinkActive="active-link" (click)="sidenav.close()"
-            class="sidenav-profile-icon">
+            class="sidenav-profile-icon" data-testid="sidenav-profile">
             <mat-icon>account_circle</mat-icon>
         </button>
     </mat-sidenav>

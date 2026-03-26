@@ -1,0 +1,23 @@
+[
+    {
+        "id": 14,
+        "content": "New comment",
+        "articleId": 16,
+        "authorUsername": "Abdel_Dev",
+        "createdAt": "2026-03-22T17:52:17"
+    },
+    {
+        "id": 1,
+        "content": "Excellente explication sur les Signals !",
+        "articleId": 16,
+        "authorUsername": "Abdel_Dev",
+        "createdAt": "2026-03-21T12:00:48"
+    },
+    {
+        "id": 2,
+        "content": "Je me demande si ça remplace totalement RxJS ?",
+        "articleId": 16,
+        "authorUsername": "Jean_Test",
+        "createdAt": "2026-03-21T12:00:48"
+    }
+]

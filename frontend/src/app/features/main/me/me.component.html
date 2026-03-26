@@ -3,11 +3,11 @@
     <form [formGroup]="profileForm" (ngSubmit)="onSubmitForm()" class="full-width-form" data-testid="profile-form">
         <mat-form-field appearance="outline">
             <mat-label>Nom d'utilisateur</mat-label>
-            <input matInput formControlName="username" autocomplete="off">
+            <input matInput formControlName="username" autocomplete="off" data-testid="username-input">
         </mat-form-field>
         <mat-form-field appearance="outline">
             <mat-label>Email</mat-label>
-            <input matInput formControlName="email" autocomplete="off">
+            <input matInput formControlName="email" autocomplete="off" data-testid="email-input">
         </mat-form-field>
         <mat-form-field appearance="outline">
             <mat-label>Mot de passe</mat-label>

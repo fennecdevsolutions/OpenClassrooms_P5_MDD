@@ -45,7 +45,7 @@ export { };
 declare global {
     namespace Cypress {
         interface Chainable {
-            login(identifier: string, password: string): Chainable<void>;
+            login(): Chainable<void>;
             getBySel(dataTestAttribute: string): Chainable<JQuery<HTMLElement>>;
         }
     }
@@ -56,9 +56,12 @@ Cypress.Commands.add('getBySel', (selector) => {
 });
 
 
-Cypress.Commands.add('login', (identifier, password) => {
+Cypress.Commands.add('login', () => {
+    cy.clearLocalStorage();
+    cy.intercept('GET', '/api/articles?direction=desc', { fixture: 'articles.json' }).as('getArticles');
+    cy.intercept('POST', '/api/auth/login', { fixture: 'token.json' }).as('loginUser');
     cy.visit('/login');
-    cy.getBySel('login-input').type(identifier);
-    cy.getBySel('password-input').type(password);
+    cy.getBySel('login-input').type("test_user");
+    cy.getBySel('password-input').type("Password123!");
     cy.getBySel('submit-btn').click();
 });

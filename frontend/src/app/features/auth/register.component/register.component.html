@@ -6,11 +6,11 @@
     <img class="logo-large">
     <h2>Inscription</h2>
     <form [formGroup]="registerForm" (ngSubmit)="onSubmitForm()" class="full-width-form" data-testid="register-form">
-        <mat-form-field appearance="outline">
+        <mat-form-field appearance="outline" data-testid="register-username">
             <mat-label>Nom d'utilisateur</mat-label>
             <input matInput formControlName="username" placeholder="john.dev">
         </mat-form-field>
-        <mat-form-field appearance="outline">
+        <mat-form-field appearance="outline" data-testid="register-email">
             <mat-label>Adresse e-mail</mat-label>
             <input matInput formControlName="email" placeholder="john.dev@example.com">
         </mat-form-field>

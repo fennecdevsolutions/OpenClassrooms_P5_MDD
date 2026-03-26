@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "title": "Java & Spring",
+        "description": "Plongez dans l'écosystème Java moderne. Nous explorons ici les subtilités du framework Spring Boot, de la gestion de l'Inversion de Contrôle (IoC) à la sécurité avec Spring Security. Ce thème s'adresse aux développeurs backend souhaitant construire des microservices robustes, scalables et maintenables sur le long terme."
+    },
+    {
+        "id": 2,
+        "title": "Angular & TypeScript",
+        "description": "Le développement frontend a évolué. Découvrez comment utiliser Angular pour créer des Single Page Applications (SPA) performantes. Nous discutons des Signals, de la détection de changement, de RxJS pour la programmation réactive, et des meilleures pratiques pour structurer vos composants et services de manière modulaire."
+    },
+    {
+        "id": 3,
+        "title": "Architecture & Design",
+        "description": "L'architecture logicielle est l'art de prendre des décisions structurantes. Ce thème couvre les Design Patterns classiques (Gang of Four), l'architecture hexagonale, le Domain-Driven Design (DDD) et comment choisir entre monolithique et microservices en fonction des besoins métiers et techniques de votre projet."
+    },
+    {
+        "id": 4,
+        "title": "Bases de Données",
+        "description": "La persistance des données est le cœur de toute application. Apprenez à optimiser vos requêtes SQL, à comprendre le fonctionnement du moteur InnoDB de MySQL, et à modéliser des relations complexes. Nous abordons également les compromis entre SQL et NoSQL pour les charges de travail intensives."
+    },
+    {
+        "id": 5,
+        "title": "DevOps & Cloud",
+        "description": "Automatisez votre flux de travail. Du déploiement continu (CI/CD) avec GitHub Actions à la conteneurisation avec Docker et l'orchestration via Kubernetes. Ce thème explore comment rendre vos environnements de production plus résilients et comment monitorer vos applications en temps réel."
+    }
+]
