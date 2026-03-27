@@ -5,13 +5,15 @@
     "ng": "ng",
     "start": "ng serve",
     "start:mobile": "ng serve --host 0.0.0.0",
+    "start:coverage": "ng run mdd:serve-coverage",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development",
     "test": "jest",
     "test:coverage": "jest --coverage",
     "e2e": "ng e2e",
+    "cypress:run": "cypress run",
     "cypress:open": "cypress open",
-    "cypress:run": "cypress run"
+    "coverage:report": "nyc report --reporter=text --reporter=lcov --reporter=html",
+    "coverage:merge": "nyc merge .nyc_output coverage/combined.json"
   },
   "private": true,
   "packageManager": "npm@11.10.0",
@@ -25,22 +27,37 @@
     "@angular/platform-browser": "^21.2.0",
     "@angular/router": "^21.2.0",
     "rxjs": "~7.8.0",
-    "tslib": "^2.3.0"
+    "tslib": "^2.3.0",
+    "zone.js": "^0.16.1"
   },
   "devDependencies": {
+    "@angular-builders/custom-webpack": "^21.0.3",
     "@angular/build": "^21.2.2",
     "@angular/cli": "^21.2.2",
     "@angular/compiler-cli": "^21.2.0",
+    "@babel/core": "^7.29.0",
+    "@cypress/code-coverage": "^4.0.3",
     "@cypress/schematic": "^5.0.0",
+    "@istanbuljs/nyc-config-typescript": "^1.0.2",
+    "@jsdevtools/coverage-istanbul-loader": "^3.0.5",
     "@types/jest": "^30.0.0",
+    "babel-loader": "^10.1.1",
+    "babel-plugin-istanbul": "^7.0.1",
+    "cypress": "15.13.0",
+    "istanbul-lib-coverage": "^3.2.2",
+    "istanbul-lib-instrument": "^6.0.3",
+    "istanbul-lib-report": "^3.0.1",
+    "istanbul-lib-source-maps": "^5.0.6",
+    "istanbul-reports": "^3.2.0",
     "jest": "^30.3.0",
     "jest-environment-jsdom": "^30.3.0",
     "jest-preset-angular": "^16.1.1",
     "jsdom": "^28.1.0",
+    "nyc": "^18.0.0",
     "prettier": "^3.8.1",
     "ts-node": "^10.9.2",
     "typescript": "~5.9.2",
     "vitest": "^4.0.8",
-    "cypress": "15.13.0"
+    "webpack": "^5.105.4"
   }
 }
