@@ -872,83 +872,83 @@
       }
     },
     "s": {
-      "0": 26,
-      "1": 26,
-      "2": 26,
-      "3": 26,
-      "4": 26,
-      "5": 26,
-      "6": 42,
-      "7": 42,
+      "0": 33,
+      "1": 33,
+      "2": 33,
+      "3": 33,
+      "4": 33,
+      "5": 33,
+      "6": 54,
+      "7": 54,
       "8": 0,
-      "9": 26,
-      "10": 42,
-      "11": 42,
+      "9": 33,
+      "10": 54,
+      "11": 54,
       "12": 0,
-      "13": 42,
+      "13": 54,
       "14": 3,
       "15": 1,
-      "16": 15,
-      "17": 14,
-      "18": 1,
-      "19": 1,
-      "20": 16,
-      "21": 16,
+      "16": 19,
+      "17": 18,
+      "18": 2,
+      "19": 2,
+      "20": 20,
+      "21": 20,
       "22": 0,
-      "23": 46,
-      "24": 46,
-      "25": 46,
-      "26": 46,
-      "27": 46,
+      "23": 60,
+      "24": 60,
+      "25": 60,
+      "26": 60,
+      "27": 60,
       "28": 0,
-      "29": 26,
-      "30": 26,
-      "31": 26,
-      "32": 26
+      "29": 33,
+      "30": 33,
+      "31": 33,
+      "32": 33
     },
     "f": {
-      "0": 26,
-      "1": 42,
-      "2": 42,
+      "0": 33,
+      "1": 54,
+      "2": 54,
       "3": 3,
       "4": 1,
-      "5": 15,
-      "6": 14,
-      "7": 1,
-      "8": 16,
+      "5": 19,
+      "6": 18,
+      "7": 2,
+      "8": 20,
       "9": 0,
-      "10": 46,
-      "11": 26
+      "10": 60,
+      "11": 33
     },
     "b": {
       "0": [
-        26
+        33
       ],
       "1": [
         0,
-        42
+        54
       ],
       "2": [
-        42,
-        23
+        54,
+        30
       ],
       "3": [
-        26
+        33
       ],
       "4": [
         0,
-        42
+        54
       ],
       "5": [
-        42,
-        23
+        54,
+        30
       ],
       "6": [
-        26
+        33
       ],
       "7": [
-        26,
-        26
+        33,
+        33
       ]
     },
     "inputSourceMap": {
@@ -1785,79 +1785,79 @@
       }
     },
     "s": {
-      "0": 481,
-      "1": 23,
-      "2": 23,
-      "3": 23,
+      "0": 698,
+      "1": 30,
+      "2": 30,
+      "3": 30,
       "4": 1,
       "5": 1,
       "6": 1,
-      "7": 23,
-      "8": 23,
-      "9": 23,
-      "10": 23,
-      "11": 23,
-      "12": 23,
-      "13": 23,
-      "14": 23,
-      "15": 23,
-      "16": 23,
-      "17": 23,
-      "18": 23,
-      "19": 23,
+      "7": 30,
+      "8": 30,
+      "9": 30,
+      "10": 30,
+      "11": 30,
+      "12": 30,
+      "13": 30,
+      "14": 30,
+      "15": 30,
+      "16": 30,
+      "17": 30,
+      "18": 30,
+      "19": 30,
       "20": 1,
       "21": 1,
       "22": 1,
-      "23": 23,
-      "24": 23,
-      "25": 23,
-      "26": 26,
-      "27": 41,
-      "28": 41,
+      "23": 30,
+      "24": 30,
+      "25": 30,
+      "26": 33,
+      "27": 52,
+      "28": 52,
       "29": 1,
-      "30": 26,
-      "31": 41,
-      "32": 26,
-      "33": 1545,
-      "34": 41,
-      "35": 41,
-      "36": 41,
-      "37": 41,
-      "38": 1545,
-      "39": 1504,
-      "40": 1504,
-      "41": 1504,
-      "42": 26
+      "30": 33,
+      "31": 52,
+      "32": 33,
+      "33": 1968,
+      "34": 52,
+      "35": 52,
+      "36": 52,
+      "37": 52,
+      "38": 1968,
+      "39": 1916,
+      "40": 1916,
+      "41": 1916,
+      "42": 33
     },
     "f": {
-      "0": 481,
+      "0": 698,
       "1": 1,
       "2": 1,
-      "3": 26,
+      "3": 33,
       "4": 1,
-      "5": 41,
-      "6": 1545
+      "5": 52,
+      "6": 1968
     },
     "b": {
       "0": [
-        23,
-        458
+        30,
+        668
       ],
       "1": [
-        41,
-        41
+        52,
+        52
       ],
       "2": [
-        41,
-        1504
+        52,
+        1916
       ],
       "3": [
-        1504,
-        41
+        1916,
+        52
       ],
       "4": [
-        458,
-        1046
+        668,
+        1248
       ]
     },
     "inputSourceMap": {
@@ -2028,7 +2028,7 @@
           "column": 41
         },
         "end": {
-          "line": 137,
+          "line": 136,
           "column": 4
         }
       },
@@ -2174,52 +2174,52 @@
       },
       "24": {
         "start": {
-          "line": 68,
-          "column": 6
+          "line": 69,
+          "column": 18
         },
         "end": {
-          "line": 68,
-          "column": 29
+          "line": 71,
+          "column": 5
         }
       },
       "25": {
         "start": {
           "line": 70,
-          "column": 18
+          "column": 6
         },
         "end": {
-          "line": 72,
-          "column": 5
+          "line": 70,
+          "column": 57
         }
       },
       "26": {
         "start": {
-          "line": 71,
-          "column": 6
+          "line": 72,
+          "column": 31
         },
         "end": {
-          "line": 71,
-          "column": 57
+          "line": 133,
+          "column": 6
         }
       },
       "27": {
         "start": {
-          "line": 73,
-          "column": 31
+          "line": 80,
+          "column": 8
         },
         "end": {
-          "line": 134,
-          "column": 6
+          "line": 115,
+          "column": 9
         }
       },
       "28": {
         "start": {
           "line": 81,
-          "column": 8
+          "column": 10
         },
         "end": {
-          "line": 116,
-          "column": 9
+          "line": 81,
+          "column": 40
         }
       },
       "29": {
@@ -2229,7 +2229,7 @@
         },
         "end": {
           "line": 82,
-          "column": 40
+          "column": 72
         }
       },
       "30": {
@@ -2239,7 +2239,7 @@
         },
         "end": {
           "line": 83,
-          "column": 72
+          "column": 37
         }
       },
       "31": {
@@ -2249,7 +2249,7 @@
         },
         "end": {
           "line": 84,
-          "column": 37
+          "column": 30
         }
       },
       "32": {
@@ -2259,7 +2259,7 @@
         },
         "end": {
           "line": 85,
-          "column": 30
+          "column": 36
         }
       },
       "33": {
@@ -2269,7 +2269,7 @@
         },
         "end": {
           "line": 86,
-          "column": 36
+          "column": 37
         }
       },
       "34": {
@@ -2279,7 +2279,7 @@
         },
         "end": {
           "line": 87,
-          "column": 37
+          "column": 39
         }
       },
       "35": {
@@ -2289,7 +2289,7 @@
         },
         "end": {
           "line": 88,
-          "column": 39
+          "column": 28
         }
       },
       "36": {
@@ -2299,7 +2299,7 @@
         },
         "end": {
           "line": 89,
-          "column": 28
+          "column": 42
         }
       },
       "37": {
@@ -2308,28 +2308,28 @@
           "column": 10
         },
         "end": {
-          "line": 90,
-          "column": 42
+          "line": 92,
+          "column": 13
         }
       },
       "38": {
         "start": {
           "line": 91,
-          "column": 10
+          "column": 12
         },
         "end": {
-          "line": 93,
-          "column": 13
+          "line": 91,
+          "column": 38
         }
       },
       "39": {
         "start": {
-          "line": 92,
-          "column": 12
+          "line": 93,
+          "column": 10
         },
         "end": {
-          "line": 92,
-          "column": 38
+          "line": 93,
+          "column": 69
         }
       },
       "40": {
@@ -2339,7 +2339,7 @@
         },
         "end": {
           "line": 94,
-          "column": 69
+          "column": 55
         }
       },
       "41": {
@@ -2349,7 +2349,7 @@
         },
         "end": {
           "line": 95,
-          "column": 55
+          "column": 28
         }
       },
       "42": {
@@ -2359,7 +2359,7 @@
         },
         "end": {
           "line": 96,
-          "column": 28
+          "column": 39
         }
       },
       "43": {
@@ -2369,7 +2369,7 @@
         },
         "end": {
           "line": 97,
-          "column": 39
+          "column": 28
         }
       },
       "44": {
@@ -2379,7 +2379,7 @@
         },
         "end": {
           "line": 98,
-          "column": 28
+          "column": 70
         }
       },
       "45": {
@@ -2389,7 +2389,7 @@
         },
         "end": {
           "line": 99,
-          "column": 70
+          "column": 40
         }
       },
       "46": {
@@ -2399,7 +2399,7 @@
         },
         "end": {
           "line": 100,
-          "column": 40
+          "column": 28
         }
       },
       "47": {
@@ -2409,7 +2409,7 @@
         },
         "end": {
           "line": 101,
-          "column": 28
+          "column": 39
         }
       },
       "48": {
@@ -2419,7 +2419,7 @@
         },
         "end": {
           "line": 102,
-          "column": 39
+          "column": 45
         }
       },
       "49": {
@@ -2428,28 +2428,28 @@
           "column": 10
         },
         "end": {
-          "line": 103,
-          "column": 45
+          "line": 105,
+          "column": 13
         }
       },
       "50": {
         "start": {
           "line": 104,
-          "column": 10
+          "column": 12
         },
         "end": {
-          "line": 106,
-          "column": 13
+          "line": 104,
+          "column": 56
         }
       },
       "51": {
         "start": {
-          "line": 105,
-          "column": 12
+          "line": 106,
+          "column": 10
         },
         "end": {
-          "line": 105,
-          "column": 56
+          "line": 106,
+          "column": 44
         }
       },
       "52": {
@@ -2459,7 +2459,7 @@
         },
         "end": {
           "line": 107,
-          "column": 44
+          "column": 24
         }
       },
       "53": {
@@ -2469,7 +2469,7 @@
         },
         "end": {
           "line": 108,
-          "column": 24
+          "column": 32
         }
       },
       "54": {
@@ -2479,7 +2479,7 @@
         },
         "end": {
           "line": 109,
-          "column": 32
+          "column": 42
         }
       },
       "55": {
@@ -2489,7 +2489,7 @@
         },
         "end": {
           "line": 110,
-          "column": 42
+          "column": 94
         }
       },
       "56": {
@@ -2499,7 +2499,7 @@
         },
         "end": {
           "line": 111,
-          "column": 94
+          "column": 28
         }
       },
       "57": {
@@ -2509,7 +2509,7 @@
         },
         "end": {
           "line": 112,
-          "column": 28
+          "column": 46
         }
       },
       "58": {
@@ -2519,7 +2519,7 @@
         },
         "end": {
           "line": 113,
-          "column": 46
+          "column": 42
         }
       },
       "59": {
@@ -2529,27 +2529,27 @@
         },
         "end": {
           "line": 114,
-          "column": 42
+          "column": 32
         }
       },
       "60": {
         "start": {
-          "line": 115,
-          "column": 10
+          "line": 116,
+          "column": 8
         },
         "end": {
-          "line": 115,
-          "column": 32
+          "line": 129,
+          "column": 9
         }
       },
       "61": {
         "start": {
           "line": 117,
-          "column": 8
+          "column": 10
         },
         "end": {
-          "line": 130,
-          "column": 9
+          "line": 117,
+          "column": 26
         }
       },
       "62": {
@@ -2559,7 +2559,7 @@
         },
         "end": {
           "line": 118,
-          "column": 26
+          "column": 52
         }
       },
       "63": {
@@ -2569,7 +2569,7 @@
         },
         "end": {
           "line": 119,
-          "column": 52
+          "column": 26
         }
       },
       "64": {
@@ -2579,7 +2579,7 @@
         },
         "end": {
           "line": 120,
-          "column": 26
+          "column": 74
         }
       },
       "65": {
@@ -2589,7 +2589,7 @@
         },
         "end": {
           "line": 121,
-          "column": 74
+          "column": 25
         }
       },
       "66": {
@@ -2599,7 +2599,7 @@
         },
         "end": {
           "line": 122,
-          "column": 25
+          "column": 92
         }
       },
       "67": {
@@ -2609,7 +2609,7 @@
         },
         "end": {
           "line": 123,
-          "column": 92
+          "column": 26
         }
       },
       "68": {
@@ -2619,7 +2619,7 @@
         },
         "end": {
           "line": 124,
-          "column": 26
+          "column": 85
         }
       },
       "69": {
@@ -2629,7 +2629,7 @@
         },
         "end": {
           "line": 125,
-          "column": 85
+          "column": 26
         }
       },
       "70": {
@@ -2639,7 +2639,7 @@
         },
         "end": {
           "line": 126,
-          "column": 26
+          "column": 63
         }
       },
       "71": {
@@ -2649,7 +2649,7 @@
         },
         "end": {
           "line": 127,
-          "column": 63
+          "column": 25
         }
       },
       "72": {
@@ -2659,26 +2659,16 @@
         },
         "end": {
           "line": 128,
-          "column": 25
+          "column": 59
         }
       },
       "73": {
         "start": {
-          "line": 129,
-          "column": 10
-        },
-        "end": {
-          "line": 129,
-          "column": 59
-        }
-      },
-      "74": {
-        "start": {
-          "line": 136,
+          "line": 135,
           "column": 2
         },
         "end": {
-          "line": 136,
+          "line": 135,
           "column": 24
         }
       }
@@ -2726,7 +2716,7 @@
             "column": 48
           },
           "end": {
-            "line": 137,
+            "line": 136,
             "column": 1
           }
         },
@@ -2822,7 +2812,7 @@
             "column": 36
           },
           "end": {
-            "line": 69,
+            "line": 68,
             "column": 5
           }
         },
@@ -2832,97 +2822,97 @@
         "name": "LoginComponent_Factory",
         "decl": {
           "start": {
-            "line": 70,
+            "line": 69,
             "column": 27
           },
           "end": {
-            "line": 70,
+            "line": 69,
             "column": 49
           }
         },
         "loc": {
           "start": {
-            "line": 70,
+            "line": 69,
             "column": 69
           },
           "end": {
-            "line": 72,
+            "line": 71,
             "column": 5
           }
         },
-        "line": 70
+        "line": 69
       },
       "7": {
         "name": "LoginComponent_Template",
         "decl": {
           "start": {
-            "line": 80,
+            "line": 79,
             "column": 25
           },
           "end": {
-            "line": 80,
+            "line": 79,
             "column": 48
           }
         },
         "loc": {
           "start": {
-            "line": 80,
+            "line": 79,
             "column": 58
           },
           "end": {
-            "line": 131,
+            "line": 130,
             "column": 7
           }
         },
-        "line": 80
+        "line": 79
       },
       "8": {
         "name": "LoginComponent_Template_form_ngSubmit_8_listener",
         "decl": {
           "start": {
-            "line": 91,
+            "line": 90,
             "column": 45
           },
           "end": {
-            "line": 91,
+            "line": 90,
             "column": 93
           }
         },
         "loc": {
           "start": {
-            "line": 91,
+            "line": 90,
             "column": 96
           },
           "end": {
-            "line": 93,
+            "line": 92,
             "column": 11
           }
         },
-        "line": 91
+        "line": 90
       },
       "9": {
         "name": "LoginComponent_Template_button_click_17_listener",
         "decl": {
           "start": {
-            "line": 104,
+            "line": 103,
             "column": 42
           },
           "end": {
-            "line": 104,
+            "line": 103,
             "column": 90
           }
         },
         "loc": {
           "start": {
-            "line": 104,
+            "line": 103,
             "column": 99
           },
           "end": {
-            "line": 106,
+            "line": 105,
             "column": 11
           }
         },
-        "line": 104
+        "line": 103
       }
     },
     "branchMap": {
@@ -3107,11 +3097,11 @@
       "6": {
         "loc": {
           "start": {
-            "line": 71,
+            "line": 70,
             "column": 18
           },
           "end": {
-            "line": 71,
+            "line": 70,
             "column": 53
           }
         },
@@ -3119,35 +3109,35 @@
         "locations": [
           {
             "start": {
-              "line": 71,
+              "line": 70,
               "column": 18
             },
             "end": {
-              "line": 71,
+              "line": 70,
               "column": 35
             }
           },
           {
             "start": {
-              "line": 71,
+              "line": 70,
               "column": 39
             },
             "end": {
-              "line": 71,
+              "line": 70,
               "column": 53
             }
           }
         ],
-        "line": 71
+        "line": 70
       },
       "7": {
         "loc": {
           "start": {
-            "line": 81,
+            "line": 80,
             "column": 8
           },
           "end": {
-            "line": 116,
+            "line": 115,
             "column": 9
           }
         },
@@ -3155,11 +3145,11 @@
         "locations": [
           {
             "start": {
-              "line": 81,
+              "line": 80,
               "column": 8
             },
             "end": {
-              "line": 116,
+              "line": 115,
               "column": 9
             }
           },
@@ -3168,16 +3158,16 @@
             "end": {}
           }
         ],
-        "line": 81
+        "line": 80
       },
       "8": {
         "loc": {
           "start": {
-            "line": 117,
+            "line": 116,
             "column": 8
           },
           "end": {
-            "line": 130,
+            "line": 129,
             "column": 9
           }
         },
@@ -3185,11 +3175,11 @@
         "locations": [
           {
             "start": {
-              "line": 117,
+              "line": 116,
               "column": 8
             },
             "end": {
-              "line": 130,
+              "line": 129,
               "column": 9
             }
           },
@@ -3198,16 +3188,16 @@
             "end": {}
           }
         ],
-        "line": 117
+        "line": 116
       },
       "9": {
         "loc": {
           "start": {
-            "line": 121,
+            "line": 120,
             "column": 32
           },
           "end": {
-            "line": 121,
+            "line": 120,
             "column": 72
           }
         },
@@ -3215,35 +3205,35 @@
         "locations": [
           {
             "start": {
-              "line": 121,
+              "line": 120,
               "column": 53
             },
             "end": {
-              "line": 121,
+              "line": 120,
               "column": 63
             }
           },
           {
             "start": {
-              "line": 121,
+              "line": 120,
               "column": 66
             },
             "end": {
-              "line": 121,
+              "line": 120,
               "column": 72
             }
           }
         ],
-        "line": 121
+        "line": 120
       },
       "10": {
         "loc": {
           "start": {
-            "line": 125,
+            "line": 124,
             "column": 31
           },
           "end": {
-            "line": 125,
+            "line": 124,
             "column": 83
           }
         },
@@ -3251,35 +3241,35 @@
         "locations": [
           {
             "start": {
-              "line": 125,
+              "line": 124,
               "column": 52
             },
             "end": {
-              "line": 125,
+              "line": 124,
               "column": 68
             }
           },
           {
             "start": {
-              "line": 125,
+              "line": 124,
               "column": 71
             },
             "end": {
-              "line": 125,
+              "line": 124,
               "column": 83
             }
           }
         ],
-        "line": 125
+        "line": 124
       },
       "11": {
         "loc": {
           "start": {
-            "line": 127,
+            "line": 126,
             "column": 27
           },
           "end": {
-            "line": 127,
+            "line": 126,
             "column": 61
           }
         },
@@ -3287,30 +3277,30 @@
         "locations": [
           {
             "start": {
-              "line": 127,
+              "line": 126,
               "column": 54
             },
             "end": {
-              "line": 127,
+              "line": 126,
               "column": 56
             }
           },
           {
             "start": {
-              "line": 127,
+              "line": 126,
               "column": 59
             },
             "end": {
-              "line": 127,
+              "line": 126,
               "column": 61
             }
           }
         ],
-        "line": 127
+        "line": 126
       }
     },
     "s": {
-      "0": 26,
+      "0": 33,
       "1": 3,
       "2": 1,
       "3": 1,
@@ -3319,84 +3309,83 @@
       "6": 2,
       "7": 2,
       "8": 2,
-      "9": 26,
-      "10": 15,
-      "11": 15,
-      "12": 15,
-      "13": 15,
-      "14": 15,
-      "15": 15,
-      "16": 15,
-      "17": 15,
-      "18": 15,
-      "19": 14,
-      "20": 14,
+      "9": 33,
+      "10": 19,
+      "11": 19,
+      "12": 19,
+      "13": 19,
+      "14": 19,
+      "15": 19,
+      "16": 19,
+      "17": 19,
+      "18": 19,
+      "19": 18,
+      "20": 18,
       "21": 1,
       "22": 1,
-      "23": 0,
-      "24": 0,
-      "25": 26,
-      "26": 15,
-      "27": 26,
-      "28": 795,
-      "29": 15,
-      "30": 15,
-      "31": 15,
-      "32": 15,
-      "33": 15,
-      "34": 15,
-      "35": 15,
-      "36": 15,
-      "37": 15,
-      "38": 15,
-      "39": 15,
-      "40": 15,
-      "41": 15,
-      "42": 15,
-      "43": 15,
-      "44": 15,
-      "45": 15,
-      "46": 15,
-      "47": 15,
-      "48": 15,
-      "49": 15,
-      "50": 15,
-      "51": 0,
-      "52": 15,
-      "53": 15,
-      "54": 15,
-      "55": 15,
-      "56": 15,
-      "57": 15,
-      "58": 15,
-      "59": 15,
-      "60": 15,
-      "61": 795,
-      "62": 780,
-      "63": 780,
-      "64": 780,
-      "65": 780,
-      "66": 780,
-      "67": 780,
-      "68": 780,
-      "69": 780,
-      "70": 780,
-      "71": 780,
-      "72": 780,
-      "73": 780,
-      "74": 26
+      "23": 1,
+      "24": 33,
+      "25": 19,
+      "26": 33,
+      "27": 999,
+      "28": 19,
+      "29": 19,
+      "30": 19,
+      "31": 19,
+      "32": 19,
+      "33": 19,
+      "34": 19,
+      "35": 19,
+      "36": 19,
+      "37": 19,
+      "38": 19,
+      "39": 19,
+      "40": 19,
+      "41": 19,
+      "42": 19,
+      "43": 19,
+      "44": 19,
+      "45": 19,
+      "46": 19,
+      "47": 19,
+      "48": 19,
+      "49": 19,
+      "50": 1,
+      "51": 19,
+      "52": 19,
+      "53": 19,
+      "54": 19,
+      "55": 19,
+      "56": 19,
+      "57": 19,
+      "58": 19,
+      "59": 19,
+      "60": 999,
+      "61": 980,
+      "62": 980,
+      "63": 980,
+      "64": 980,
+      "65": 980,
+      "66": 980,
+      "67": 980,
+      "68": 980,
+      "69": 980,
+      "70": 980,
+      "71": 980,
+      "72": 980,
+      "73": 33
     },
     "f": {
       "0": 3,
-      "1": 26,
-      "2": 15,
-      "3": 14,
+      "1": 33,
+      "2": 19,
+      "3": 18,
       "4": 1,
-      "5": 0,
-      "6": 15,
-      "7": 795,
-      "8": 15,
-      "9": 0
+      "5": 1,
+      "6": 19,
+      "7": 999,
+      "8": 19,
+      "9": 1
     },
     "b": {
       "0": [
@@ -3408,13 +3397,13 @@
         1
       ],
       "2": [
-        15
+        19
       ],
       "3": [
-        15
+        19
       ],
       "4": [
-        15,
+        19,
         0
       ],
       "5": [
@@ -3422,28 +3411,28 @@
         0
       ],
       "6": [
-        15,
-        15
+        19,
+        19
       ],
       "7": [
-        15,
-        780
+        19,
+        980
       ],
       "8": [
-        780,
-        15
+        980,
+        19
       ],
       "9": [
-        780,
-        0
+        976,
+        4
       ],
       "10": [
-        780,
-        0
+        976,
+        4
       ],
       "11": [
         2,
-        778
+        978
       ]
     },
     "inputSourceMap": {
@@ -3503,7 +3492,6 @@
         "message",
         "togglePasswordVisibility",
         "event",
-        "preventDefault",
         "selectors",
         "attrs",
         "_c0",
@@ -3550,14 +3538,14 @@
         "F:\\GitRepos\\OpenClassrooms_P5_MDD\\frontend\\src\\app\\features\\auth\\login.component\\login.component.html"
       ],
       "sourcesContent": [
-        "import { Component, DestroyRef, inject, signal } from '@angular/core';\nimport { takeUntilDestroyed } from '@angular/core/rxjs-interop';\nimport { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';\nimport { MatButtonModule } from '@angular/material/button';\nimport { MatFormFieldModule } from '@angular/material/form-field';\nimport { MatIconModule } from '@angular/material/icon';\nimport { MatInputModule } from '@angular/material/input';\nimport { Router, RouterLink } from '@angular/router';\nimport { HeaderComponent } from '../../../components/header/header.component/header.component';\nimport { LoginRequest } from '../../../core/models/auth.model';\nimport { AuthService } from '../../../core/services/auth.service';\n\n@Component({\n  selector: 'app-login.component',\n  imports: [\n    MatFormFieldModule,\n    MatInputModule,\n    ReactiveFormsModule,\n    MatIconModule,\n    RouterLink,\n    MatButtonModule,\n    HeaderComponent\n  ],\n  templateUrl: './login.component.html',\n  styleUrl: './login.component.scss',\n})\nexport class LoginComponent {\n\n  private router = inject(Router);\n  private authService = inject(AuthService);\n  private destroyRef = inject(DestroyRef);\n  serverErrorMessage = signal<string | null>(null);\n  hidePassword = signal(true);\n\n\n  loginForm = new FormGroup({\n    identifier: new FormControl('', { nonNullable: true, validators: [Validators.required] }),\n    password: new FormControl('', { nonNullable: true, validators: [Validators.required] })\n  });\n\n\n\n  onSubmitForm() {\n    if (this.loginForm.valid) {\n      const loginRequest: LoginRequest = this.loginForm.getRawValue();\n      this.authService.loginUser(loginRequest).pipe(takeUntilDestroyed(this.destroyRef)).subscribe({\n        next: (res) => {\n          this.serverErrorMessage.set(null);\n          this.router.navigate(['/']);\n        },\n        error: (err) => {\n          const msg = err.error?.message || \"Une erreur est survenue\";\n          this.serverErrorMessage.set(msg);\n        }\n      });\n    }\n\n  }\n\n  togglePasswordVisibility(event: MouseEvent) {\n    this.hidePassword.set(!this.hidePassword());\n    event.preventDefault()\n  }\n}\n",
-        "<app-header></app-header>\n<div class=\"centered-container\">\n    <button mat-icon-button class=\"back-btn\" routerLink=\"/\" aria-label=\"Retour\">\n        <mat-icon>arrow_back</mat-icon>\n    </button>\n    <img class=\"logo-large\">\n    <h2>Se connecter</h2>\n    <form [formGroup]=\"loginForm\" (ngSubmit)=\"onSubmitForm()\" class=\"full-width-form\" data-testid=\"login-form\">\n        <mat-form-field appearance=\"outline\" data-testid=\"login-input\">\n            <mat-label>Nom d'utilisateur ou E-mail</mat-label>\n            <input matInput formControlName=\"identifier\" placeholder=\"john.dev\">\n        </mat-form-field>\n        <mat-form-field appearance=\"outline\">\n            <mat-label>Mot de passe</mat-label>\n            <input matInput [type]=\"hidePassword()? 'password' : 'text'\" formControlName=\"password\" placeholder=\"\"\n                data-testid=\"password-input\">\n            <button mat-icon-button matSuffix (click)=\"togglePasswordVisibility($event)\"\n                [attr.aria-label]=\"'Hide password'\" [attr.aria-pressed]=\"hidePassword()\"\n                data-testid=\"toggle-password-btn\">\n                <mat-icon>{{hidePassword()? 'visibility_off' : 'visibility'}}</mat-icon>\n            </button>\n        </mat-form-field>\n        <div class=\"error-container\">\n            @if (serverErrorMessage()) {\n            <div class=\"server-error\" data-testid=\"server-error\">\n                {{ serverErrorMessage() }}\n            </div>\n            }\n        </div>\n        <button mat-raised-button type=\"submit\" class=\"submit-btn\" [disabled]=\"loginForm.invalid\"\n            data-testid=\"submit-btn\">\n            Se connecter\n        </button>\n\n    </form>\n</div>"
+        "import { Component, DestroyRef, inject, signal } from '@angular/core';\nimport { takeUntilDestroyed } from '@angular/core/rxjs-interop';\nimport { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';\nimport { MatButtonModule } from '@angular/material/button';\nimport { MatFormFieldModule } from '@angular/material/form-field';\nimport { MatIconModule } from '@angular/material/icon';\nimport { MatInputModule } from '@angular/material/input';\nimport { Router, RouterLink } from '@angular/router';\nimport { HeaderComponent } from '../../../components/header/header.component/header.component';\nimport { LoginRequest } from '../../../core/models/auth.model';\nimport { AuthService } from '../../../core/services/auth.service';\n\n@Component({\n  selector: 'app-login.component',\n  imports: [\n    MatFormFieldModule,\n    MatInputModule,\n    ReactiveFormsModule,\n    MatIconModule,\n    RouterLink,\n    MatButtonModule,\n    HeaderComponent\n  ],\n  templateUrl: './login.component.html',\n  styleUrl: './login.component.scss',\n})\nexport class LoginComponent {\n\n  private router = inject(Router);\n  private authService = inject(AuthService);\n  private destroyRef = inject(DestroyRef);\n  serverErrorMessage = signal<string | null>(null);\n  hidePassword = signal(true);\n\n\n  loginForm = new FormGroup({\n    identifier: new FormControl('', { nonNullable: true, validators: [Validators.required] }),\n    password: new FormControl('', { nonNullable: true, validators: [Validators.required] })\n  });\n\n\n\n  onSubmitForm() {\n    if (this.loginForm.valid) {\n      const loginRequest: LoginRequest = this.loginForm.getRawValue();\n      this.authService.loginUser(loginRequest).pipe(takeUntilDestroyed(this.destroyRef)).subscribe({\n        next: (res) => {\n          this.serverErrorMessage.set(null);\n          this.router.navigate(['/']);\n        },\n        error: (err) => {\n          const msg = err.error?.message || \"Une erreur est survenue\";\n          this.serverErrorMessage.set(msg);\n        }\n      });\n    }\n\n  }\n\n  togglePasswordVisibility(event: MouseEvent) {\n    this.hidePassword.set(!this.hidePassword());\n  }\n}\n",
+        "<app-header></app-header>\n<div class=\"centered-container\">\n    <button mat-icon-button class=\"back-btn\" routerLink=\"/\" aria-label=\"Retour\">\n        <mat-icon>arrow_back</mat-icon>\n    </button>\n    <img class=\"logo-large\">\n    <h2>Se connecter</h2>\n    <form [formGroup]=\"loginForm\" (ngSubmit)=\"onSubmitForm()\" class=\"full-width-form\" data-testid=\"login-form\">\n        <mat-form-field appearance=\"outline\" data-testid=\"login-input\">\n            <mat-label>Nom d'utilisateur ou E-mail</mat-label>\n            <input matInput formControlName=\"identifier\" placeholder=\"john.dev\">\n        </mat-form-field>\n        <mat-form-field appearance=\"outline\">\n            <mat-label>Mot de passe</mat-label>\n            <input matInput [type]=\"hidePassword()? 'password' : 'text'\" formControlName=\"password\" placeholder=\"\"\n                data-testid=\"password-input\">\n            <button mat-icon-button matSuffix type=\"button\" (click)=\"togglePasswordVisibility($event)\"\n                [attr.aria-label]=\"'Hide password'\" [attr.aria-pressed]=\"hidePassword()\"\n                data-testid=\"toggle-password-btn\">\n                <mat-icon>{{hidePassword()? 'visibility_off' : 'visibility'}}</mat-icon>\n            </button>\n        </mat-form-field>\n        <div class=\"error-container\">\n            @if (serverErrorMessage()) {\n            <div class=\"server-error\" data-testid=\"server-error\">\n                {{ serverErrorMessage() }}\n            </div>\n            }\n        </div>\n        <button mat-raised-button type=\"submit\" class=\"submit-btn\" [disabled]=\"loginForm.invalid\"\n            data-testid=\"submit-btn\">\n            Se connecter\n        </button>\n\n    </form>\n</div>"
       ],
-      "mappings": "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",
+      "mappings": "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",
       "ignoreList": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "97b0799d135e7b5e9f0c70c3fceab3f7c5dcd68b"
+    "hash": "8a4bbb2b8a62949ab279f659006f871b794d750f"
   },
   "F:\\GitRepos\\OpenClassrooms_P5_MDD\\frontend\\src\\app\\features\\auth\\register.component\\register.component.ts": {
     "path": "F:\\GitRepos\\OpenClassrooms_P5_MDD\\frontend\\src\\app\\features\\auth\\register.component\\register.component.ts",
@@ -3648,7 +3636,7 @@
           "column": 44
         },
         "end": {
-          "line": 147,
+          "line": 146,
           "column": 4
         }
       },
@@ -3718,58 +3706,58 @@
           "column": 6
         },
         "end": {
-          "line": 55,
-          "column": 50
+          "line": 67,
+          "column": 7
         }
       },
       "16": {
         "start": {
           "line": 56,
-          "column": 6
+          "column": 32
         },
         "end": {
           "line": 56,
-          "column": 29
+          "column": 63
         }
       },
       "17": {
         "start": {
-          "line": 59,
-          "column": 6
+          "line": 57,
+          "column": 8
         },
         "end": {
-          "line": 71,
-          "column": 7
+          "line": 66,
+          "column": 11
         }
       },
       "18": {
         "start": {
-          "line": 60,
-          "column": 32
+          "line": 59,
+          "column": 12
         },
         "end": {
-          "line": 60,
-          "column": 63
+          "line": 59,
+          "column": 46
         }
       },
       "19": {
         "start": {
-          "line": 61,
-          "column": 8
+          "line": 60,
+          "column": 12
         },
         "end": {
-          "line": 70,
-          "column": 11
+          "line": 60,
+          "column": 40
         }
       },
       "20": {
         "start": {
           "line": 63,
-          "column": 12
+          "column": 24
         },
         "end": {
           "line": 63,
-          "column": 46
+          "column": 71
         }
       },
       "21": {
@@ -3779,67 +3767,67 @@
         },
         "end": {
           "line": 64,
-          "column": 40
+          "column": 45
         }
       },
       "22": {
         "start": {
-          "line": 67,
-          "column": 24
+          "line": 70,
+          "column": 6
         },
         "end": {
-          "line": 67,
-          "column": 71
+          "line": 70,
+          "column": 50
         }
       },
       "23": {
         "start": {
-          "line": 68,
-          "column": 12
+          "line": 72,
+          "column": 18
         },
         "end": {
-          "line": 68,
-          "column": 45
+          "line": 74,
+          "column": 5
         }
       },
       "24": {
         "start": {
           "line": 73,
-          "column": 18
+          "column": 6
         },
         "end": {
-          "line": 75,
-          "column": 5
+          "line": 73,
+          "column": 60
         }
       },
       "25": {
         "start": {
-          "line": 74,
-          "column": 6
+          "line": 75,
+          "column": 31
         },
         "end": {
-          "line": 74,
-          "column": 60
+          "line": 143,
+          "column": 6
         }
       },
       "26": {
         "start": {
-          "line": 76,
-          "column": 31
+          "line": 82,
+          "column": 8
         },
         "end": {
-          "line": 144,
-          "column": 6
+          "line": 125,
+          "column": 9
         }
       },
       "27": {
         "start": {
           "line": 83,
-          "column": 8
+          "column": 10
         },
         "end": {
-          "line": 126,
-          "column": 9
+          "line": 83,
+          "column": 40
         }
       },
       "28": {
@@ -3849,7 +3837,7 @@
         },
         "end": {
           "line": 84,
-          "column": 40
+          "column": 72
         }
       },
       "29": {
@@ -3859,7 +3847,7 @@
         },
         "end": {
           "line": 85,
-          "column": 72
+          "column": 37
         }
       },
       "30": {
@@ -3869,7 +3857,7 @@
         },
         "end": {
           "line": 86,
-          "column": 37
+          "column": 30
         }
       },
       "31": {
@@ -3879,7 +3867,7 @@
         },
         "end": {
           "line": 87,
-          "column": 30
+          "column": 36
         }
       },
       "32": {
@@ -3889,7 +3877,7 @@
         },
         "end": {
           "line": 88,
-          "column": 36
+          "column": 37
         }
       },
       "33": {
@@ -3899,7 +3887,7 @@
         },
         "end": {
           "line": 89,
-          "column": 37
+          "column": 38
         }
       },
       "34": {
@@ -3909,7 +3897,7 @@
         },
         "end": {
           "line": 90,
-          "column": 38
+          "column": 28
         }
       },
       "35": {
@@ -3919,7 +3907,7 @@
         },
         "end": {
           "line": 91,
-          "column": 28
+          "column": 42
         }
       },
       "36": {
@@ -3928,28 +3916,28 @@
           "column": 10
         },
         "end": {
-          "line": 92,
-          "column": 42
+          "line": 94,
+          "column": 13
         }
       },
       "37": {
         "start": {
           "line": 93,
-          "column": 10
+          "column": 12
         },
         "end": {
-          "line": 95,
-          "column": 13
+          "line": 93,
+          "column": 38
         }
       },
       "38": {
         "start": {
-          "line": 94,
-          "column": 12
+          "line": 95,
+          "column": 10
         },
         "end": {
-          "line": 94,
-          "column": 38
+          "line": 95,
+          "column": 69
         }
       },
       "39": {
@@ -3959,7 +3947,7 @@
         },
         "end": {
           "line": 96,
-          "column": 69
+          "column": 45
         }
       },
       "40": {
@@ -3969,7 +3957,7 @@
         },
         "end": {
           "line": 97,
-          "column": 45
+          "column": 28
         }
       },
       "41": {
@@ -3979,7 +3967,7 @@
         },
         "end": {
           "line": 98,
-          "column": 28
+          "column": 39
         }
       },
       "42": {
@@ -3989,7 +3977,7 @@
         },
         "end": {
           "line": 99,
-          "column": 39
+          "column": 28
         }
       },
       "43": {
@@ -3999,7 +3987,7 @@
         },
         "end": {
           "line": 100,
-          "column": 28
+          "column": 70
         }
       },
       "44": {
@@ -4009,7 +3997,7 @@
         },
         "end": {
           "line": 101,
-          "column": 70
+          "column": 42
         }
       },
       "45": {
@@ -4019,7 +4007,7 @@
         },
         "end": {
           "line": 102,
-          "column": 42
+          "column": 28
         }
       },
       "46": {
@@ -4029,7 +4017,7 @@
         },
         "end": {
           "line": 103,
-          "column": 28
+          "column": 39
         }
       },
       "47": {
@@ -4039,7 +4027,7 @@
         },
         "end": {
           "line": 104,
-          "column": 39
+          "column": 28
         }
       },
       "48": {
@@ -4049,7 +4037,7 @@
         },
         "end": {
           "line": 105,
-          "column": 28
+          "column": 70
         }
       },
       "49": {
@@ -4059,7 +4047,7 @@
         },
         "end": {
           "line": 106,
-          "column": 70
+          "column": 40
         }
       },
       "50": {
@@ -4069,7 +4057,7 @@
         },
         "end": {
           "line": 107,
-          "column": 40
+          "column": 28
         }
       },
       "51": {
@@ -4079,7 +4067,7 @@
         },
         "end": {
           "line": 108,
-          "column": 28
+          "column": 39
         }
       },
       "52": {
@@ -4089,7 +4077,7 @@
         },
         "end": {
           "line": 109,
-          "column": 39
+          "column": 46
         }
       },
       "53": {
@@ -4098,28 +4086,28 @@
           "column": 10
         },
         "end": {
-          "line": 110,
-          "column": 46
+          "line": 112,
+          "column": 13
         }
       },
       "54": {
         "start": {
           "line": 111,
-          "column": 10
+          "column": 12
         },
         "end": {
-          "line": 113,
-          "column": 13
+          "line": 111,
+          "column": 56
         }
       },
       "55": {
         "start": {
-          "line": 112,
-          "column": 12
+          "line": 113,
+          "column": 10
         },
         "end": {
-          "line": 112,
-          "column": 56
+          "line": 113,
+          "column": 44
         }
       },
       "56": {
@@ -4129,7 +4117,7 @@
         },
         "end": {
           "line": 114,
-          "column": 44
+          "column": 24
         }
       },
       "57": {
@@ -4139,7 +4127,7 @@
         },
         "end": {
           "line": 115,
-          "column": 24
+          "column": 30
         }
       },
       "58": {
@@ -4149,7 +4137,7 @@
         },
         "end": {
           "line": 116,
-          "column": 30
+          "column": 44
         }
       },
       "59": {
@@ -4159,7 +4147,7 @@
         },
         "end": {
           "line": 117,
-          "column": 44
+          "column": 100
         }
       },
       "60": {
@@ -4169,7 +4157,7 @@
         },
         "end": {
           "line": 118,
-          "column": 100
+          "column": 30
         }
       },
       "61": {
@@ -4179,7 +4167,7 @@
         },
         "end": {
           "line": 119,
-          "column": 30
+          "column": 43
         }
       },
       "62": {
@@ -4189,7 +4177,7 @@
         },
         "end": {
           "line": 120,
-          "column": 43
+          "column": 97
         }
       },
       "63": {
@@ -4199,7 +4187,7 @@
         },
         "end": {
           "line": 121,
-          "column": 97
+          "column": 28
         }
       },
       "64": {
@@ -4209,7 +4197,7 @@
         },
         "end": {
           "line": 122,
-          "column": 28
+          "column": 46
         }
       },
       "65": {
@@ -4219,7 +4207,7 @@
         },
         "end": {
           "line": 123,
-          "column": 46
+          "column": 40
         }
       },
       "66": {
@@ -4229,27 +4217,27 @@
         },
         "end": {
           "line": 124,
-          "column": 40
+          "column": 32
         }
       },
       "67": {
         "start": {
-          "line": 125,
-          "column": 10
+          "line": 126,
+          "column": 8
         },
         "end": {
-          "line": 125,
-          "column": 32
+          "line": 139,
+          "column": 9
         }
       },
       "68": {
         "start": {
           "line": 127,
-          "column": 8
+          "column": 10
         },
         "end": {
-          "line": 140,
-          "column": 9
+          "line": 127,
+          "column": 26
         }
       },
       "69": {
@@ -4259,7 +4247,7 @@
         },
         "end": {
           "line": 128,
-          "column": 26
+          "column": 55
         }
       },
       "70": {
@@ -4269,7 +4257,7 @@
         },
         "end": {
           "line": 129,
-          "column": 55
+          "column": 27
         }
       },
       "71": {
@@ -4279,7 +4267,7 @@
         },
         "end": {
           "line": 130,
-          "column": 27
+          "column": 74
         }
       },
       "72": {
@@ -4289,7 +4277,7 @@
         },
         "end": {
           "line": 131,
-          "column": 74
+          "column": 25
         }
       },
       "73": {
@@ -4299,7 +4287,7 @@
         },
         "end": {
           "line": 132,
-          "column": 25
+          "column": 92
         }
       },
       "74": {
@@ -4309,7 +4297,7 @@
         },
         "end": {
           "line": 133,
-          "column": 92
+          "column": 26
         }
       },
       "75": {
@@ -4319,7 +4307,7 @@
         },
         "end": {
           "line": 134,
-          "column": 26
+          "column": 96
         }
       },
       "76": {
@@ -4329,7 +4317,7 @@
         },
         "end": {
           "line": 135,
-          "column": 96
+          "column": 26
         }
       },
       "77": {
@@ -4339,7 +4327,7 @@
         },
         "end": {
           "line": 136,
-          "column": 26
+          "column": 63
         }
       },
       "78": {
@@ -4349,7 +4337,7 @@
         },
         "end": {
           "line": 137,
-          "column": 63
+          "column": 25
         }
       },
       "79": {
@@ -4359,26 +4347,16 @@
         },
         "end": {
           "line": 138,
-          "column": 25
+          "column": 62
         }
       },
       "80": {
         "start": {
-          "line": 139,
-          "column": 10
-        },
-        "end": {
-          "line": 139,
-          "column": 62
-        }
-      },
-      "81": {
-        "start": {
-          "line": 146,
+          "line": 145,
           "column": 2
         },
         "end": {
-          "line": 146,
+          "line": 145,
           "column": 27
         }
       }
@@ -4426,7 +4404,7 @@
             "column": 51
           },
           "end": {
-            "line": 147,
+            "line": 146,
             "column": 1
           }
         },
@@ -4447,10 +4425,10 @@
         "loc": {
           "start": {
             "line": 54,
-            "column": 36
+            "column": 19
           },
           "end": {
-            "line": 57,
+            "line": 68,
             "column": 5
           }
         },
@@ -4461,21 +4439,21 @@
         "decl": {
           "start": {
             "line": 58,
-            "column": 4
+            "column": 16
           },
           "end": {
             "line": 58,
-            "column": 5
+            "column": 17
           }
         },
         "loc": {
           "start": {
             "line": 58,
-            "column": 19
+            "column": 23
           },
           "end": {
-            "line": 72,
-            "column": 5
+            "line": 61,
+            "column": 11
           }
         },
         "line": 58
@@ -4485,17 +4463,17 @@
         "decl": {
           "start": {
             "line": 62,
-            "column": 16
+            "column": 17
           },
           "end": {
             "line": 62,
-            "column": 17
+            "column": 18
           }
         },
         "loc": {
           "start": {
             "line": 62,
-            "column": 23
+            "column": 24
           },
           "end": {
             "line": 65,
@@ -4508,121 +4486,121 @@
         "name": "(anonymous_5)",
         "decl": {
           "start": {
-            "line": 66,
-            "column": 17
+            "line": 69,
+            "column": 4
           },
           "end": {
-            "line": 66,
-            "column": 18
+            "line": 69,
+            "column": 5
           }
         },
         "loc": {
           "start": {
-            "line": 66,
-            "column": 24
+            "line": 69,
+            "column": 36
           },
           "end": {
-            "line": 69,
-            "column": 11
+            "line": 71,
+            "column": 5
           }
         },
-        "line": 66
+        "line": 69
       },
       "6": {
         "name": "RegisterComponent_Factory",
         "decl": {
           "start": {
-            "line": 73,
+            "line": 72,
             "column": 27
           },
           "end": {
-            "line": 73,
+            "line": 72,
             "column": 52
           }
         },
         "loc": {
           "start": {
-            "line": 73,
+            "line": 72,
             "column": 72
           },
           "end": {
-            "line": 75,
+            "line": 74,
             "column": 5
           }
         },
-        "line": 73
+        "line": 72
       },
       "7": {
         "name": "RegisterComponent_Template",
         "decl": {
           "start": {
-            "line": 82,
+            "line": 81,
             "column": 25
           },
           "end": {
-            "line": 82,
+            "line": 81,
             "column": 51
           }
         },
         "loc": {
           "start": {
-            "line": 82,
+            "line": 81,
             "column": 61
           },
           "end": {
-            "line": 141,
+            "line": 140,
             "column": 7
           }
         },
-        "line": 82
+        "line": 81
       },
       "8": {
         "name": "RegisterComponent_Template_form_ngSubmit_8_listener",
         "decl": {
           "start": {
-            "line": 93,
+            "line": 92,
             "column": 45
           },
           "end": {
-            "line": 93,
+            "line": 92,
             "column": 96
           }
         },
         "loc": {
           "start": {
-            "line": 93,
+            "line": 92,
             "column": 99
           },
           "end": {
-            "line": 95,
+            "line": 94,
             "column": 11
           }
         },
-        "line": 93
+        "line": 92
       },
       "9": {
         "name": "RegisterComponent_Template_button_click_21_listener",
         "decl": {
           "start": {
-            "line": 111,
+            "line": 110,
             "column": 42
           },
           "end": {
-            "line": 111,
+            "line": 110,
             "column": 93
           }
         },
         "loc": {
           "start": {
-            "line": 111,
+            "line": 110,
             "column": 102
           },
           "end": {
-            "line": 113,
+            "line": 112,
             "column": 11
           }
         },
-        "line": 111
+        "line": 110
       }
     },
     "branchMap": {
@@ -4741,11 +4719,11 @@
       "4": {
         "loc": {
           "start": {
-            "line": 59,
+            "line": 55,
             "column": 6
           },
           "end": {
-            "line": 71,
+            "line": 67,
             "column": 7
           }
         },
@@ -4753,11 +4731,11 @@
         "locations": [
           {
             "start": {
-              "line": 59,
+              "line": 55,
               "column": 6
             },
             "end": {
-              "line": 71,
+              "line": 67,
               "column": 7
             }
           },
@@ -4766,16 +4744,16 @@
             "end": {}
           }
         ],
-        "line": 59
+        "line": 55
       },
       "5": {
         "loc": {
           "start": {
-            "line": 67,
+            "line": 63,
             "column": 24
           },
           "end": {
-            "line": 67,
+            "line": 63,
             "column": 71
           }
         },
@@ -4783,35 +4761,35 @@
         "locations": [
           {
             "start": {
-              "line": 67,
+              "line": 63,
               "column": 24
             },
             "end": {
-              "line": 67,
+              "line": 63,
               "column": 42
             }
           },
           {
             "start": {
-              "line": 67,
+              "line": 63,
               "column": 46
             },
             "end": {
-              "line": 67,
+              "line": 63,
               "column": 71
             }
           }
         ],
-        "line": 67
+        "line": 63
       },
       "6": {
         "loc": {
           "start": {
-            "line": 74,
+            "line": 73,
             "column": 18
           },
           "end": {
-            "line": 74,
+            "line": 73,
             "column": 56
           }
         },
@@ -4819,35 +4797,35 @@
         "locations": [
           {
             "start": {
-              "line": 74,
+              "line": 73,
               "column": 18
             },
             "end": {
-              "line": 74,
+              "line": 73,
               "column": 35
             }
           },
           {
             "start": {
-              "line": 74,
+              "line": 73,
               "column": 39
             },
             "end": {
-              "line": 74,
+              "line": 73,
               "column": 56
             }
           }
         ],
-        "line": 74
+        "line": 73
       },
       "7": {
         "loc": {
           "start": {
-            "line": 83,
+            "line": 82,
             "column": 8
           },
           "end": {
-            "line": 126,
+            "line": 125,
             "column": 9
           }
         },
@@ -4855,11 +4833,11 @@
         "locations": [
           {
             "start": {
-              "line": 83,
+              "line": 82,
               "column": 8
             },
             "end": {
-              "line": 126,
+              "line": 125,
               "column": 9
             }
           },
@@ -4868,16 +4846,16 @@
             "end": {}
           }
         ],
-        "line": 83
+        "line": 82
       },
       "8": {
         "loc": {
           "start": {
-            "line": 127,
+            "line": 126,
             "column": 8
           },
           "end": {
-            "line": 140,
+            "line": 139,
             "column": 9
           }
         },
@@ -4885,11 +4863,11 @@
         "locations": [
           {
             "start": {
-              "line": 127,
+              "line": 126,
               "column": 8
             },
             "end": {
-              "line": 140,
+              "line": 139,
               "column": 9
             }
           },
@@ -4898,16 +4876,16 @@
             "end": {}
           }
         ],
-        "line": 127
+        "line": 126
       },
       "9": {
         "loc": {
           "start": {
-            "line": 131,
+            "line": 130,
             "column": 32
           },
           "end": {
-            "line": 131,
+            "line": 130,
             "column": 72
           }
         },
@@ -4915,35 +4893,35 @@
         "locations": [
           {
             "start": {
-              "line": 131,
+              "line": 130,
               "column": 53
             },
             "end": {
-              "line": 131,
+              "line": 130,
               "column": 63
             }
           },
           {
             "start": {
-              "line": 131,
+              "line": 130,
               "column": 66
             },
             "end": {
-              "line": 131,
+              "line": 130,
               "column": 72
             }
           }
         ],
-        "line": 131
+        "line": 130
       },
       "10": {
         "loc": {
           "start": {
-            "line": 135,
+            "line": 134,
             "column": 37
           },
           "end": {
-            "line": 135,
+            "line": 134,
             "column": 89
           }
         },
@@ -4951,35 +4929,35 @@
         "locations": [
           {
             "start": {
-              "line": 135,
+              "line": 134,
               "column": 58
             },
             "end": {
-              "line": 135,
+              "line": 134,
               "column": 74
             }
           },
           {
             "start": {
-              "line": 135,
+              "line": 134,
               "column": 77
             },
             "end": {
-              "line": 135,
+              "line": 134,
               "column": 89
             }
           }
         ],
-        "line": 135
+        "line": 134
       },
       "11": {
         "loc": {
           "start": {
-            "line": 137,
+            "line": 136,
             "column": 27
           },
           "end": {
-            "line": 137,
+            "line": 136,
             "column": 61
           }
         },
@@ -4987,26 +4965,26 @@
         "locations": [
           {
             "start": {
-              "line": 137,
+              "line": 136,
               "column": 54
             },
             "end": {
-              "line": 137,
+              "line": 136,
               "column": 56
             }
           },
           {
             "start": {
-              "line": 137,
+              "line": 136,
               "column": 59
             },
             "end": {
-              "line": 137,
+              "line": 136,
               "column": 61
             }
           }
         ],
-        "line": 137
+        "line": 136
       }
     },
     "s": {
@@ -5018,26 +4996,26 @@
       "5": 4,
       "6": 4,
       "7": 4,
-      "8": 26,
+      "8": 33,
       "9": 3,
       "10": 3,
       "11": 3,
       "12": 3,
       "13": 3,
       "14": 3,
-      "15": 0,
-      "16": 0,
+      "15": 3,
+      "16": 3,
       "17": 3,
-      "18": 3,
-      "19": 3,
-      "20": 1,
-      "21": 1,
-      "22": 2,
-      "23": 2,
-      "24": 26,
-      "25": 3,
-      "26": 26,
-      "27": 269,
+      "18": 1,
+      "19": 1,
+      "20": 2,
+      "21": 2,
+      "22": 1,
+      "23": 33,
+      "24": 3,
+      "25": 33,
+      "26": 271,
+      "27": 3,
       "28": 3,
       "29": 3,
       "30": 3,
@@ -5064,8 +5042,8 @@
       "51": 3,
       "52": 3,
       "53": 3,
-      "54": 3,
-      "55": 0,
+      "54": 1,
+      "55": 3,
       "56": 3,
       "57": 3,
       "58": 3,
@@ -5077,33 +5055,32 @@
       "64": 3,
       "65": 3,
       "66": 3,
-      "67": 3,
-      "68": 269,
-      "69": 266,
-      "70": 266,
-      "71": 266,
-      "72": 266,
-      "73": 266,
-      "74": 266,
-      "75": 266,
-      "76": 266,
-      "77": 266,
-      "78": 266,
-      "79": 266,
-      "80": 266,
-      "81": 26
+      "67": 271,
+      "68": 268,
+      "69": 268,
+      "70": 268,
+      "71": 268,
+      "72": 268,
+      "73": 268,
+      "74": 268,
+      "75": 268,
+      "76": 268,
+      "77": 268,
+      "78": 268,
+      "79": 268,
+      "80": 33
     },
     "f": {
       "0": 6,
-      "1": 26,
-      "2": 0,
-      "3": 3,
-      "4": 1,
-      "5": 2,
+      "1": 33,
+      "2": 3,
+      "3": 1,
+      "4": 2,
+      "5": 1,
       "6": 3,
-      "7": 269,
+      "7": 271,
       "8": 3,
-      "9": 0
+      "9": 1
     },
     "b": {
       "0": [
@@ -5134,23 +5111,23 @@
       ],
       "7": [
         3,
-        266
+        268
       ],
       "8": [
-        266,
+        268,
         3
       ],
       "9": [
-        266,
-        0
+        264,
+        4
       ],
       "10": [
-        266,
-        0
+        264,
+        4
       ],
       "11": [
         4,
-        262
+        264
       ]
     },
     "inputSourceMap": {
@@ -5196,10 +5173,6 @@
         "password",
         "minLength",
         "pattern",
-        "togglePasswordVisibility",
-        "event",
-        "set",
-        "preventDefault",
         "onSubmitForm",
         "valid",
         "registerRequest",
@@ -5209,11 +5182,14 @@
         "subscribe",
         "next",
         "res",
+        "set",
         "navigate",
         "error",
         "err",
         "msg",
         "message",
+        "togglePasswordVisibility",
+        "event",
         "selectors",
         "decls",
         "vars",
@@ -5258,14 +5234,14 @@
         "F:\\GitRepos\\OpenClassrooms_P5_MDD\\frontend\\src\\app\\features\\auth\\register.component\\register.component.html"
       ],
       "sourcesContent": [
-        "import { Component, DestroyRef, inject, signal } from '@angular/core';\nimport { takeUntilDestroyed } from '@angular/core/rxjs-interop';\nimport { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';\nimport { MatButtonModule } from \"@angular/material/button\";\nimport { MatFormFieldModule } from '@angular/material/form-field';\nimport { MatIconModule } from '@angular/material/icon';\nimport { MatInputModule } from '@angular/material/input';\nimport { Router, RouterLink } from '@angular/router';\nimport { HeaderComponent } from '../../../components/header/header.component/header.component';\nimport { RegisterRequest } from '../../../core/models/auth.model';\nimport { AuthService } from '../../../core/services/auth.service';\n@Component({\n  selector: 'app-register',\n  imports: [\n    HeaderComponent,\n    MatFormFieldModule,\n    MatInputModule,\n    ReactiveFormsModule,\n    RouterLink,\n    MatIconModule,\n    MatButtonModule],\n  templateUrl: './register.component.html',\n  styleUrl: './register.component.scss',\n})\nexport class RegisterComponent {\n  private router = inject(Router);\n  private authService = inject(AuthService);\n  private destroyRef = inject(DestroyRef);\n  serverErrorMessage = signal<string | null>(null);\n  hidePassword = signal(true);\n\n\n  registerForm = new FormGroup({\n    username: new FormControl('', { nonNullable: true, validators: [Validators.required] }),\n    email: new FormControl('', { nonNullable: true, validators: [Validators.required, Validators.email] }),\n    password: new FormControl('', { nonNullable: true, validators: [Validators.required, Validators.minLength(8), Validators.pattern(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%*?&])/)] })\n  });\n\n\n  togglePasswordVisibility(event: MouseEvent) {\n    this.hidePassword.set(!this.hidePassword());\n    event.preventDefault()\n  }\n\n  onSubmitForm() {\n    if (this.registerForm.valid) {\n      const registerRequest: RegisterRequest = this.registerForm.getRawValue();\n      this.authService.registerUser(registerRequest).pipe(takeUntilDestroyed(this.destroyRef)).subscribe({\n        next: (res) => {\n          this.serverErrorMessage.set(null);\n          this.router.navigate(['/']);\n        },\n        error: (err) => {\n          const msg = err.error?.message || \"Une erreur est survenue\";\n          this.serverErrorMessage.set(msg);\n        }\n      });\n    }\n\n  }\n\n\n}\n",
-        "<app-header></app-header>\n<div class=\"centered-container\">\n    <button mat-icon-button class=\"back-btn\" routerLink=\"/\" aria-label=\"Retour\">\n        <mat-icon>arrow_back</mat-icon>\n    </button>\n    <img class=\"logo-large\">\n    <h2>Inscription</h2>\n    <form [formGroup]=\"registerForm\" (ngSubmit)=\"onSubmitForm()\" class=\"full-width-form\" data-testid=\"register-form\">\n        <mat-form-field appearance=\"outline\" data-testid=\"register-username\">\n            <mat-label>Nom d'utilisateur</mat-label>\n            <input matInput formControlName=\"username\" placeholder=\"john.dev\">\n        </mat-form-field>\n        <mat-form-field appearance=\"outline\" data-testid=\"register-email\">\n            <mat-label>Adresse e-mail</mat-label>\n            <input matInput formControlName=\"email\" placeholder=\"john.dev@example.com\">\n        </mat-form-field>\n        <mat-form-field appearance=\"outline\">\n            <mat-label>Mot de passe</mat-label>\n            <input matInput [type]=\"hidePassword()? 'password': 'text'\" formControlName=\"password\" placeholder=\"\"\n                data-testid=\"password-input\">\n            <button matIconButton matSuffix (click)=\"togglePasswordVisibility($event)\"\n                [attr.area-label]=\"'Hide password'\" [attr.aria-pressed]=\"hidePassword()\"\n                data-testid=\"toggle-password-btn\">\n                <mat-icon>\n                    {{hidePassword()? 'visibility_off': 'visibility'}}\n                </mat-icon>\n\n            </button>\n            <mat-hint>Utilisez au moins 8 caractères avec majuscule, chiffres et symboles</mat-hint>\n        </mat-form-field>\n        <div class=\"error-container\" data-testid=\"server-error\">\n            @if (serverErrorMessage()) {\n            <div class=\"server-error\">\n                {{ serverErrorMessage() }}\n            </div>\n            }\n        </div>\n        <button mat-raised-button type=\"submit\" class=\"submit-btn\" [disabled]=\"registerForm.invalid\"\n            data-testid=\"submit-btn\">\n            S'inscrire\n        </button>\n\n    </form>\n</div>"
+        "import { Component, DestroyRef, inject, signal } from '@angular/core';\nimport { takeUntilDestroyed } from '@angular/core/rxjs-interop';\nimport { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';\nimport { MatButtonModule } from \"@angular/material/button\";\nimport { MatFormFieldModule } from '@angular/material/form-field';\nimport { MatIconModule } from '@angular/material/icon';\nimport { MatInputModule } from '@angular/material/input';\nimport { Router, RouterLink } from '@angular/router';\nimport { HeaderComponent } from '../../../components/header/header.component/header.component';\nimport { RegisterRequest } from '../../../core/models/auth.model';\nimport { AuthService } from '../../../core/services/auth.service';\n@Component({\n  selector: 'app-register',\n  imports: [\n    HeaderComponent,\n    MatFormFieldModule,\n    MatInputModule,\n    ReactiveFormsModule,\n    RouterLink,\n    MatIconModule,\n    MatButtonModule],\n  templateUrl: './register.component.html',\n  styleUrl: './register.component.scss',\n})\nexport class RegisterComponent {\n  private router = inject(Router);\n  private authService = inject(AuthService);\n  private destroyRef = inject(DestroyRef);\n  serverErrorMessage = signal<string | null>(null);\n  hidePassword = signal(true);\n\n\n  registerForm = new FormGroup({\n    username: new FormControl('', { nonNullable: true, validators: [Validators.required] }),\n    email: new FormControl('', { nonNullable: true, validators: [Validators.required, Validators.email] }),\n    password: new FormControl('', { nonNullable: true, validators: [Validators.required, Validators.minLength(8), Validators.pattern(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%*?&])/)] })\n  });\n\n  onSubmitForm() {\n    if (this.registerForm.valid) {\n      const registerRequest: RegisterRequest = this.registerForm.getRawValue();\n      this.authService.registerUser(registerRequest).pipe(takeUntilDestroyed(this.destroyRef)).subscribe({\n        next: (res) => {\n          this.serverErrorMessage.set(null);\n          this.router.navigate(['/']);\n        },\n        error: (err) => {\n          const msg = err.error?.message || \"Une erreur est survenue\";\n          this.serverErrorMessage.set(msg);\n        }\n      });\n    }\n\n  }\n  togglePasswordVisibility(event: MouseEvent) {\n    this.hidePassword.set(!this.hidePassword());\n  }\n\n\n}\n",
+        "<app-header></app-header>\n<div class=\"centered-container\">\n    <button mat-icon-button class=\"back-btn\" routerLink=\"/\" aria-label=\"Retour\">\n        <mat-icon>arrow_back</mat-icon>\n    </button>\n    <img class=\"logo-large\">\n    <h2>Inscription</h2>\n    <form [formGroup]=\"registerForm\" (ngSubmit)=\"onSubmitForm()\" class=\"full-width-form\" data-testid=\"register-form\">\n        <mat-form-field appearance=\"outline\" data-testid=\"register-username\">\n            <mat-label>Nom d'utilisateur</mat-label>\n            <input matInput formControlName=\"username\" placeholder=\"john.dev\">\n        </mat-form-field>\n        <mat-form-field appearance=\"outline\" data-testid=\"register-email\">\n            <mat-label>Adresse e-mail</mat-label>\n            <input matInput formControlName=\"email\" placeholder=\"john.dev@example.com\">\n        </mat-form-field>\n        <mat-form-field appearance=\"outline\">\n            <mat-label>Mot de passe</mat-label>\n            <input matInput [type]=\"hidePassword()? 'password': 'text'\" formControlName=\"password\" placeholder=\"\"\n                data-testid=\"password-input\">\n            <button matIconButton matSuffix type=\"button\" (click)=\"togglePasswordVisibility($event)\"\n                [attr.area-label]=\"'Hide password'\" [attr.aria-pressed]=\"hidePassword()\"\n                data-testid=\"toggle-password-btn\">\n                <mat-icon>\n                    {{hidePassword()? 'visibility_off': 'visibility'}}\n                </mat-icon>\n\n            </button>\n            <mat-hint>Utilisez au moins 8 caractères avec majuscule, chiffres et symboles</mat-hint>\n        </mat-form-field>\n        <div class=\"error-container\" data-testid=\"server-error\">\n            @if (serverErrorMessage()) {\n            <div class=\"server-error\">\n                {{ serverErrorMessage() }}\n            </div>\n            }\n        </div>\n        <button mat-raised-button type=\"submit\" class=\"submit-btn\" [disabled]=\"registerForm.invalid\"\n            data-testid=\"submit-btn\">\n            S'inscrire\n        </button>\n\n    </form>\n</div>"
       ],
-      "mappings": "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",
+      "mappings": "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",
       "ignoreList": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "a706fa58d91ed3ae5b08cd86b2ec9a180baa922a"
+    "hash": "b618623afeb4398f0715ef61674052dfcece3e4e"
   },
   "F:\\GitRepos\\OpenClassrooms_P5_MDD\\frontend\\src\\app\\features\\home\\landing.component\\landing.component.ts": {
     "path": "F:\\GitRepos\\OpenClassrooms_P5_MDD\\frontend\\src\\app\\features\\home\\landing.component\\landing.component.ts",
@@ -5554,34 +5530,34 @@
       }
     },
     "s": {
-      "0": 26,
-      "1": 26,
-      "2": 3,
-      "3": 26,
-      "4": 13,
-      "5": 3,
-      "6": 3,
-      "7": 3,
-      "8": 3,
-      "9": 3,
-      "10": 3,
-      "11": 3,
-      "12": 3,
-      "13": 26
+      "0": 33,
+      "1": 33,
+      "2": 4,
+      "3": 33,
+      "4": 18,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 4,
+      "9": 4,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 33
     },
     "f": {
-      "0": 26,
-      "1": 3,
-      "2": 13
+      "0": 33,
+      "1": 4,
+      "2": 18
     },
     "b": {
       "0": [
-        3,
-        3
+        4,
+        4
       ],
       "1": [
-        3,
-        10
+        4,
+        14
       ]
     },
     "inputSourceMap": {
@@ -6666,102 +6642,102 @@
       }
     },
     "s": {
-      "0": 482,
-      "1": 23,
-      "2": 23,
-      "3": 23,
+      "0": 699,
+      "1": 30,
+      "2": 30,
+      "3": 30,
       "4": 1,
       "5": 1,
       "6": 1,
       "7": 1,
-      "8": 23,
-      "9": 23,
-      "10": 13,
-      "11": 3,
-      "12": 26,
-      "13": 25,
-      "14": 0,
-      "15": 26,
-      "16": 25,
-      "17": 26,
-      "18": 494,
-      "19": 25,
-      "20": 25,
-      "21": 25,
-      "22": 0,
-      "23": 0,
-      "24": 0,
-      "25": 0,
-      "26": 25,
-      "27": 25,
-      "28": 25,
-      "29": 25,
+      "8": 30,
+      "9": 30,
+      "10": 18,
+      "11": 4,
+      "12": 33,
+      "13": 32,
+      "14": 1,
+      "15": 33,
+      "16": 32,
+      "17": 33,
+      "18": 715,
+      "19": 32,
+      "20": 32,
+      "21": 32,
+      "22": 1,
+      "23": 1,
+      "24": 1,
+      "25": 1,
+      "26": 32,
+      "27": 32,
+      "28": 32,
+      "29": 32,
       "30": 0,
       "31": 0,
       "32": 0,
-      "33": 25,
-      "34": 25,
-      "35": 25,
-      "36": 25,
+      "33": 32,
+      "34": 32,
+      "35": 32,
+      "36": 32,
       "37": 0,
       "38": 0,
       "39": 0,
-      "40": 25,
-      "41": 25,
-      "42": 25,
-      "43": 25,
-      "44": 25,
+      "40": 32,
+      "41": 32,
+      "42": 32,
+      "43": 32,
+      "44": 32,
       "45": 0,
       "46": 0,
       "47": 0,
-      "48": 25,
-      "49": 25,
-      "50": 25,
-      "51": 25,
-      "52": 25,
-      "53": 25,
-      "54": 494,
-      "55": 469,
-      "56": 469,
-      "57": 26
+      "48": 32,
+      "49": 32,
+      "50": 32,
+      "51": 32,
+      "52": 32,
+      "53": 32,
+      "54": 715,
+      "55": 683,
+      "56": 683,
+      "57": 33
     },
     "f": {
-      "0": 482,
+      "0": 699,
       "1": 1,
-      "2": 13,
-      "3": 26,
-      "4": 0,
-      "5": 25,
-      "6": 494,
-      "7": 0,
+      "2": 18,
+      "3": 33,
+      "4": 1,
+      "5": 32,
+      "6": 715,
+      "7": 1,
       "8": 0,
       "9": 0,
       "10": 0
     },
     "b": {
       "0": [
-        23,
-        459
+        30,
+        669
       ],
       "1": [
-        3,
-        10
+        4,
+        14
       ],
       "2": [
-        25,
-        25
+        32,
+        32
       ],
       "3": [
-        25,
-        469
+        32,
+        683
       ],
       "4": [
-        469,
-        25
+        683,
+        32
       ],
       "5": [
-        459,
-        10
+        669,
+        14
       ]
     },
     "inputSourceMap": {
@@ -7210,36 +7186,36 @@
       }
     },
     "s": {
-      "0": 26,
-      "1": 16,
-      "2": 16,
-      "3": 15,
-      "4": 15,
+      "0": 33,
+      "1": 22,
+      "2": 22,
+      "3": 21,
+      "4": 21,
       "5": 3,
-      "6": 2,
-      "7": 2,
-      "8": 0,
-      "9": 26,
-      "10": 16,
-      "11": 26,
-      "12": 26
+      "6": 4,
+      "7": 5,
+      "8": 3,
+      "9": 33,
+      "10": 22,
+      "11": 33,
+      "12": 33
     },
     "f": {
-      "0": 26,
-      "1": 15,
+      "0": 33,
+      "1": 21,
       "2": 3,
-      "3": 2,
-      "4": 2,
-      "5": 0,
-      "6": 16
+      "3": 4,
+      "4": 5,
+      "5": 3,
+      "6": 22
     },
     "b": {
       "0": [
         0
       ],
       "1": [
-        16,
-        16
+        22,
+        22
       ]
     },
     "inputSourceMap": {
@@ -7579,30 +7555,30 @@
       }
     },
     "s": {
-      "0": 26,
-      "1": 10,
-      "2": 10,
+      "0": 33,
+      "1": 11,
+      "2": 11,
       "3": 6,
-      "4": 2,
-      "5": 1,
-      "6": 8,
-      "7": 26,
-      "8": 10,
-      "9": 26,
-      "10": 26
+      "4": 4,
+      "5": 3,
+      "6": 9,
+      "7": 33,
+      "8": 11,
+      "9": 33,
+      "10": 33
     },
     "f": {
-      "0": 26,
+      "0": 33,
       "1": 6,
-      "2": 2,
-      "3": 1,
-      "4": 8,
-      "5": 10
+      "2": 4,
+      "3": 3,
+      "4": 9,
+      "5": 11
     },
     "b": {
       "0": [
-        10,
-        10
+        11,
+        11
       ]
     },
     "inputSourceMap": {
@@ -8748,7 +8724,7 @@
       }
     },
     "s": {
-      "0": 26,
+      "0": 33,
       "1": 1090,
       "2": 1105,
       "3": 15,
@@ -8759,7 +8735,7 @@
       "8": 1090,
       "9": 1090,
       "10": 1090,
-      "11": 26,
+      "11": 33,
       "12": 3,
       "13": 3,
       "14": 3,
@@ -8774,9 +8750,9 @@
       "23": 2,
       "24": 1,
       "25": 2,
-      "26": 26,
+      "26": 33,
       "27": 3,
-      "28": 26,
+      "28": 33,
       "29": 233,
       "30": 3,
       "31": 3,
@@ -8814,12 +8790,12 @@
       "63": 230,
       "64": 230,
       "65": 230,
-      "66": 26
+      "66": 33
     },
     "f": {
       "0": 1090,
       "1": 1105,
-      "2": 26,
+      "2": 33,
       "3": 3,
       "4": 1,
       "5": 2,
@@ -9313,41 +9289,41 @@
       }
     },
     "s": {
-      "0": 26,
-      "1": 26,
-      "2": 3,
-      "3": 26,
-      "4": 9,
-      "5": 3,
-      "6": 3,
-      "7": 3,
-      "8": 3,
-      "9": 3,
-      "10": 3,
-      "11": 9,
-      "12": 6,
-      "13": 6,
-      "14": 6,
-      "15": 6,
-      "16": 26
+      "0": 33,
+      "1": 33,
+      "2": 10,
+      "3": 33,
+      "4": 456,
+      "5": 10,
+      "6": 10,
+      "7": 10,
+      "8": 10,
+      "9": 10,
+      "10": 10,
+      "11": 456,
+      "12": 446,
+      "13": 446,
+      "14": 446,
+      "15": 446,
+      "16": 33
     },
     "f": {
-      "0": 26,
-      "1": 3,
-      "2": 9
+      "0": 33,
+      "1": 10,
+      "2": 456
     },
     "b": {
       "0": [
-        3,
-        3
+        10,
+        10
       ],
       "1": [
-        3,
-        6
+        10,
+        446
       ],
       "2": [
-        6,
-        3
+        446,
+        10
       ]
     },
     "inputSourceMap": {
@@ -11074,167 +11050,167 @@
       }
     },
     "s": {
-      "0": 26,
-      "1": 6,
-      "2": 4,
-      "3": 2,
-      "4": 2,
-      "5": 2,
-      "6": 2,
-      "7": 2,
-      "8": 2,
-      "9": 2,
-      "10": 2,
-      "11": 2,
-      "12": 2,
-      "13": 2,
-      "14": 2,
-      "15": 2,
-      "16": 2,
-      "17": 2,
-      "18": 2,
-      "19": 4,
-      "20": 2,
-      "21": 2,
-      "22": 2,
-      "23": 2,
-      "24": 2,
-      "25": 2,
-      "26": 2,
-      "27": 2,
-      "28": 2,
-      "29": 2,
-      "30": 2,
-      "31": 9,
-      "32": 3,
-      "33": 9,
-      "34": 6,
-      "35": 6,
-      "36": 8,
-      "37": 2,
-      "38": 2,
-      "39": 2,
-      "40": 26,
-      "41": 2,
-      "42": 2,
-      "43": 2,
-      "44": 2,
-      "45": 2,
-      "46": 2,
-      "47": 2,
-      "48": 2,
-      "49": 2,
-      "50": 0,
-      "51": 0,
-      "52": 0,
-      "53": 0,
-      "54": 0,
-      "55": 0,
-      "56": 0,
-      "57": 0,
-      "58": 0,
-      "59": 0,
-      "60": 26,
-      "61": 2,
-      "62": 26,
-      "63": 11,
-      "64": 2,
-      "65": 2,
-      "66": 2,
-      "67": 2,
-      "68": 2,
-      "69": 2,
-      "70": 2,
-      "71": 2,
-      "72": 2,
-      "73": 2,
-      "74": 2,
-      "75": 2,
-      "76": 2,
-      "77": 2,
-      "78": 2,
-      "79": 2,
-      "80": 0,
-      "81": 2,
-      "82": 2,
-      "83": 2,
-      "84": 2,
-      "85": 2,
-      "86": 2,
-      "87": 2,
-      "88": 2,
-      "89": 2,
-      "90": 11,
-      "91": 9,
-      "92": 9,
-      "93": 9,
-      "94": 9,
-      "95": 8,
-      "96": 8,
-      "97": 8,
-      "98": 8,
-      "99": 26
+      "0": 33,
+      "1": 461,
+      "2": 152,
+      "3": 4,
+      "4": 4,
+      "5": 4,
+      "6": 4,
+      "7": 4,
+      "8": 4,
+      "9": 4,
+      "10": 4,
+      "11": 4,
+      "12": 4,
+      "13": 4,
+      "14": 4,
+      "15": 4,
+      "16": 4,
+      "17": 4,
+      "18": 4,
+      "19": 152,
+      "20": 148,
+      "21": 148,
+      "22": 148,
+      "23": 148,
+      "24": 148,
+      "25": 148,
+      "26": 148,
+      "27": 148,
+      "28": 148,
+      "29": 148,
+      "30": 148,
+      "31": 456,
+      "32": 10,
+      "33": 456,
+      "34": 446,
+      "35": 446,
+      "36": 18,
+      "37": 4,
+      "38": 4,
+      "39": 4,
+      "40": 33,
+      "41": 4,
+      "42": 4,
+      "43": 4,
+      "44": 4,
+      "45": 4,
+      "46": 4,
+      "47": 4,
+      "48": 5,
+      "49": 5,
+      "50": 3,
+      "51": 3,
+      "52": 3,
+      "53": 1,
+      "54": 1,
+      "55": 1,
+      "56": 2,
+      "57": 2,
+      "58": 1,
+      "59": 2,
+      "60": 33,
+      "61": 4,
+      "62": 33,
+      "63": 167,
+      "64": 4,
+      "65": 4,
+      "66": 4,
+      "67": 4,
+      "68": 4,
+      "69": 4,
+      "70": 4,
+      "71": 4,
+      "72": 4,
+      "73": 4,
+      "74": 4,
+      "75": 4,
+      "76": 4,
+      "77": 4,
+      "78": 4,
+      "79": 4,
+      "80": 3,
+      "81": 4,
+      "82": 4,
+      "83": 4,
+      "84": 4,
+      "85": 4,
+      "86": 4,
+      "87": 4,
+      "88": 4,
+      "89": 4,
+      "90": 167,
+      "91": 163,
+      "92": 163,
+      "93": 163,
+      "94": 163,
+      "95": 162,
+      "96": 162,
+      "97": 162,
+      "98": 162,
+      "99": 33
     },
     "f": {
-      "0": 6,
-      "1": 4,
-      "2": 9,
-      "3": 8,
-      "4": 26,
-      "5": 2,
-      "6": 2,
-      "7": 2,
-      "8": 0,
-      "9": 0,
-      "10": 0,
-      "11": 2,
-      "12": 11,
-      "13": 0
+      "0": 461,
+      "1": 152,
+      "2": 456,
+      "3": 18,
+      "4": 33,
+      "5": 4,
+      "6": 5,
+      "7": 5,
+      "8": 3,
+      "9": 1,
+      "10": 2,
+      "11": 4,
+      "12": 167,
+      "13": 3
     },
     "b": {
       "0": [
-        2,
-        2
+        4,
+        148
       ],
       "1": [
-        2,
-        2
+        148,
+        4
       ],
       "2": [
-        3,
-        6
+        10,
+        446
       ],
       "3": [
-        6,
-        3
+        446,
+        10
       ],
       "4": [
-        2,
-        6
+        4,
+        14
       ],
       "5": [
-        0,
+        3,
         0
       ],
       "6": [
-        0,
-        0
+        1,
+        1
       ],
       "7": [
-        2,
-        2
+        4,
+        4
       ],
       "8": [
-        2,
-        9
+        4,
+        163
       ],
       "9": [
-        9,
-        2
+        163,
+        4
       ],
       "10": [
-        3,
-        6
+        149,
+        14
       ]
     },
     "inputSourceMap": {
@@ -11881,56 +11857,56 @@
       }
     },
     "s": {
-      "0": 26,
-      "1": 140,
-      "2": 26,
-      "3": 26,
-      "4": 140,
-      "5": 26,
-      "6": 470,
-      "7": 140,
-      "8": 140,
-      "9": 140,
-      "10": 140,
-      "11": 140,
-      "12": 140,
-      "13": 140,
-      "14": 140,
-      "15": 140,
-      "16": 140,
-      "17": 140,
-      "18": 140,
-      "19": 140,
-      "20": 470,
-      "21": 330,
-      "22": 330,
-      "23": 330,
-      "24": 330,
-      "25": 330,
-      "26": 330,
-      "27": 330,
-      "28": 330,
-      "29": 330,
-      "30": 26
+      "0": 33,
+      "1": 200,
+      "2": 33,
+      "3": 33,
+      "4": 200,
+      "5": 33,
+      "6": 650,
+      "7": 200,
+      "8": 200,
+      "9": 200,
+      "10": 200,
+      "11": 200,
+      "12": 200,
+      "13": 200,
+      "14": 200,
+      "15": 200,
+      "16": 200,
+      "17": 200,
+      "18": 200,
+      "19": 200,
+      "20": 650,
+      "21": 450,
+      "22": 450,
+      "23": 450,
+      "24": 450,
+      "25": 450,
+      "26": 450,
+      "27": 450,
+      "28": 450,
+      "29": 450,
+      "30": 33
     },
     "f": {
-      "0": 140,
-      "1": 26,
-      "2": 140,
-      "3": 470
+      "0": 200,
+      "1": 33,
+      "2": 200,
+      "3": 650
     },
     "b": {
       "0": [
-        140,
-        140
+        200,
+        200
       ],
       "1": [
-        140,
-        330
+        200,
+        450
       ],
       "2": [
-        330,
-        140
+        450,
+        200
       ]
     },
     "inputSourceMap": {
@@ -12805,82 +12781,82 @@
       }
     },
     "s": {
-      "0": 26,
-      "1": 330,
-      "2": 470,
-      "3": 140,
-      "4": 470,
-      "5": 330,
-      "6": 330,
-      "7": 26,
-      "8": 15,
-      "9": 15,
-      "10": 15,
-      "11": 15,
-      "12": 0,
-      "13": 0,
-      "14": 26,
-      "15": 15,
-      "16": 26,
-      "17": 110,
-      "18": 15,
-      "19": 15,
-      "20": 15,
-      "21": 15,
-      "22": 15,
-      "23": 0,
-      "24": 15,
-      "25": 15,
-      "26": 15,
-      "27": 15,
-      "28": 15,
-      "29": 15,
-      "30": 15,
-      "31": 15,
-      "32": 15,
-      "33": 15,
-      "34": 110,
-      "35": 95,
-      "36": 95,
-      "37": 95,
-      "38": 95,
-      "39": 26
+      "0": 33,
+      "1": 450,
+      "2": 650,
+      "3": 200,
+      "4": 650,
+      "5": 450,
+      "6": 450,
+      "7": 33,
+      "8": 19,
+      "9": 19,
+      "10": 19,
+      "11": 21,
+      "12": 2,
+      "13": 2,
+      "14": 33,
+      "15": 19,
+      "16": 33,
+      "17": 146,
+      "18": 19,
+      "19": 19,
+      "20": 19,
+      "21": 19,
+      "22": 19,
+      "23": 2,
+      "24": 19,
+      "25": 19,
+      "26": 19,
+      "27": 19,
+      "28": 19,
+      "29": 19,
+      "30": 19,
+      "31": 19,
+      "32": 19,
+      "33": 19,
+      "34": 146,
+      "35": 127,
+      "36": 127,
+      "37": 127,
+      "38": 127,
+      "39": 33
     },
     "f": {
-      "0": 330,
-      "1": 470,
-      "2": 26,
-      "3": 15,
-      "4": 15,
-      "5": 0,
-      "6": 15,
-      "7": 110,
-      "8": 0
+      "0": 450,
+      "1": 650,
+      "2": 33,
+      "3": 19,
+      "4": 21,
+      "5": 2,
+      "6": 19,
+      "7": 146,
+      "8": 2
     },
     "b": {
       "0": [
-        140,
-        330
+        200,
+        450
       ],
       "1": [
-        330,
-        140
+        450,
+        200
       ],
       "2": [
-        0,
-        0
+        1,
+        1
       ],
       "3": [
-        15,
-        15
+        19,
+        19
       ],
       "4": [
-        15,
-        95
+        19,
+        127
       ],
       "5": [
-        95,
-        15
+        127,
+        19
       ]
     },
     "inputSourceMap": {
@@ -14592,162 +14568,162 @@
       }
     },
     "s": {
-      "0": 48,
+      "0": 78,
       "1": 10,
-      "2": 29,
+      "2": 49,
       "3": 6,
-      "4": 76,
+      "4": 126,
       "5": 15,
       "6": 15,
       "7": 15,
-      "8": 2,
-      "9": 2,
-      "10": 2,
+      "8": 4,
+      "9": 4,
+      "10": 4,
       "11": 15,
       "12": 15,
       "13": 15,
-      "14": 76,
-      "15": 61,
-      "16": 61,
-      "17": 61,
-      "18": 61,
-      "19": 61,
-      "20": 61,
-      "21": 269,
-      "22": 12,
-      "23": 12,
-      "24": 12,
-      "25": 1,
-      "26": 1,
-      "27": 1,
-      "28": 12,
-      "29": 12,
-      "30": 26,
-      "31": 27,
-      "32": 27,
-      "33": 27,
-      "34": 27,
-      "35": 27,
-      "36": 27,
-      "37": 27,
-      "38": 27,
-      "39": 1,
+      "14": 126,
+      "15": 111,
+      "16": 111,
+      "17": 111,
+      "18": 111,
+      "19": 111,
+      "20": 111,
+      "21": 302,
+      "22": 15,
+      "23": 15,
+      "24": 15,
+      "25": 3,
+      "26": 3,
+      "27": 3,
+      "28": 15,
+      "29": 15,
+      "30": 33,
+      "31": 30,
+      "32": 30,
+      "33": 30,
+      "34": 30,
+      "35": 30,
+      "36": 30,
+      "37": 30,
+      "38": 30,
+      "39": 3,
       "40": 1,
       "41": 1,
-      "42": 0,
-      "43": 0,
-      "44": 0,
-      "45": 0,
-      "46": 2,
+      "42": 2,
+      "43": 2,
+      "44": 1,
+      "45": 2,
+      "46": 4,
       "47": 1,
       "48": 1,
-      "49": 1,
-      "50": 1,
-      "51": 0,
-      "52": 1,
-      "53": 0,
-      "54": 1,
-      "55": 26,
-      "56": 27,
-      "57": 26,
-      "58": 345,
-      "59": 27,
-      "60": 27,
-      "61": 27,
-      "62": 27,
-      "63": 27,
-      "64": 27,
-      "65": 27,
-      "66": 27,
-      "67": 345,
-      "68": 318,
-      "69": 318,
-      "70": 318,
-      "71": 318,
-      "72": 318,
-      "73": 318,
-      "74": 26
+      "49": 3,
+      "50": 3,
+      "51": 1,
+      "52": 2,
+      "53": 1,
+      "54": 3,
+      "55": 33,
+      "56": 30,
+      "57": 33,
+      "58": 428,
+      "59": 30,
+      "60": 30,
+      "61": 30,
+      "62": 30,
+      "63": 30,
+      "64": 30,
+      "65": 30,
+      "66": 30,
+      "67": 428,
+      "68": 398,
+      "69": 398,
+      "70": 398,
+      "71": 398,
+      "72": 398,
+      "73": 398,
+      "74": 33
     },
     "f": {
-      "0": 48,
-      "1": 29,
-      "2": 76,
-      "3": 2,
-      "4": 269,
-      "5": 1,
-      "6": 26,
-      "7": 27,
-      "8": 1,
+      "0": 78,
+      "1": 49,
+      "2": 126,
+      "3": 4,
+      "4": 302,
+      "5": 3,
+      "6": 33,
+      "7": 30,
+      "8": 3,
       "9": 1,
-      "10": 0,
-      "11": 2,
+      "10": 2,
+      "11": 4,
       "12": 1,
-      "13": 1,
-      "14": 27,
-      "15": 345
+      "13": 3,
+      "14": 30,
+      "15": 428
     },
     "b": {
       "0": [
         10,
-        38
+        68
       ],
       "1": [
         6,
-        23
+        43
       ],
       "2": [
         15,
-        61
+        111
       ],
       "3": [
-        61,
+        111,
         15
       ],
       "4": [
-        38,
-        23
+        68,
+        43
       ],
       "5": [
-        23,
-        38
+        43,
+        68
       ],
       "6": [
-        12,
-        257
+        15,
+        287
       ],
       "7": [
-        27
+        30
       ],
       "8": [
-        27
+        30
       ],
       "9": [
-        0,
-        0
-      ],
-      "10": [
-        0,
+        1,
         1
       ],
+      "10": [
+        1,
+        2
+      ],
       "11": [
-        0,
+        1,
         1
       ],
       "12": [
-        27,
-        27
+        30,
+        30
       ],
       "13": [
-        27,
-        318
+        30,
+        398
       ],
       "14": [
-        318,
-        27
+        398,
+        30
       ],
       "15": [
-        61,
-        257
+        111,
+        287
       ]
     },
     "inputSourceMap": {
@@ -15126,29 +15102,29 @@
       }
     },
     "s": {
-      "0": 26,
-      "1": 4,
-      "2": 4,
-      "3": 4,
-      "4": 4,
+      "0": 33,
+      "1": 5,
+      "2": 5,
+      "3": 5,
+      "4": 5,
       "5": 2,
       "6": 1,
-      "7": 26,
-      "8": 4,
-      "9": 26,
-      "10": 26
+      "7": 33,
+      "8": 5,
+      "9": 33,
+      "10": 33
     },
     "f": {
-      "0": 26,
-      "1": 4,
+      "0": 33,
+      "1": 5,
       "2": 2,
       "3": 1,
-      "4": 4
+      "4": 5
     },
     "b": {
       "0": [
-        4,
-        4
+        5,
+        5
       ]
     },
     "inputSourceMap": {
@@ -15415,7 +15391,7 @@
           "column": 38
         },
         "end": {
-          "line": 195,
+          "line": 194,
           "column": 4
         }
       },
@@ -15661,62 +15637,62 @@
       },
       "47": {
         "start": {
-          "line": 118,
+          "line": 120,
           "column": 6
         },
         "end": {
-          "line": 118,
-          "column": 29
+          "line": 120,
+          "column": 24
         }
       },
       "48": {
         "start": {
-          "line": 121,
-          "column": 6
+          "line": 122,
+          "column": 18
         },
         "end": {
-          "line": 121,
-          "column": 24
+          "line": 124,
+          "column": 5
         }
       },
       "49": {
         "start": {
           "line": 123,
-          "column": 18
+          "column": 6
         },
         "end": {
-          "line": 125,
-          "column": 5
+          "line": 123,
+          "column": 54
         }
       },
       "50": {
         "start": {
-          "line": 124,
-          "column": 6
+          "line": 125,
+          "column": 31
         },
         "end": {
-          "line": 124,
-          "column": 54
+          "line": 191,
+          "column": 6
         }
       },
       "51": {
         "start": {
-          "line": 126,
-          "column": 31
+          "line": 132,
+          "column": 8
         },
         "end": {
-          "line": 192,
-          "column": 6
+          "line": 171,
+          "column": 9
         }
       },
       "52": {
         "start": {
           "line": 133,
-          "column": 8
+          "column": 10
         },
         "end": {
-          "line": 172,
-          "column": 9
+          "line": 133,
+          "column": 50
         }
       },
       "53": {
@@ -15726,7 +15702,7 @@
         },
         "end": {
           "line": 134,
-          "column": 50
+          "column": 46
         }
       },
       "54": {
@@ -15736,7 +15712,7 @@
         },
         "end": {
           "line": 135,
-          "column": 46
+          "column": 28
         }
       },
       "55": {
@@ -15746,7 +15722,7 @@
         },
         "end": {
           "line": 136,
-          "column": 28
+          "column": 42
         }
       },
       "56": {
@@ -15755,28 +15731,28 @@
           "column": 10
         },
         "end": {
-          "line": 137,
-          "column": 42
+          "line": 139,
+          "column": 13
         }
       },
       "57": {
         "start": {
           "line": 138,
-          "column": 10
+          "column": 12
         },
         "end": {
-          "line": 140,
-          "column": 13
+          "line": 138,
+          "column": 38
         }
       },
       "58": {
         "start": {
-          "line": 139,
-          "column": 12
+          "line": 140,
+          "column": 10
         },
         "end": {
-          "line": 139,
-          "column": 38
+          "line": 140,
+          "column": 68
         }
       },
       "59": {
@@ -15786,7 +15762,7 @@
         },
         "end": {
           "line": 141,
-          "column": 68
+          "column": 44
         }
       },
       "60": {
@@ -15796,7 +15772,7 @@
         },
         "end": {
           "line": 142,
-          "column": 44
+          "column": 28
         }
       },
       "61": {
@@ -15806,7 +15782,7 @@
         },
         "end": {
           "line": 143,
-          "column": 28
+          "column": 38
         }
       },
       "62": {
@@ -15816,7 +15792,7 @@
         },
         "end": {
           "line": 144,
-          "column": 38
+          "column": 28
         }
       },
       "63": {
@@ -15826,7 +15802,7 @@
         },
         "end": {
           "line": 145,
-          "column": 28
+          "column": 68
         }
       },
       "64": {
@@ -15836,7 +15812,7 @@
         },
         "end": {
           "line": 146,
-          "column": 68
+          "column": 33
         }
       },
       "65": {
@@ -15846,7 +15822,7 @@
         },
         "end": {
           "line": 147,
-          "column": 33
+          "column": 28
         }
       },
       "66": {
@@ -15856,7 +15832,7 @@
         },
         "end": {
           "line": 148,
-          "column": 28
+          "column": 39
         }
       },
       "67": {
@@ -15866,7 +15842,7 @@
         },
         "end": {
           "line": 149,
-          "column": 39
+          "column": 28
         }
       },
       "68": {
@@ -15876,7 +15852,7 @@
         },
         "end": {
           "line": 150,
-          "column": 28
+          "column": 70
         }
       },
       "69": {
@@ -15886,7 +15862,7 @@
         },
         "end": {
           "line": 151,
-          "column": 70
+          "column": 40
         }
       },
       "70": {
@@ -15896,7 +15872,7 @@
         },
         "end": {
           "line": 152,
-          "column": 40
+          "column": 28
         }
       },
       "71": {
@@ -15906,7 +15882,7 @@
         },
         "end": {
           "line": 153,
-          "column": 28
+          "column": 39
         }
       },
       "72": {
@@ -15916,7 +15892,7 @@
         },
         "end": {
           "line": 154,
-          "column": 39
+          "column": 45
         }
       },
       "73": {
@@ -15925,28 +15901,28 @@
           "column": 10
         },
         "end": {
-          "line": 155,
-          "column": 45
+          "line": 157,
+          "column": 13
         }
       },
       "74": {
         "start": {
           "line": 156,
-          "column": 10
+          "column": 12
         },
         "end": {
-          "line": 158,
-          "column": 13
+          "line": 156,
+          "column": 56
         }
       },
       "75": {
         "start": {
-          "line": 157,
-          "column": 12
+          "line": 158,
+          "column": 10
         },
         "end": {
-          "line": 157,
-          "column": 56
+          "line": 158,
+          "column": 44
         }
       },
       "76": {
@@ -15956,7 +15932,7 @@
         },
         "end": {
           "line": 159,
-          "column": 44
+          "column": 24
         }
       },
       "77": {
@@ -15966,7 +15942,7 @@
         },
         "end": {
           "line": 160,
-          "column": 24
+          "column": 32
         }
       },
       "78": {
@@ -15976,7 +15952,7 @@
         },
         "end": {
           "line": 161,
-          "column": 32
+          "column": 42
         }
       },
       "79": {
@@ -15986,7 +15962,7 @@
         },
         "end": {
           "line": 162,
-          "column": 42
+          "column": 90
         }
       },
       "80": {
@@ -15996,7 +15972,7 @@
         },
         "end": {
           "line": 163,
-          "column": 90
+          "column": 28
         }
       },
       "81": {
@@ -16006,7 +15982,7 @@
         },
         "end": {
           "line": 164,
-          "column": 28
+          "column": 45
         }
       },
       "82": {
@@ -16016,7 +15992,7 @@
         },
         "end": {
           "line": 165,
-          "column": 45
+          "column": 41
         }
       },
       "83": {
@@ -16026,7 +16002,7 @@
         },
         "end": {
           "line": 166,
-          "column": 41
+          "column": 32
         }
       },
       "84": {
@@ -16036,7 +16012,7 @@
         },
         "end": {
           "line": 167,
-          "column": 32
+          "column": 33
         }
       },
       "85": {
@@ -16046,7 +16022,7 @@
         },
         "end": {
           "line": 168,
-          "column": 33
+          "column": 58
         }
       },
       "86": {
@@ -16056,7 +16032,7 @@
         },
         "end": {
           "line": 169,
-          "column": 58
+          "column": 103
         }
       },
       "87": {
@@ -16066,27 +16042,27 @@
         },
         "end": {
           "line": 170,
-          "column": 103
+          "column": 30
         }
       },
       "88": {
         "start": {
-          "line": 171,
-          "column": 10
+          "line": 172,
+          "column": 8
         },
         "end": {
-          "line": 171,
-          "column": 30
+          "line": 187,
+          "column": 9
         }
       },
       "89": {
         "start": {
           "line": 173,
-          "column": 8
+          "column": 10
         },
         "end": {
-          "line": 188,
-          "column": 9
+          "line": 173,
+          "column": 26
         }
       },
       "90": {
@@ -16096,7 +16072,7 @@
         },
         "end": {
           "line": 174,
-          "column": 26
+          "column": 54
         }
       },
       "91": {
@@ -16106,7 +16082,7 @@
         },
         "end": {
           "line": 175,
-          "column": 54
+          "column": 27
         }
       },
       "92": {
@@ -16116,7 +16092,7 @@
         },
         "end": {
           "line": 176,
-          "column": 27
+          "column": 74
         }
       },
       "93": {
@@ -16126,7 +16102,7 @@
         },
         "end": {
           "line": 177,
-          "column": 74
+          "column": 25
         }
       },
       "94": {
@@ -16136,7 +16112,7 @@
         },
         "end": {
           "line": 178,
-          "column": 25
+          "column": 92
         }
       },
       "95": {
@@ -16146,7 +16122,7 @@
         },
         "end": {
           "line": 179,
-          "column": 92
+          "column": 26
         }
       },
       "96": {
@@ -16156,7 +16132,7 @@
         },
         "end": {
           "line": 180,
-          "column": 26
+          "column": 85
         }
       },
       "97": {
@@ -16166,7 +16142,7 @@
         },
         "end": {
           "line": 181,
-          "column": 85
+          "column": 26
         }
       },
       "98": {
@@ -16176,7 +16152,7 @@
         },
         "end": {
           "line": 182,
-          "column": 26
+          "column": 63
         }
       },
       "99": {
@@ -16186,7 +16162,7 @@
         },
         "end": {
           "line": 183,
-          "column": 63
+          "column": 25
         }
       },
       "100": {
@@ -16196,7 +16172,7 @@
         },
         "end": {
           "line": 184,
-          "column": 25
+          "column": 61
         }
       },
       "101": {
@@ -16206,7 +16182,7 @@
         },
         "end": {
           "line": 185,
-          "column": 61
+          "column": 26
         }
       },
       "102": {
@@ -16216,26 +16192,16 @@
         },
         "end": {
           "line": 186,
-          "column": 26
+          "column": 38
         }
       },
       "103": {
         "start": {
-          "line": 187,
-          "column": 10
-        },
-        "end": {
-          "line": 187,
-          "column": 38
-        }
-      },
-      "104": {
-        "start": {
-          "line": 194,
+          "line": 193,
           "column": 2
         },
         "end": {
-          "line": 194,
+          "line": 193,
           "column": 21
         }
       }
@@ -16355,7 +16321,7 @@
             "column": 45
           },
           "end": {
-            "line": 195,
+            "line": 194,
             "column": 1
           }
         },
@@ -16571,7 +16537,7 @@
             "column": 36
           },
           "end": {
-            "line": 119,
+            "line": 118,
             "column": 5
           }
         },
@@ -16581,121 +16547,121 @@
         "name": "(anonymous_14)",
         "decl": {
           "start": {
-            "line": 120,
+            "line": 119,
             "column": 4
           },
           "end": {
-            "line": 120,
+            "line": 119,
             "column": 5
           }
         },
         "loc": {
           "start": {
-            "line": 120,
+            "line": 119,
             "column": 24
           },
           "end": {
-            "line": 122,
+            "line": 121,
             "column": 5
           }
         },
-        "line": 120
+        "line": 119
       },
       "15": {
         "name": "MeComponent_Factory",
         "decl": {
           "start": {
-            "line": 123,
+            "line": 122,
             "column": 27
           },
           "end": {
-            "line": 123,
+            "line": 122,
             "column": 46
           }
         },
         "loc": {
           "start": {
-            "line": 123,
+            "line": 122,
             "column": 66
           },
           "end": {
-            "line": 125,
+            "line": 124,
             "column": 5
           }
         },
-        "line": 123
+        "line": 122
       },
       "16": {
         "name": "MeComponent_Template",
         "decl": {
           "start": {
-            "line": 132,
+            "line": 131,
             "column": 25
           },
           "end": {
-            "line": 132,
+            "line": 131,
             "column": 45
           }
         },
         "loc": {
           "start": {
-            "line": 132,
+            "line": 131,
             "column": 55
           },
           "end": {
-            "line": 189,
+            "line": 188,
             "column": 7
           }
         },
-        "line": 132
+        "line": 131
       },
       "17": {
         "name": "MeComponent_Template_form_ngSubmit_3_listener",
         "decl": {
           "start": {
-            "line": 138,
+            "line": 137,
             "column": 45
           },
           "end": {
-            "line": 138,
+            "line": 137,
             "column": 90
           }
         },
         "loc": {
           "start": {
-            "line": 138,
+            "line": 137,
             "column": 93
           },
           "end": {
-            "line": 140,
+            "line": 139,
             "column": 11
           }
         },
-        "line": 138
+        "line": 137
       },
       "18": {
         "name": "MeComponent_Template_button_click_16_listener",
         "decl": {
           "start": {
-            "line": 156,
+            "line": 155,
             "column": 42
           },
           "end": {
-            "line": 156,
+            "line": 155,
             "column": 87
           }
         },
         "loc": {
           "start": {
-            "line": 156,
+            "line": 155,
             "column": 96
           },
           "end": {
-            "line": 158,
+            "line": 157,
             "column": 11
           }
         },
-        "line": 156
+        "line": 155
       }
     },
     "branchMap": {
@@ -16966,11 +16932,11 @@
       "9": {
         "loc": {
           "start": {
-            "line": 124,
+            "line": 123,
             "column": 18
           },
           "end": {
-            "line": 124,
+            "line": 123,
             "column": 50
           }
         },
@@ -16978,35 +16944,35 @@
         "locations": [
           {
             "start": {
-              "line": 124,
+              "line": 123,
               "column": 18
             },
             "end": {
-              "line": 124,
+              "line": 123,
               "column": 35
             }
           },
           {
             "start": {
-              "line": 124,
+              "line": 123,
               "column": 39
             },
             "end": {
-              "line": 124,
+              "line": 123,
               "column": 50
             }
           }
         ],
-        "line": 124
+        "line": 123
       },
       "10": {
         "loc": {
           "start": {
-            "line": 133,
+            "line": 132,
             "column": 8
           },
           "end": {
-            "line": 172,
+            "line": 171,
             "column": 9
           }
         },
@@ -17014,11 +16980,11 @@
         "locations": [
           {
             "start": {
-              "line": 133,
+              "line": 132,
               "column": 8
             },
             "end": {
-              "line": 172,
+              "line": 171,
               "column": 9
             }
           },
@@ -17027,16 +16993,16 @@
             "end": {}
           }
         ],
-        "line": 133
+        "line": 132
       },
       "11": {
         "loc": {
           "start": {
-            "line": 173,
+            "line": 172,
             "column": 8
           },
           "end": {
-            "line": 188,
+            "line": 187,
             "column": 9
           }
         },
@@ -17044,11 +17010,11 @@
         "locations": [
           {
             "start": {
-              "line": 173,
+              "line": 172,
               "column": 8
             },
             "end": {
-              "line": 188,
+              "line": 187,
               "column": 9
             }
           },
@@ -17057,16 +17023,16 @@
             "end": {}
           }
         ],
-        "line": 173
+        "line": 172
       },
       "12": {
         "loc": {
           "start": {
-            "line": 177,
+            "line": 176,
             "column": 32
           },
           "end": {
-            "line": 177,
+            "line": 176,
             "column": 72
           }
         },
@@ -17074,35 +17040,35 @@
         "locations": [
           {
             "start": {
-              "line": 177,
+              "line": 176,
               "column": 53
             },
             "end": {
-              "line": 177,
+              "line": 176,
               "column": 63
             }
           },
           {
             "start": {
-              "line": 177,
+              "line": 176,
               "column": 66
             },
             "end": {
-              "line": 177,
+              "line": 176,
               "column": 72
             }
           }
         ],
-        "line": 177
+        "line": 176
       },
       "13": {
         "loc": {
           "start": {
-            "line": 181,
+            "line": 180,
             "column": 31
           },
           "end": {
-            "line": 181,
+            "line": 180,
             "column": 83
           }
         },
@@ -17110,35 +17076,35 @@
         "locations": [
           {
             "start": {
-              "line": 181,
+              "line": 180,
               "column": 52
             },
             "end": {
-              "line": 181,
+              "line": 180,
               "column": 68
             }
           },
           {
             "start": {
-              "line": 181,
+              "line": 180,
               "column": 71
             },
             "end": {
-              "line": 181,
+              "line": 180,
               "column": 83
             }
           }
         ],
-        "line": 181
+        "line": 180
       },
       "14": {
         "loc": {
           "start": {
-            "line": 183,
+            "line": 182,
             "column": 27
           },
           "end": {
-            "line": 183,
+            "line": 182,
             "column": 61
           }
         },
@@ -17146,31 +17112,31 @@
         "locations": [
           {
             "start": {
-              "line": 183,
+              "line": 182,
               "column": 54
             },
             "end": {
-              "line": 183,
+              "line": 182,
               "column": 56
             }
           },
           {
             "start": {
-              "line": 183,
+              "line": 182,
               "column": 59
             },
             "end": {
-              "line": 183,
+              "line": 182,
               "column": 61
             }
           }
         ],
-        "line": 183
+        "line": 182
       }
     },
     "s": {
-      "0": 26,
-      "1": 271,
+      "0": 33,
+      "1": 301,
       "2": 3,
       "3": 1,
       "4": 1,
@@ -17179,35 +17145,35 @@
       "7": 2,
       "8": 2,
       "9": 2,
-      "10": 269,
-      "11": 12,
-      "12": 12,
-      "13": 12,
+      "10": 302,
+      "11": 15,
+      "12": 15,
+      "13": 15,
       "14": 1,
       "15": 1,
       "16": 1,
-      "17": 12,
-      "18": 269,
-      "19": 257,
-      "20": 257,
-      "21": 257,
-      "22": 26,
-      "23": 4,
-      "24": 4,
-      "25": 4,
-      "26": 4,
-      "27": 4,
-      "28": 4,
-      "29": 4,
-      "30": 4,
-      "31": 4,
-      "32": 5,
-      "33": 5,
-      "34": 13,
-      "35": 5,
-      "36": 4,
-      "37": 4,
-      "38": 4,
+      "17": 15,
+      "18": 302,
+      "19": 287,
+      "20": 287,
+      "21": 287,
+      "22": 33,
+      "23": 5,
+      "24": 5,
+      "25": 5,
+      "26": 5,
+      "27": 5,
+      "28": 5,
+      "29": 5,
+      "30": 5,
+      "31": 5,
+      "32": 6,
+      "33": 6,
+      "34": 16,
+      "35": 6,
+      "36": 5,
+      "37": 5,
+      "38": 5,
       "39": 2,
       "40": 2,
       "41": 2,
@@ -17216,83 +17182,82 @@
       "44": 1,
       "45": 1,
       "46": 0,
-      "47": 0,
-      "48": 1,
-      "49": 26,
-      "50": 4,
-      "51": 26,
-      "52": 107,
-      "53": 4,
-      "54": 4,
-      "55": 4,
-      "56": 4,
-      "57": 4,
-      "58": 2,
-      "59": 4,
-      "60": 4,
-      "61": 4,
-      "62": 4,
-      "63": 4,
-      "64": 4,
-      "65": 4,
-      "66": 4,
-      "67": 4,
-      "68": 4,
-      "69": 4,
-      "70": 4,
-      "71": 4,
-      "72": 4,
-      "73": 4,
-      "74": 4,
-      "75": 0,
-      "76": 4,
-      "77": 4,
-      "78": 4,
-      "79": 4,
-      "80": 4,
-      "81": 4,
-      "82": 4,
-      "83": 4,
-      "84": 4,
-      "85": 4,
-      "86": 4,
-      "87": 4,
-      "88": 4,
-      "89": 107,
-      "90": 103,
-      "91": 103,
-      "92": 103,
-      "93": 103,
-      "94": 103,
-      "95": 103,
-      "96": 103,
-      "97": 103,
-      "98": 103,
-      "99": 103,
-      "100": 103,
-      "101": 103,
-      "102": 103,
-      "103": 103,
-      "104": 26
+      "47": 1,
+      "48": 33,
+      "49": 5,
+      "50": 33,
+      "51": 122,
+      "52": 5,
+      "53": 5,
+      "54": 5,
+      "55": 5,
+      "56": 5,
+      "57": 2,
+      "58": 5,
+      "59": 5,
+      "60": 5,
+      "61": 5,
+      "62": 5,
+      "63": 5,
+      "64": 5,
+      "65": 5,
+      "66": 5,
+      "67": 5,
+      "68": 5,
+      "69": 5,
+      "70": 5,
+      "71": 5,
+      "72": 5,
+      "73": 5,
+      "74": 0,
+      "75": 5,
+      "76": 5,
+      "77": 5,
+      "78": 5,
+      "79": 5,
+      "80": 5,
+      "81": 5,
+      "82": 5,
+      "83": 5,
+      "84": 5,
+      "85": 5,
+      "86": 5,
+      "87": 5,
+      "88": 122,
+      "89": 117,
+      "90": 117,
+      "91": 117,
+      "92": 117,
+      "93": 117,
+      "94": 117,
+      "95": 117,
+      "96": 117,
+      "97": 117,
+      "98": 117,
+      "99": 117,
+      "100": 117,
+      "101": 117,
+      "102": 117,
+      "103": 33
     },
     "f": {
-      "0": 271,
+      "0": 301,
       "1": 3,
-      "2": 269,
+      "2": 302,
       "3": 1,
-      "4": 26,
-      "5": 4,
-      "6": 5,
-      "7": 5,
-      "8": 13,
-      "9": 4,
+      "4": 33,
+      "5": 5,
+      "6": 6,
+      "7": 6,
+      "8": 16,
+      "9": 5,
       "10": 2,
       "11": 1,
       "12": 1,
       "13": 0,
       "14": 1,
-      "15": 4,
-      "16": 107,
+      "15": 5,
+      "16": 122,
       "17": 2,
       "18": 0
     },
@@ -17306,21 +17271,21 @@
         1
       ],
       "2": [
-        12,
-        257
+        15,
+        287
       ],
       "3": [
-        257,
-        12
+        287,
+        15
       ],
       "4": [
-        4
+        5
       ],
       "5": [
-        4
+        5
       ],
       "6": [
-        4
+        5
       ],
       "7": [
         2,
@@ -17331,28 +17296,28 @@
         1
       ],
       "9": [
-        4,
-        4
+        5,
+        5
       ],
       "10": [
-        4,
-        103
+        5,
+        117
       ],
       "11": [
-        103,
-        4
+        117,
+        5
       ],
       "12": [
-        103,
+        117,
         0
       ],
       "13": [
-        103,
+        117,
         0
       ],
       "14": [
         2,
-        101
+        115
       ]
     },
     "inputSourceMap": {
@@ -17441,7 +17406,6 @@
         "message",
         "togglePasswordVisibility",
         "event",
-        "preventDefault",
         "selectors",
         "decls",
         "vars",
@@ -17488,14 +17452,14 @@
         "F:\\GitRepos\\OpenClassrooms_P5_MDD\\frontend\\src\\app\\features\\main\\me\\me.component.html"
       ],
       "sourcesContent": [
-        "import { Component, DestroyRef, inject, signal } from '@angular/core';\r\nimport { takeUntilDestroyed } from '@angular/core/rxjs-interop';\r\nimport { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';\r\nimport { MatButtonModule } from '@angular/material/button';\r\nimport { MatFormFieldModule } from '@angular/material/form-field';\r\nimport { MatIconModule } from '@angular/material/icon';\r\nimport { MatInputModule } from '@angular/material/input';\r\nimport { MatSnackBar } from '@angular/material/snack-bar';\r\nimport { tap } from 'rxjs';\r\nimport { ThemeCardComponent } from '../../../components/card/theme-card/theme-card.component';\r\nimport { ThemeWithSubscription } from '../../../core/models/theme.models';\r\nimport { UserProfileUpdateRequest } from '../../../core/models/user.model';\r\nimport { ThemeService } from '../../../core/services/theme.service';\r\nimport { UserService } from '../../../core/services/user.service';\r\n\r\n@Component({\r\n  selector: 'app-me',\r\n  imports: [ReactiveFormsModule, MatIconModule, MatButtonModule, MatFormFieldModule, MatIconModule, MatInputModule, ThemeCardComponent, ThemeCardComponent],\r\n  templateUrl: './me.component.html',\r\n  styleUrl: './me.component.scss',\r\n})\r\nexport class MeComponent {\r\n  private userService = inject(UserService);\r\n  private themeService = inject(ThemeService);\r\n  private destroyRef = inject(DestroyRef);\r\n  private snackBar = inject(MatSnackBar)\r\n  serverErrorMessage = signal<string | null>(null);\r\n  hidePassword = signal(true);\r\n  isUnsubView = true;\r\n\r\n  themes = signal<ThemeWithSubscription[]>([]);\r\n\r\n  ngOnInit(): void {\r\n    this.loadThemes();\r\n  }\r\n\r\n  loadThemes() {\r\n    this.themeService.getUserSubscriptions()\r\n      .pipe(takeUntilDestroyed(this.destroyRef))\r\n      .subscribe(themes => {\r\n        const mapped = themes.map(theme => ({ ...theme, isSubscribed: true }));\r\n        this.themes.set(mapped);\r\n      });\r\n  }\r\n\r\n\r\n  profileForm = new FormGroup({\r\n    username: new FormControl('', { nonNullable: true, validators: [Validators.required] }),\r\n    email: new FormControl('', { nonNullable: true, validators: [Validators.required, Validators.email] }),\r\n    password: new FormControl('', { validators: [Validators.minLength(8), Validators.pattern(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%*?&])/)] })\r\n  })\r\n\r\n  userProfile$ = this.userService.getUserProfile().pipe(\r\n    takeUntilDestroyed(this.destroyRef),\r\n    tap(user => {\r\n      //pre-fill form\r\n      this.profileForm.patchValue({\r\n        username: user.username,\r\n        email: user.email\r\n      })\r\n    })\r\n  ).subscribe();\r\n\r\n  onSubmitForm() {\r\n    if (this.profileForm.valid) {\r\n      const updateRequest: UserProfileUpdateRequest = this.profileForm.getRawValue();\r\n      this.userService.updateUserProfile(updateRequest).pipe(takeUntilDestroyed(this.destroyRef)).subscribe({\r\n        next: () => {\r\n          this.serverErrorMessage.set(null);\r\n          this.snackBar.open('Profile mis à jour avec succès', 'Fermer', {\r\n            duration: 3000,\r\n            horizontalPosition: 'center',\r\n            verticalPosition: 'bottom',\r\n          });\r\n        },\r\n        error: (err) => {\r\n          const msg = err.error?.message || \"Une erreur est survenue\";\r\n          this.serverErrorMessage.set(msg);\r\n        }\r\n      });\r\n    }\r\n  }\r\n  togglePasswordVisibility(event: MouseEvent) {\r\n    this.hidePassword.set(!this.hidePassword());\r\n    event.preventDefault()\r\n  }\r\n\r\n  handleUnsubscribe() {\r\n    this.loadThemes();\r\n  }\r\n\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
-        "<div class=\"profile-container\">\r\n    <h2>Profile utilisateur</h2>\r\n    <form [formGroup]=\"profileForm\" (ngSubmit)=\"onSubmitForm()\" class=\"full-width-form\" data-testid=\"profile-form\">\r\n        <mat-form-field appearance=\"outline\">\r\n            <mat-label>Nom d'utilisateur</mat-label>\r\n            <input matInput formControlName=\"username\" autocomplete=\"off\" data-testid=\"username-input\">\r\n        </mat-form-field>\r\n        <mat-form-field appearance=\"outline\">\r\n            <mat-label>Email</mat-label>\r\n            <input matInput formControlName=\"email\" autocomplete=\"off\" data-testid=\"email-input\">\r\n        </mat-form-field>\r\n        <mat-form-field appearance=\"outline\">\r\n            <mat-label>Mot de passe</mat-label>\r\n            <input matInput [type]=\"hidePassword()? 'password' : 'text'\" formControlName=\"password\"\r\n                autocomplete=\"new-password\" data-testid=\"password-input\">\r\n            <button mat-icon-button matSuffix (click)=\"togglePasswordVisibility($event)\"\r\n                [attr.aria-label]=\"'Hide password'\" [attr.aria-pressed]=\"hidePassword()\"\r\n                data-testid=\"toggle-password-btn\">\r\n                <mat-icon>{{hidePassword()? 'visibility_off' : 'visibility'}}</mat-icon>\r\n            </button>\r\n        </mat-form-field>\r\n        <div class=\"error-container\" data-testid=\"server-error\">\r\n            @if (serverErrorMessage()) {\r\n            <div class=\"server-error\">\r\n                {{ serverErrorMessage() }}\r\n            </div>\r\n            }\r\n        </div>\r\n        <button mat-raised-button type=\"submit\" class=\"submit-btn\" [disabled]=\"profileForm.invalid\"\r\n            data-testid=\"submit-btn\">\r\n            Sauvegarder\r\n        </button>\r\n    </form>\r\n</div>\r\n<hr>\r\n<div class=\"themes-container\">\r\n    <div class=\"themes-grid\">\r\n        @for (theme of themes(); track theme.id) {\r\n        <app-theme-card [theme]=\"theme\" [isUnsubView]=\"isUnsubView\" (unsubscribed)=\"handleUnsubscribe()\"\r\n            data-testid=\"subscribed-theme-card\" />\r\n        }\r\n    </div>\r\n</div>"
+        "import { Component, DestroyRef, inject, signal } from '@angular/core';\r\nimport { takeUntilDestroyed } from '@angular/core/rxjs-interop';\r\nimport { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';\r\nimport { MatButtonModule } from '@angular/material/button';\r\nimport { MatFormFieldModule } from '@angular/material/form-field';\r\nimport { MatIconModule } from '@angular/material/icon';\r\nimport { MatInputModule } from '@angular/material/input';\r\nimport { MatSnackBar } from '@angular/material/snack-bar';\r\nimport { tap } from 'rxjs';\r\nimport { ThemeCardComponent } from '../../../components/card/theme-card/theme-card.component';\r\nimport { ThemeWithSubscription } from '../../../core/models/theme.models';\r\nimport { UserProfileUpdateRequest } from '../../../core/models/user.model';\r\nimport { ThemeService } from '../../../core/services/theme.service';\r\nimport { UserService } from '../../../core/services/user.service';\r\n\r\n@Component({\r\n  selector: 'app-me',\r\n  imports: [ReactiveFormsModule, MatIconModule, MatButtonModule, MatFormFieldModule, MatIconModule, MatInputModule, ThemeCardComponent, ThemeCardComponent],\r\n  templateUrl: './me.component.html',\r\n  styleUrl: './me.component.scss',\r\n})\r\nexport class MeComponent {\r\n  private userService = inject(UserService);\r\n  private themeService = inject(ThemeService);\r\n  private destroyRef = inject(DestroyRef);\r\n  private snackBar = inject(MatSnackBar)\r\n  serverErrorMessage = signal<string | null>(null);\r\n  hidePassword = signal(true);\r\n  isUnsubView = true;\r\n\r\n  themes = signal<ThemeWithSubscription[]>([]);\r\n\r\n  ngOnInit(): void {\r\n    this.loadThemes();\r\n  }\r\n\r\n  loadThemes() {\r\n    this.themeService.getUserSubscriptions()\r\n      .pipe(takeUntilDestroyed(this.destroyRef))\r\n      .subscribe(themes => {\r\n        const mapped = themes.map(theme => ({ ...theme, isSubscribed: true }));\r\n        this.themes.set(mapped);\r\n      });\r\n  }\r\n\r\n\r\n  profileForm = new FormGroup({\r\n    username: new FormControl('', { nonNullable: true, validators: [Validators.required] }),\r\n    email: new FormControl('', { nonNullable: true, validators: [Validators.required, Validators.email] }),\r\n    password: new FormControl('', { validators: [Validators.minLength(8), Validators.pattern(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%*?&])/)] })\r\n  })\r\n\r\n  userProfile$ = this.userService.getUserProfile().pipe(\r\n    takeUntilDestroyed(this.destroyRef),\r\n    tap(user => {\r\n      //pre-fill form\r\n      this.profileForm.patchValue({\r\n        username: user.username,\r\n        email: user.email\r\n      })\r\n    })\r\n  ).subscribe();\r\n\r\n  onSubmitForm() {\r\n    if (this.profileForm.valid) {\r\n      const updateRequest: UserProfileUpdateRequest = this.profileForm.getRawValue();\r\n      this.userService.updateUserProfile(updateRequest).pipe(takeUntilDestroyed(this.destroyRef)).subscribe({\r\n        next: () => {\r\n          this.serverErrorMessage.set(null);\r\n          this.snackBar.open('Profile mis à jour avec succès', 'Fermer', {\r\n            duration: 3000,\r\n            horizontalPosition: 'center',\r\n            verticalPosition: 'bottom',\r\n          });\r\n        },\r\n        error: (err) => {\r\n          const msg = err.error?.message || \"Une erreur est survenue\";\r\n          this.serverErrorMessage.set(msg);\r\n        }\r\n      });\r\n    }\r\n  }\r\n  togglePasswordVisibility(event: MouseEvent) {\r\n    this.hidePassword.set(!this.hidePassword());\r\n  }\r\n\r\n  handleUnsubscribe() {\r\n    this.loadThemes();\r\n  }\r\n\r\n}\r\n\r\n\r\n\r\n\r\n\r\n\r\n\r\n",
+        "<div class=\"profile-container\">\r\n    <h2>Profile utilisateur</h2>\r\n    <form [formGroup]=\"profileForm\" (ngSubmit)=\"onSubmitForm()\" class=\"full-width-form\" data-testid=\"profile-form\">\r\n        <mat-form-field appearance=\"outline\">\r\n            <mat-label>Nom d'utilisateur</mat-label>\r\n            <input matInput formControlName=\"username\" autocomplete=\"off\" data-testid=\"username-input\">\r\n        </mat-form-field>\r\n        <mat-form-field appearance=\"outline\">\r\n            <mat-label>Email</mat-label>\r\n            <input matInput formControlName=\"email\" autocomplete=\"off\" data-testid=\"email-input\">\r\n        </mat-form-field>\r\n        <mat-form-field appearance=\"outline\">\r\n            <mat-label>Mot de passe</mat-label>\r\n            <input matInput [type]=\"hidePassword()? 'password' : 'text'\" formControlName=\"password\"\r\n                autocomplete=\"new-password\" data-testid=\"password-input\">\r\n            <button mat-icon-button matSuffix type=\"button\" (click)=\"togglePasswordVisibility($event)\"\r\n                [attr.aria-label]=\"'Hide password'\" [attr.aria-pressed]=\"hidePassword()\"\r\n                data-testid=\"toggle-password-btn\">\r\n                <mat-icon>{{hidePassword()? 'visibility_off' : 'visibility'}}</mat-icon>\r\n            </button>\r\n        </mat-form-field>\r\n        <div class=\"error-container\" data-testid=\"server-error\">\r\n            @if (serverErrorMessage()) {\r\n            <div class=\"server-error\">\r\n                {{ serverErrorMessage() }}\r\n            </div>\r\n            }\r\n        </div>\r\n        <button mat-raised-button type=\"submit\" class=\"submit-btn\" [disabled]=\"profileForm.invalid\"\r\n            data-testid=\"submit-btn\">\r\n            Sauvegarder\r\n        </button>\r\n    </form>\r\n</div>\r\n<hr>\r\n<div class=\"themes-container\">\r\n    <div class=\"themes-grid\">\r\n        @for (theme of themes(); track theme.id) {\r\n        <app-theme-card [theme]=\"theme\" [isUnsubView]=\"isUnsubView\" (unsubscribed)=\"handleUnsubscribe()\"\r\n            data-testid=\"subscribed-theme-card\" />\r\n        }\r\n    </div>\r\n</div>"
       ],
-      "mappings": "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",
+      "mappings": "AAAA,SAAoBA,UAAU,EAAEC,MAAM,EAAEC,MAAM,QAAQ,eAAe;AACrE,SAASC,kBAAkB,QAAQ,4BAA4B;AAC/D,SAASC,WAAW,EAAEC,SAAS,EAAEC,mBAAmB,EAAEC,UAAU,QAAQ,gBAAgB;AACxF,SAASC,eAAe,QAAQ,0BAA0B;AAC1D,SAASC,kBAAkB,QAAQ,8BAA8B;AACjE,SAASC,aAAa,QAAQ,wBAAwB;AACtD,SAASC,cAAc,QAAQ,yBAAyB;AACxD,SAASC,WAAW,QAAQ,6BAA6B;AACzD,SAASC,GAAG,QAAQ,MAAM;AAC1B,SAASC,kBAAkB,QAAQ,0DAA0D;AAG7F,SAASC,YAAY,QAAQ,sCAAsC;AACnE,SAASC,WAAW,QAAQ,qCAAqC;;;;;;;;;;ICUrDC,EAAA,CAAAC,cAAA,aAA0B;IACtBD,EAAA,CAAAE,MAAA,GACJ;IAAAF,EAAA,CAAAG,YAAA,EAAM;;;;IADFH,EAAA,CAAAI,SAAA,EACJ;IADIJ,EAAA,CAAAK,kBAAA,MAAAC,MAAA,CAAAC,kBAAA,QACJ;;;;;;IAaJP,EAAA,CAAAC,cAAA,yBAC0C;IADkBD,EAAA,CAAAQ,UAAA,0BAAAC,mEAAA;MAAAT,EAAA,CAAAU,aAAA,CAAAC,GAAA;MAAA,MAAAL,MAAA,GAAAN,EAAA,CAAAY,aAAA;MAAA,OAAAZ,EAAA,CAAAa,WAAA,CAAgBP,MAAA,CAAAQ,iBAAA,EAAmB;IAAA,EAAC;IAAhGd,EAAA,CAAAG,YAAA,EAC0C;;;;;IADVH,EAAhB,CAAAe,UAAA,UAAAC,QAAA,CAAe,gBAAAV,MAAA,CAAAW,WAAA,CAA4B;;;ADjBnE,WAAaC,WAAW;EAAlB,MAAOA,WAAW;IACdC,WAAW,GAAGnC,MAAM,CAACe,WAAW,CAAC;IACjCqB,YAAY,GAAGpC,MAAM,CAACc,YAAY,CAAC;IACnCuB,UAAU,GAAGrC,MAAM,CAACD,UAAU,CAAC;IAC/BuC,QAAQ,GAAGtC,MAAM,CAACW,WAAW,CAAC;IACtCY,kBAAkB,GAAGtB,MAAM,CAAgB,IAAI,MAAAsC,SAAA;MAAAC,SAAA;IAAA,mCAAC;IAChDC,YAAY,GAAGxC,MAAM,CAAC,IAAI,MAAAsC,SAAA;MAAAC,SAAA;IAAA,mCAAC;IAC3BP,WAAW,GAAG,IAAI;IAElBS,MAAM,GAAGzC,MAAM,CAA0B,EAAE,MAAAsC,SAAA;MAAAC,SAAA;IAAA,mCAAC;IAE5CG,QAAQA,CAAA;MACN,IAAI,CAACC,UAAU,EAAE;IACnB;IAEAA,UAAUA,CAAA;MACR,IAAI,CAACR,YAAY,CAACS,oBAAoB,EAAE,CACrCC,IAAI,CAAC5C,kBAAkB,CAAC,IAAI,CAACmC,UAAU,CAAC,CAAC,CACzCU,SAAS,CAACL,MAAM,IAAG;QAClB,MAAMM,MAAM,GAAGN,MAAM,CAACO,GAAG,CAACC,KAAK,KAAK;UAAE,GAAGA,KAAK;UAAEC,YAAY,EAAE;QAAI,CAAE,CAAC,CAAC;QACtE,IAAI,CAACT,MAAM,CAACU,GAAG,CAACJ,MAAM,CAAC;MACzB,CAAC,CAAC;IACN;IAGAK,WAAW,GAAG,IAAIjD,SAAS,CAAC;MAC1BkD,QAAQ,EAAE,IAAInD,WAAW,CAAC,EAAE,EAAE;QAAEoD,WAAW,EAAE,IAAI;QAAEC,UAAU,EAAE,CAAClD,UAAU,CAACmD,QAAQ;MAAC,CAAE,CAAC;MACvFC,KAAK,EAAE,IAAIvD,WAAW,CAAC,EAAE,EAAE;QAAEoD,WAAW,EAAE,IAAI;QAAEC,UAAU,EAAE,CAAClD,UAAU,CAACmD,QAAQ,EAAEnD,UAAU,CAACoD,KAAK;MAAC,CAAE,CAAC;MACtGC,QAAQ,EAAE,IAAIxD,WAAW,CAAC,EAAE,EAAE;QAAEqD,UAAU,EAAE,CAAClD,UAAU,CAACsD,SAAS,CAAC,CAAC,CAAC,EAAEtD,UAAU,CAACuD,OAAO,CAAC,oDAAoD,CAAC;MAAC,CAAE;KAClJ,CAAC;IAEFC,YAAY,GAAG,IAAI,CAAC3B,WAAW,CAAC4B,cAAc,EAAE,CAACjB,IAAI,CACnD5C,kBAAkB,CAAC,IAAI,CAACmC,UAAU,CAAC,EACnCzB,GAAG,CAACoD,IAAI,IAAG;MACT;MACA,IAAI,CAACX,WAAW,CAACY,UAAU,CAAC;QAC1BX,QAAQ,EAAEU,IAAI,CAACV,QAAQ;QACvBI,KAAK,EAAEM,IAAI,CAACN;OACb,CAAC;IACJ,CAAC,CAAC,CACH,CAACX,SAAS,EAAE;IAEbmB,YAAYA,CAAA;MACV,IAAI,IAAI,CAACb,WAAW,CAACc,KAAK,EAAE;QAC1B,MAAMC,aAAa,GAA6B,IAAI,CAACf,WAAW,CAACgB,WAAW,EAAE;QAC9E,IAAI,CAAClC,WAAW,CAACmC,iBAAiB,CAACF,aAAa,CAAC,CAACtB,IAAI,CAAC5C,kBAAkB,CAAC,IAAI,CAACmC,UAAU,CAAC,CAAC,CAACU,SAAS,CAAC;UACpGwB,IAAI,EAAEA,CAAA,KAAK;YACT,IAAI,CAAChD,kBAAkB,CAAC6B,GAAG,CAAC,IAAI,CAAC;YACjC,IAAI,CAACd,QAAQ,CAACkC,IAAI,CAAC,gCAAgC,EAAE,QAAQ,EAAE;cAC7DC,QAAQ,EAAE,IAAI;cACdC,kBAAkB,EAAE,QAAQ;cAC5BC,gBAAgB,EAAE;aACnB,CAAC;UACJ,CAAC;UACDC,KAAK,EAAGC,GAAG,IAAI;YACb,MAAMC,GAAG,GAAGD,GAAG,CAACD,KAAK,EAAEG,OAAO,IAAI,yBAAyB;YAC3D,IAAI,CAACxD,kBAAkB,CAAC6B,GAAG,CAAC0B,GAAG,CAAC;UAClC;SACD,CAAC;MACJ;IACF;IACAE,wBAAwBA,CAACC,KAAiB;MACxC,IAAI,CAACxC,YAAY,CAACW,GAAG,CAAC,CAAC,IAAI,CAACX,YAAY,EAAE,CAAC;IAC7C;IAEAX,iBAAiBA,CAAA;MACf,IAAI,CAACc,UAAU,EAAE;IACnB;;uCAnEWV,WAAW;IAAA;;YAAXA,WAAW;MAAAgD,SAAA;MAAAC,KAAA;MAAAC,IAAA;MAAAC,MAAA;MAAAC,QAAA,WAAAC,qBAAAC,EAAA,EAAAC,GAAA;QAAA,IAAAD,EAAA;UCpBpBxE,EADJ,CAAAC,cAAA,aAA+B,SACvB;UAAAD,EAAA,CAAAE,MAAA,0BAAmB;UAAAF,EAAA,CAAAG,YAAA,EAAK;UAC5BH,EAAA,CAAAC,cAAA,cAA+G;UAA/ED,EAAA,CAAAQ,UAAA,sBAAAkE,8CAAA;YAAA,OAAYD,GAAA,CAAAvB,YAAA,EAAc;UAAA,EAAC;UAEnDlD,EADJ,CAAAC,cAAA,wBAAqC,gBACtB;UAAAD,EAAA,CAAAE,MAAA,wBAAiB;UAAAF,EAAA,CAAAG,YAAA,EAAY;UACxCH,EAAA,CAAA2E,SAAA,eAA2F;UAC/F3E,EAAA,CAAAG,YAAA,EAAiB;UAEbH,EADJ,CAAAC,cAAA,wBAAqC,gBACtB;UAAAD,EAAA,CAAAE,MAAA,aAAK;UAAAF,EAAA,CAAAG,YAAA,EAAY;UAC5BH,EAAA,CAAA2E,SAAA,gBAAqF;UACzF3E,EAAA,CAAAG,YAAA,EAAiB;UAEbH,EADJ,CAAAC,cAAA,yBAAqC,iBACtB;UAAAD,EAAA,CAAAE,MAAA,oBAAY;UAAAF,EAAA,CAAAG,YAAA,EAAY;UACnCH,EAAA,CAAA2E,SAAA,gBAC6D;UAC7D3E,EAAA,CAAAC,cAAA,iBAEsC;UAFUD,EAAA,CAAAQ,UAAA,mBAAAoE,8CAAAC,MAAA;YAAA,OAASJ,GAAA,CAAAT,wBAAA,CAAAa,MAAA,CAAgC;UAAA,EAAC;UAGtF7E,EAAA,CAAAC,cAAA,gBAAU;UAAAD,EAAA,CAAAE,MAAA,IAAmD;UAErEF,EAFqE,CAAAG,YAAA,EAAW,EACnE,EACI;UACjBH,EAAA,CAAAC,cAAA,cAAwD;UACpDD,EAAA,CAAA8E,mBAAA,KAAAC,mCAAA,iBAA4B;UAKhC/E,EAAA,CAAAG,YAAA,EAAM;UACNH,EAAA,CAAAC,cAAA,iBAC6B;UACzBD,EAAA,CAAAE,MAAA,qBACJ;UAERF,EAFQ,CAAAG,YAAA,EAAS,EACN,EACL;UACNH,EAAA,CAAA2E,SAAA,UAAI;UAEA3E,EADJ,CAAAC,cAAA,eAA8B,eACD;UACrBD,EAAA,CAAAgF,gBAAA,KAAAC,2BAAA,8BAAAC,UAAA,CAGC;UAETlF,EADI,CAAAG,YAAA,EAAM,EACJ;;;UAxCIH,EAAA,CAAAI,SAAA,GAAyB;UAAzBJ,EAAA,CAAAe,UAAA,cAAA0D,GAAA,CAAApC,WAAA,CAAyB;UAWPrC,EAAA,CAAAI,SAAA,IAA4C;UAA5CJ,EAAA,CAAAe,UAAA,SAAA0D,GAAA,CAAAhD,YAAA,yBAA4C;UAGxDzB,EAAA,CAAAI,SAAA,EAAmC;;UAEzBJ,EAAA,CAAAI,SAAA,GAAmD;UAAnDJ,EAAA,CAAAmF,iBAAA,CAAAV,GAAA,CAAAhD,YAAA,qCAAmD;UAIjEzB,EAAA,CAAAI,SAAA,GAIC;UAJDJ,EAAA,CAAAoF,aAAA,CAAAX,GAAA,CAAAlE,kBAAA,aAIC;UAEsDP,EAAA,CAAAI,SAAA,EAAgC;UAAhCJ,EAAA,CAAAe,UAAA,aAAA0D,GAAA,CAAApC,WAAA,CAAAgD,OAAA,CAAgC;UAS3FrF,EAAA,CAAAI,SAAA,GAGC;UAHDJ,EAAA,CAAAsF,UAAA,CAAAb,GAAA,CAAA/C,MAAA,EAAQ,CAGP;;;qBDvBGrC,mBAAmB,EAAAkG,EAAA,CAAAC,aAAA,EAAAD,EAAA,CAAAE,oBAAA,EAAAF,EAAA,CAAAG,eAAA,EAAAH,EAAA,CAAAI,oBAAA,EAAAJ,EAAA,CAAAK,kBAAA,EAAAL,EAAA,CAAAM,eAAA,EAAEpG,aAAa,EAAAqG,EAAA,CAAAC,OAAA,EAAExG,eAAe,EAAAyG,EAAA,CAAAC,SAAA,EAAAD,EAAA,CAAAE,aAAA,EAAE1G,kBAAkB,EAAA2G,EAAA,CAAAC,YAAA,EAAAD,EAAA,CAAAE,QAAA,EAAAF,EAAA,CAAAG,SAAA,EAAiB5G,cAAc,EAAA6G,EAAA,CAAAC,QAAA,EAAE3G,kBAAkB;MAAA4G,MAAA;IAAA;;SAIzHvF,WAAW;AAAA",
       "ignoreList": []
     },
     "_coverageSchema": "1a1c01bbd47fc00a2c39e90264f33305004495a9",
-    "hash": "a57e5fa694cd2f06a9d6565cc4336a397beccebe"
+    "hash": "24218652c3d56baaf15fc7e8c93d792c03d52e9d"
   },
   "F:\\GitRepos\\OpenClassrooms_P5_MDD\\frontend\\src\\app\\features\\main\\theme\\theme.component.ts": {
     "path": "F:\\GitRepos\\OpenClassrooms_P5_MDD\\frontend\\src\\app\\features\\main\\theme\\theme.component.ts",
@@ -18144,14 +18108,14 @@
       }
     },
     "s": {
-      "0": 26,
-      "1": 60,
-      "2": 75,
+      "0": 33,
+      "1": 110,
+      "2": 125,
       "3": 15,
-      "4": 75,
-      "5": 60,
-      "6": 60,
-      "7": 26,
+      "4": 125,
+      "5": 110,
+      "6": 110,
+      "7": 33,
       "8": 3,
       "9": 3,
       "10": 3,
@@ -18161,36 +18125,36 @@
       "14": 9,
       "15": 3,
       "16": 15,
-      "17": 26,
+      "17": 33,
       "18": 3,
-      "19": 26,
-      "20": 27,
+      "19": 33,
+      "20": 37,
       "21": 3,
       "22": 3,
       "23": 3,
       "24": 3,
-      "25": 27,
-      "26": 24,
-      "27": 24,
-      "28": 26
+      "25": 37,
+      "26": 34,
+      "27": 34,
+      "28": 33
     },
     "f": {
-      "0": 60,
-      "1": 75,
-      "2": 26,
+      "0": 110,
+      "1": 125,
+      "2": 33,
       "3": 3,
       "4": 9,
       "5": 15,
       "6": 3,
-      "7": 27
+      "7": 37
     },
     "b": {
       "0": [
         15,
-        60
+        110
       ],
       "1": [
-        60,
+        110,
         15
       ],
       "2": [
@@ -18199,10 +18163,10 @@
       ],
       "3": [
         3,
-        24
+        34
       ],
       "4": [
-        24,
+        34,
         3
       ]
     },
@@ -18288,7 +18252,7 @@
     "fnMap": {},
     "branchMap": {},
     "s": {
-      "0": 26
+      "0": 33
     },
     "f": {},
     "b": {},
@@ -18481,24 +18445,24 @@
       }
     },
     "s": {
-      "0": 26,
-      "1": 63,
-      "2": 18,
-      "3": 45,
-      "4": 45,
-      "5": 45
+      "0": 33,
+      "1": 87,
+      "2": 22,
+      "3": 65,
+      "4": 65,
+      "5": 65
     },
     "f": {
-      "0": 63
+      "0": 87
     },
     "b": {
       "0": [
-        18,
-        45
+        22,
+        65
       ],
       "1": [
-        63,
-        48
+        87,
+        68
       ]
     },
     "inputSourceMap": {
@@ -18546,7 +18510,7 @@
     "fnMap": {},
     "branchMap": {},
     "s": {
-      "0": 26
+      "0": 33
     },
     "f": {},
     "b": {},
@@ -18828,31 +18792,31 @@
       }
     },
     "s": {
-      "0": 26,
-      "1": 26,
-      "2": 26,
-      "3": 26,
-      "4": 26,
-      "5": 1590,
-      "6": 26,
-      "7": 26
+      "0": 33,
+      "1": 33,
+      "2": 33,
+      "3": 33,
+      "4": 33,
+      "5": 2027,
+      "6": 33,
+      "7": 33
     },
     "f": {
-      "0": 26,
-      "1": 26,
-      "2": 1590
+      "0": 33,
+      "1": 33,
+      "2": 2027
     },
     "b": {
       "0": [
-        26
+        33
       ],
       "1": [
-        26,
-        26
+        33,
+        33
       ],
       "2": [
-        26,
-        1564
+        33,
+        1994
       ]
     },
     "inputSourceMap": {

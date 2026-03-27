@@ -90,4 +90,43 @@ describe('Profile e2e tests', () => {
             .should('be.visible')
             .and('contain', 'Une erreur est survenue');
     });
+
+
+    it('should show error if unsubscription from theme fails', () => {
+        // intercept unsubscription request
+        cy.intercept('DELETE', '/api/themes/1/unsubscribe', {
+            statusCode: 500,
+            body: 'Server Error'
+        }).as('unsubscribeError');
+
+        cy.visit('/me');
+        cy.wait('@getSubscriptions');
+
+        // unsubscribe
+        cy.get('app-theme-card').first().within(() => {
+            cy.getBySel("unsubscribe-btn").contains('Se désabonner').click();
+        });
+
+        cy.wait('@unsubscribeError');
+
+        // verify error message
+        cy.get('.mat-mdc-simple-snack-bar').should('be.visible')
+            .and('contain', 'Une erreur est survenue');
+
+        // intercept and reply with forbidden error status
+        cy.intercept('DELETE', '/api/themes/1/unsubscribe', {
+            statusCode: 403,
+            body: 'Forbidden'
+        }).as('unsubscribeErrorForbidden');
+
+        cy.get('app-theme-card').first().within(() => {
+            cy.getBySel("unsubscribe-btn").contains('Se désabonner').click();
+        });
+
+        cy.wait('@unsubscribeErrorForbidden');
+
+        // verify error message
+        cy.get('.mat-mdc-simple-snack-bar').should('be.visible')
+            .and('contain', 'Veuillez vous connecter avant de vous désabonner');
+    })
 })

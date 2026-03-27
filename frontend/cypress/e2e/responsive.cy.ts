@@ -25,5 +25,13 @@ describe('Header Responsiveness', () => {
         cy.getBySel('sidenav-articles').should('be.visible');
         cy.getBySel('sidenav-themes').should('be.visible');
         cy.getBySel('sidenav-profile').should('be.visible');
+
+        // logout and verify landing page display
+        cy.getBySel('sidenav-logout').click();
+
+        cy.get('.logo-large').should('be.visible');
+        cy.getBySel('register-btn').should('be.visible');
+        cy.getBySel('login-btn').should('be.visible');
+
     });
 });

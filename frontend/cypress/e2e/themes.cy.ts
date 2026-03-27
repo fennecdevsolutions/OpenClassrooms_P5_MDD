@@ -87,5 +87,43 @@ describe('Themes e2e tests', () => {
         cy.get('.mat-mdc-simple-snack-bar')
             .should('be.visible')
             .and('contain', 'Une erreur est survenue');
+
+
+        // intercept and reply with 409 instead
+        cy.intercept('POST', '/api/themes/4/subscribe', {
+            statusCode: 409,
+            body: 'conflict'
+        }).as('subscribeErrorConflict');
+
+        cy.get('app-theme-card').contains('Bases de Données')
+            .parents('app-theme-card')
+            .find('button').click();
+
+        cy.wait('@subscribeErrorConflict');
+
+        // verify error snackbar
+        cy.get('.mat-mdc-simple-snack-bar')
+            .should('be.visible')
+            .and('contain', 'Vous êtes déjà abonné à ce thème');
+
+
+        // intercept and reply with 403 instead
+        cy.intercept('POST', '/api/themes/4/subscribe', {
+            statusCode: 403,
+            body: 'Forbidden'
+        }).as('subscribeErrorForbidden');
+
+        cy.get('app-theme-card').contains('Bases de Données')
+            .parents('app-theme-card')
+            .find('button').click();
+
+        cy.wait('@subscribeErrorForbidden');
+
+        // verify error snackbar
+        cy.get('.mat-mdc-simple-snack-bar')
+            .should('be.visible')
+            .and('contain', 'Veuillez vous connecter avant de vous abonner');
     });
+
+
 });

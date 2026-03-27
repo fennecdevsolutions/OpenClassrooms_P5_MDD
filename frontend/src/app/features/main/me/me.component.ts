@@ -82,7 +82,6 @@ export class MeComponent {
   }
   togglePasswordVisibility(event: MouseEvent) {
     this.hidePassword.set(!this.hidePassword());
-    event.preventDefault()
   }
 
   handleUnsubscribe() {

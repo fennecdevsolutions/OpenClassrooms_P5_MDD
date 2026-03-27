@@ -1,3 +1,5 @@
+import { Comment } from '../../../frontend/src/app/core/models/comment.model';
+
 describe('Article Creation e2e tests', () => {
     beforeEach(() => {
         cy.clearLocalStorage();
@@ -5,6 +7,48 @@ describe('Article Creation e2e tests', () => {
         cy.intercept('GET', '/api/articles?direction=desc', { fixture: 'articles.json' }).as('getArticles');
         cy.intercept('GET', '/api/themes', { fixture: 'themes.json' }).as('getThemes');
     });
+
+
+    it('should display the list of articles and retrigger articles fetching with ascending order', () => {
+        cy.fixture('articles.json').then((articles: any[]) => {
+            const reversedArticles = [...articles].reverse();
+            //check default direction query
+            cy.wait('@getArticles').its('request.query.direction').should('equal', 'desc');
+
+            // verify defautl order
+            cy.getBySel('article-title').should('have.length', 10);
+            cy.getBySel('article-title').first().should('contain', articles[0].title);
+
+            // intercept new request
+            cy.intercept('GET', '/api/articles?direction=asc', {
+                body: reversedArticles
+            }).as('getArticlesAsc')
+
+            // click sort button
+            cy.getBySel('sort-button').click();
+
+            //check asc direction query
+            cy.wait('@getArticlesAsc').its('request.query.direction').should('equal', 'asc');
+
+            // verify cards order
+            cy.getBySel('article-title').first().should('contain', reversedArticles[0].title);
+
+            // intercept new request
+            cy.intercept('GET', '/api/articles?direction=desc', {
+                body: articles
+            }).as('getArticlesDesc2')
+
+            // click sort button
+            cy.getBySel('sort-button').click();
+
+            //check asc direction query
+            cy.wait('@getArticlesDesc2').its('request.query.direction').should('equal', 'desc');
+
+            // verify cards order
+            cy.getBySel('article-title').first().should('contain', articles[0].title);
+        });
+
+    })
 
     it('should create a new article successfully and redirect to details', () => {
         // intercept article creation
@@ -79,6 +123,86 @@ describe('Article Creation e2e tests', () => {
             .and('contain', 'Contenu de test détaillé');
     });
 
+
+    it('should display comments and allow user to post a new one', () => {
+
+        const newCommentText = 'Ceci est un commentaire de test E2E !';
+        const newComment: Comment = {
+            id: '4',
+            content: newCommentText,
+            articleId: '16',
+            authorUsername: 'Abdel_Dev',
+            createdAt: '2026-03-30T17:52:17',
+        };
+
+        // intercept article details, comments and new comment posting
+        cy.intercept('GET', '/api/articles/16', {
+            body: { id: '16', title: 'New Article', content: '...', authorName: 'Abdel_Dev' }
+        }).as('getArticle');
+
+        cy.intercept('GET', '/api/articles/16/comments', { fixture: 'comments.json' }).as('getInitialComments');
+
+        cy.intercept('POST', '/api/articles/16/comments', {
+            statusCode: 200,
+            body: newComment
+        }).as('postComment');
+
+        cy.visit('/articles/16');
+        cy.wait(['@getArticle', '@getInitialComments']);
+
+        cy.getBySel('comment-card').should('have.length', 3);
+
+        // intercept comments refresh
+        cy.intercept('GET', '/api/articles/16/comments', {
+            body: [
+                newComment,
+                {
+                    "id": 14,
+                    "content": "New comment",
+                    "articleId": 16,
+                    "authorUsername": "Abdel_Dev",
+                    "createdAt": "2026-03-22T17:52:17"
+                },
+                {
+                    "id": 1,
+                    "content": "Excellente explication sur les Signals !",
+                    "articleId": 16,
+                    "authorUsername": "Abdel_Dev",
+                    "createdAt": "2026-03-21T12:00:48"
+                },
+                {
+                    "id": 2,
+                    "content": "Je me demande si ça remplace totalement RxJS ?",
+                    "articleId": 16,
+                    "authorUsername": "Jean_Test",
+                    "createdAt": "2026-03-21T12:00:48"
+                }
+            ]
+        }).as('getUpdatedComments');
+
+        // Post new comment
+        cy.getBySel('comment-input').type(newCommentText);
+        cy.getBySel('submit-comment').should('not.be.disabled').click();
+
+        // Wait for requests to finish
+        cy.wait('@postComment');
+        cy.wait('@getUpdatedComments');
+
+        // check snackbar
+        cy.get('.mat-mdc-simple-snack-bar')
+            .should('be.visible')
+            .and('contain', 'Commentaire ajouté');
+
+        // Verify text area is empty
+        cy.getBySel('comment-input').should('have.value', '');
+
+        // Verify new comment
+        cy.getBySel('comment-card').first().within(() => {
+            cy.contains(newCommentText).should('be.visible');
+            cy.contains('Abdel_Dev').should('be.visible');
+        });
+    });
+
     it('should show an error message if the creation fails', () => {
 
         cy.intercept('POST', '/api/articles', {
@@ -132,4 +256,56 @@ describe('Article Creation e2e tests', () => {
             .should('be.visible')
             .and('contain', 'Veuillez vous connecter avant de créer un article');
     });
+
+
+    it('should show  error message when error during comment posting', () => {
+
+        // Intercept article details request
+        cy.intercept('GET', '/api/articles/16', {
+            body: { id: '16', title: 'New Article', content: 'Article contest', authorName: 'Abdel_Dev' }
+        }).as('getArticle');
+        cy.intercept('GET', '/api/articles/16/comments', { fixture: 'comments.json' }).as('getComments');
+
+        // intercept post and reply with error
+        cy.intercept('POST', '/api/articles/16/comments', {
+            statusCode: 403,
+            body: { message: 'Forbidden' }
+        }).as('postCommentError403');
+
+        cy.visit('/articles/16');
+        cy.wait(['@getArticle', '@getComments']);
+
+        // Post comment
+        cy.getBySel('comment-input').type('Test commentaire interdit');
+        cy.getBySel('submit-comment').click();
+
+        cy.wait('@postCommentError403');
+
+        // verify snackbar
+        cy.get('.mat-mdc-simple-snack-bar')
+            .should('be.visible')
+            .and('contain', 'Veuillez vous connecter avant de commenter');
+
+
+        // intercept post and reply with  error 500
+        cy.intercept('POST', '/api/articles/16/comments', {
+            statusCode: 500,
+            body: { message: 'Forbidden' }
+        }).as('postCommentError500');
+
+        cy.getBySel('submit-comment').click();
+
+        cy.wait('@postCommentError500');
+
+        // verify snackbar
+        cy.get('.mat-mdc-simple-snack-bar')
+            .should('be.visible')
+            .and('contain', 'Une erreur est survenue');
+
+
+        // check text area is not reset
+        cy.getBySel('comment-input').should('have.value', 'Test commentaire interdit');
+    });
+
+
 });

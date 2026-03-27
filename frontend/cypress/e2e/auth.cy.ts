@@ -24,7 +24,16 @@ describe('Authentication e2e tests', () => {
 
     cy.getBySel('password-input')
       .should('be.visible')
+      .and('have.attr', 'type', 'password')
       .type('Password123!');
+
+    // toggle password visibility and check it
+    cy.getBySel('toggle-password-btn').click();
+
+    cy.getBySel('password-input')
+      .should('be.visible')
+      .and('have.attr', 'type', 'text')
+
 
     cy.getBySel('submit-btn').should('not.be.disabled').click();
     cy.wait('@registerUser');
@@ -57,7 +66,15 @@ describe('Authentication e2e tests', () => {
 
     cy.getBySel('password-input')
       .should('be.visible')
+      .and('have.attr', 'type', 'password')
       .type('Password123!');
+
+    // toggle password visibility and check it
+    cy.getBySel('toggle-password-btn').click();
+
+    cy.getBySel('password-input')
+      .should('be.visible')
+      .and('have.attr', 'type', 'text')
 
     cy.getBySel('submit-btn').should('not.be.disabled').click();
     cy.wait('@loginUser');

@@ -36,12 +36,6 @@ export class RegisterComponent {
     password: new FormControl('', { nonNullable: true, validators: [Validators.required, Validators.minLength(8), Validators.pattern(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[$@$!%*?&])/)] })
   });
 
-
-  togglePasswordVisibility(event: MouseEvent) {
-    this.hidePassword.set(!this.hidePassword());
-    event.preventDefault()
-  }
-
   onSubmitForm() {
     if (this.registerForm.valid) {
       const registerRequest: RegisterRequest = this.registerForm.getRawValue();
@@ -57,6 +51,9 @@ export class RegisterComponent {
       });
     }
 
+  }
+  togglePasswordVisibility(event: MouseEvent) {
+    this.hidePassword.set(!this.hidePassword());
   }
 
 
